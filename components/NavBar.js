@@ -4,13 +4,16 @@ import Link from 'next/link';
 
 import { MdEmail } from 'react-icons/md';
 import { FaFacebookF, FaInstagram, FaTwitter, FaFigma } from 'react-icons/fa';
+
 import WebWorksDreamsLogo from '../public/images/WWD.2.svg';
+import styles from '../styles/NavBar.module.scss';
+import { MobileNavBar } from "./MobileNavBar";
 
 export const NavBar = () => {
     return (
       <>
-        <nav className="flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
-          <div className="container flex justify-between">
+        <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
+          <div className="container flex justify-between px-2 md:px-0">
             <a className="flex" href="mailto:webworksdreams@gmail.com">
               <MdEmail className="text-white text-lg mr-1" />
               webworksdreams@gmail.com
@@ -41,16 +44,16 @@ export const NavBar = () => {
             </div>
           </div>
         </nav>
-        <div className="flex justify-center py-2 border-2 border-red-500">
-          <div className="container flex justify-between">
+        <div className="hidden md:flex justify-center py-2 border-2 border-red-500 px-2 md:px-0">
+          <div className="container md:flex justify-between">
             <div className="flex items-center">
               <Image src={WebWorksDreamsLogo} width="30" height="30" />
               <span className="text-lg text-gray-600 ml-1">
                 WebWorks Dreams
               </span>
             </div>
-            <div>
-              <ul className="flex text-xs font-bold text-greeny">
+            <div className="flex item-center">
+              <ul className="flex flex-col md:flex-row text-xs font-bold text-greeny">
                 <li className="mr-8 hover:text-darkGreeny flex items-center">
                   <Link href="/">Home</Link>
                 </li>
@@ -66,12 +69,15 @@ export const NavBar = () => {
                 <li className="mr-8 hover:text-darkGreeny flex items-center">
                   <Link href="/contact">Contact Us</Link>
                 </li>
-                <li className="bg-gradient-to-r from-greeny to-lightGreeny p-2 px-4 rounded-full text-white font-semibold">
+                <li className="text-white px-6 py-3 rounded-full flex items-center bg-gradient-to-r from-greeny to-lightGreeny">
                   <Link href="/quote">Get A Quote</Link>
                 </li>
               </ul>
             </div>
           </div>
+        </div>
+        <div className="md:hidden">
+          <MobileNavBar />
         </div>
       </>
     );

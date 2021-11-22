@@ -1,0 +1,48 @@
+.container {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+}
+
+.a {
+  align-self: flex-end;
+  height: 15px;
+  width: 15px;
+  background: red;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  &:hover {
+    animation-name: link;
+    animation-name: nudge;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes link {
+  0% {
+       background-color: orange;
+
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes nudge {
+  
+  0% {
+    transform: translate(20px, 0);
+  }
+  
+  100% {
+    transform: translate(-20px, 0);
+  }
+}
+
+
