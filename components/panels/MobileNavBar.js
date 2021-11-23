@@ -1,8 +1,8 @@
 import { Menu, Transition } from "@headlessui/react";
-import { AiOutlineMenu } from "react-icons/ai";
+import { FiMenu } from "react-icons/fi";
 import { Fragment } from "react";
 import Image from "next/image";
-import WebWorksDreamsLogo from "../public/images/WWD.2.svg";
+import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
 
 export const MobileNavBar = () => {
   return (
@@ -16,7 +16,7 @@ export const MobileNavBar = () => {
           <span className="text-lg text-white ml-1">WebWorks Dreams</span>
         </div>
         <Menu.Button>
-          <AiOutlineMenu className="h-16 w-auto py-1" />
+          <FiMenu className="h-16 w-auto py-1" />
         </Menu.Button>
       </div>
       <Transition

@@ -1,17 +1,17 @@
 import Head from 'next/head'
-import { NavBar } from '../components/NavBar'
+import { Hero } from '../components/panels/Hero'
 
 export default function Home() {
   return (
-    <nav>
+    <>
       <Head>
         <title>WebWorks Dreams</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <NavBar/>
+      <main className="border-2 border-red-500 flex justify-center">
+        <Hero />
       </main>
-    </nav>
+    </>
   );
 }

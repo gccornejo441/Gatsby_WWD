@@ -4,12 +4,10 @@ import Link from 'next/link';
 
 import { MdEmail } from 'react-icons/md';
 import { FaFacebookF, FaInstagram, FaTwitter, FaFigma } from 'react-icons/fa';
-
-import WebWorksDreamsLogo from '../public/images/WWD.2.svg';
-import styles from '../styles/NavBar.module.scss';
+import WebWorksDreamsLogo from '../../public/images/WWD.2.svg'
 import { MobileNavBar } from "./MobileNavBar";
 
-export const NavBar = () => {
+export const NavBar = ({ props }) => {
     return (
       <>
         <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
@@ -44,7 +42,7 @@ export const NavBar = () => {
             </div>
           </div>
         </nav>
-        <div className="hidden md:flex justify-center py-2 border-2 border-red-500 px-2 md:px-0">
+        <div className="hidden md:flex justify-center py-2 px-2 md:px-0">
           <div className="container md:flex justify-between">
             <div className="flex items-center">
               <Image src={WebWorksDreamsLogo} width="30" height="30" />
