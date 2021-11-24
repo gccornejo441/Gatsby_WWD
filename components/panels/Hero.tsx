@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="container border-2 border-blue-500 flex justify-between">
-      <div className="border-2 border-black">
+    <div className="container flex justify-between">
+      <div>
         <div className="my-8">
           <div className="text-6xl font-bold text-gray-800 flex flex-col">
             <span>You dream it,</span>
@@ -26,7 +26,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="border-2 border-black">
+      <div>
         <Image src={headerBlob} alt="Hero Image" height={600} width={600} />
       </div>
     </div>

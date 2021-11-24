@@ -18,3 +18,80 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.shapes {
+  // pink
+  .object_1 {
+      position: relative;
+      left: -5em;
+      animation: bob 3s alternate infinite;
+    }
+   // star 
+  .object_2 {
+      position: relative;
+      left: 50em;
+      top: 10em;
+      animation: bob_1 3s alternate infinite;
+    }
+    //light pink circle
+    .object_3 {
+      position: relative;
+      left: 10em;
+      top: 30em;
+      animation: bob_2 3s alternate infinite;
+    }
+    //tri
+    .object_4 {
+      position: relative;
+      left: 100em;
+      top: 10em;
+      animation: bob_3 3s alternate infinite;
+    }
+}
+
+@keyframes bob {
+  0% {
+    transform: translate(-10px, -10px);
+  }
+
+  100% {
+    transform: translate(10px, 10px);
+  }
+}
+
+@keyframes bob_1 {
+  0% {
+    transform: translate(10px, -10px);
+  }
+
+  100% {
+    transform: translate(-10px, 10px);
+  }
+}
+
+@keyframes bob_2 {
+  0% {
+    transform: translate(10px, -10px);
+  }
+
+  100% {
+    transform: translate(-10px, 10px);
+  }
+}
+
+@keyframes bob_3 {
+  0% {
+    transform: translate(10px, -10px);
+  }
+
+  100% {
+    transform: translate(-10px, 10px);
+  }
+}
+
+.rightBlob {
+  position: fixed;
+  left: -300px;
+  top: 50vh;
+  z-index: -1;
+}
