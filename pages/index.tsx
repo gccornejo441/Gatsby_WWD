@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { Hero } from '../components/panels/Hero'
+import Head from "next/head";
+import { Hero } from '../components/panels/Hero';
 
 export default function Home() {
   return (

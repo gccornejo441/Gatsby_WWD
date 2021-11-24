@@ -1,6 +1,6 @@
 import { AppProps } from "next/dist/shared/lib/router/router";
 import "tailwindcss/tailwind.css";
-import { Layout } from '../components/panels/Layout';
+import { Layout } from "../components/panels/Layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

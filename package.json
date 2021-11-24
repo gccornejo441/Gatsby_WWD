@@ -1,5 +1,5 @@
 {
-  "name": "webworks-dreams",
+  "name": "gatsby_wwd",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,26 +9,20 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
-    "next": "^12.0.5-canary.4",
+    "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
     "sass": "^1.43.4"
   },
   "devDependencies": {
-    "@types/node": "16.11.8",
-    "@types/react": "17.0.35",
+    "@types/node": "16.11.10",
+    "@types/react": "17.0.36",
     "autoprefixer": "^10.4.0",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.19",
     "typescript": "4.5.2"
-  },
-  "babelMacros": {
-    "twin": {
-      "config": "./tailwind.config.js",
-      "preset": "styled-components"
-    }
   }
 }
