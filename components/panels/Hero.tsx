@@ -2,12 +2,13 @@ import React from "react";
 import Link from "next/link";
 import headerBlob from "../../public/images/headerBlob.svg";
 import Image from "next/image";
+import SEOImage from "../../public/images/SEO.svg";
 
 export const Hero = () => {
   return (
     <div className="w-full container">
       <div className="flex flex-col md:flex-row md:justify-between">
-        <div className="px-10">
+        <div className="px-10 md:px-0">
           <div className="my-8">
             <div className="text-5xl md:text-5xl lg:text-6xl font-bold text-gray-800 flex flex-col">
               <span>You dream it,</span>
@@ -42,12 +43,56 @@ export const Hero = () => {
             <div className="text-center text-3xl md:text-2xl lg:text-3xl font-bold text-gray-800">
               <span>What We Offer</span>
             </div>
-            <div className="text-center w-72 md:w-96">
+            <div className="text-center w-72 md:w-96 mx-auto">
               <span className="text-gray-400 font-semibold text-sm">
                 If you're in the market for modern solutions, WebWorks Dreams
                 offers the means to empower newcomers to explore the newest and
                 innovative software capabilities.
               </span>
+            </div>
+            <div>
+              <ul className="flex justify-between">
+                <li className="flex flex-col">
+                  <Image height={200} width={200} src={SEOImage} />
+                  <div className="text-center text-3xl md:text-2xl lg:text-3xl font-bold text-gray-800">
+                    <span>LOCAL SEARCH ENGINE OPTIMIZATION</span>
+                  </div>
+                  <div className="text-center w-72 md:w-96">
+                    <span className="text-gray-400 font-semibold text-sm">
+                      Our websites are tailored to your needs and your user
+                      demands, so we have cultivated our process to target
+                      customer satisfaction.
+                    </span>
+                  </div>
+                </li>
+                <li className="flex flex-col">
+                  <Image height={200} width={200} src={SEOImage} />
+                  <div className="text-center text-3xl md:text-2xl lg:text-3xl font-bold text-gray-800">
+                    <span>WEBSITE DEVELOPMENT</span>
+                  </div>
+                  <div className="text-center w-72 md:w-96">
+                    <span className="text-gray-400 font-semibold text-sm">
+                      With little worry about speed and website responsiveness,
+                      your customers will truly be receiving a quality
+                      experience that of the most technologically up-to-date
+                      companies in your field.
+                    </span>
+                  </div>
+                </li>
+                <li className="flex flex-col">
+                  <Image height={200} width={200} src={SEOImage} />
+                  <div className="text-center text-3xl md:text-2xl lg:text-3xl font-bold text-gray-800">
+                    <span>MODERN WEBSITE FRAMEWORKS</span>
+                  </div>
+                  <div className="text-center w-72 md:w-96">
+                    <span className="text-gray-400 font-semibold text-sm">
+                      Creating modern websites has never been easier. With the
+                      power of CSS frameworks such as Tailwind CSS, we are at
+                      liberty to compose dynamically responsive websites.
+                    </span>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
