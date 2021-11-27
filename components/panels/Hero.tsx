@@ -3,6 +3,8 @@ import Link from "next/link";
 import headerBlob from "../../public/images/headerBlob.svg";
 import Image from "next/image";
 import SEOImage from "../../public/images/SEO.svg";
+import WebDevelopment from "../../public/images/Web-Development.svg";
+import Frameworks from "../../public/images/Frameworks.svg";
 
 export const Hero = () => {
   return (
@@ -33,7 +35,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col pt-10">
-        <div className="border-2 border-green-500 flex justify-center">
+        <div>
           <div className="flex flex-col">
             <div className="flex justify-center">
               <span className="bg-lighterGreen px-5 rounded-full text-greeny font-bold text-sm">
@@ -50,11 +52,16 @@ export const Hero = () => {
                 innovative software capabilities.
               </span>
             </div>
-            <div>
+            <div className="my-28">
               <ul className="flex justify-between">
                 <li className="flex flex-col">
-                  <Image height={200} width={200} src={SEOImage} />
-                  <div className="text-center text-3xl md:text-2xl lg:text-3xl font-bold text-gray-800">
+                  <Image 
+                  alt="Search Engine Optimization"
+                  height={200} 
+                  width={200} 
+                  src={SEOImage} 
+                  />
+                  <div className="text-center text-3xl md:text-2xl lg:text-xl font-bold text-gray-800">
                     <span>LOCAL SEARCH ENGINE OPTIMIZATION</span>
                   </div>
                   <div className="text-center w-72 md:w-96">
@@ -66,11 +73,16 @@ export const Hero = () => {
                   </div>
                 </li>
                 <li className="flex flex-col">
-                  <Image height={200} width={200} src={SEOImage} />
-                  <div className="text-center text-3xl md:text-2xl lg:text-3xl font-bold text-gray-800">
+                  <Image
+                  alt="Web Developement" 
+                  height={200} 
+                  width={200} 
+                  src={WebDevelopment} 
+                  />
+                  <div className="text-center text-3xl md:text-2xl lg:text-xl font-bold text-gray-800">
                     <span>WEBSITE DEVELOPMENT</span>
                   </div>
-                  <div className="text-center w-72 md:w-96">
+                  <div className="text-center w-72 md:w-auto">
                     <span className="text-gray-400 font-semibold text-sm">
                       With little worry about speed and website responsiveness,
                       your customers will truly be receiving a quality
@@ -80,8 +92,13 @@ export const Hero = () => {
                   </div>
                 </li>
                 <li className="flex flex-col">
-                  <Image height={200} width={200} src={SEOImage} />
-                  <div className="text-center text-3xl md:text-2xl lg:text-3xl font-bold text-gray-800">
+                  <Image 
+                  alt="Frameworks"
+                  height={200} 
+                  width={200} 
+                  src={Frameworks} 
+                  />
+                  <div className="text-center text-3xl md:text-2xl lg:text-xl font-bold text-gray-800">
                     <span>MODERN WEBSITE FRAMEWORKS</span>
                   </div>
                   <div className="text-center w-72 md:w-96">

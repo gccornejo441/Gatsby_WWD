@@ -42,9 +42,9 @@ a {
   }
   //tri
   .object_4 {
-    position: relative;
-    left: 100em;
-    top: 10em;
+    position: absolute;
+    right: 5em;
+    top: 50em;
     animation: bob_3 3s alternate infinite;
   }
 }
