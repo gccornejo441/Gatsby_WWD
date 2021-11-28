@@ -11,7 +11,7 @@ export const NavBar = () => {
   return (
     <>
       <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
-        <div className="container flex justify-between px-2 md:px-0">
+        <div className="container flex justify-between px-28">
           <a className="flex" href="mailto:webworksdreams@gmail.com">
             <MdEmail className="text-white text-lg mr-1" />
             webworksdreams@gmail.com
@@ -43,9 +43,9 @@ export const NavBar = () => {
         </div>
       </nav>
       <div className="hidden md:flex justify-center py-2 px-2 md:px-0">
-        <div className="container md:flex justify-between">
+        <div className="container md:flex justify-between px-28">
           <div className="flex items-center">
-            <Image src={WebWorksDreamsLogo} width="30" height="30" />
+            <Image src={WebWorksDreamsLogo} width="50" height="50" />
             <span className="text-lg text-gray-600 ml-1">WebWorks Dreams</span>
           </div>
           <div className="flex item-center">
