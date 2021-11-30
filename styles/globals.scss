@@ -19,6 +19,21 @@ a {
   box-sizing: border-box;
 }
 
+.hero-text {
+  animation: drop 0.7s linear 1 normal forwards;
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(-40px, -50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 .shapes {
   // pink
   .object_1 {
@@ -90,8 +105,16 @@ a {
 }
 
 .rightBlob {
-  position: fixed;
+  position: absolute;
   left: -300px;
-  top: 50vh;
+  top: 90vh;
   z-index: -1;
 }
+
+.leftBlob {
+  position: absolute;
+  right: -300px;
+  top: 1400px;
+  z-index: 1;
+}
+

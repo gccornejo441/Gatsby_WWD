@@ -2,11 +2,13 @@ import React from "react";
 import WebWorksDream from "../../public/images/WWD.2.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebook, FaInstagram, FaTwitter, FaFigma, FaYoutube, FaLinkedin } from "react-icons/fa";
+
 
 export const Footer = () => {
   return (
     <footer className="bg-white relative z-0 text-gray-400 font-normal text-base">
-      <div className="relative flex flex-col w-full max-w-6xl mx-auto">
+      <div className="relative flex flex-col w-full max-w-6xl mx-auto px-8">
         <div className="flex flex-wrap -mx-2 pt-16">
           <div className="flex px-2 relative pb-12 w-1/2 md:w-1/4">
             <div>
@@ -73,85 +75,79 @@ export const Footer = () => {
             </div>
           </div>
           </div>
-          <div className="text-xs pt-6 pb-20 flex justify-between">
-            <div className="flex">
+          <div className="text-xs pt-6 pb-20 flex justify-between flex-col md:flex-row">
+            <div className="flex justify-center">
               <a
                 target="_blank"
-                href="https://twitter.com/avocode"
                 aria-label="twitter"
-                className="sc-6w6m2h-0 ggzfjo"
+                className="flex pr-2"
               >
-                Twitter
+                <FaTwitter className="w-5 h-5"/>
               </a>
               <a
                 target="_blank"
-                href="https://www.facebook.com/avocode/"
                 aria-label="facebook"
-                className="sc-6w6m2h-0 ggzfjo"
+                className="flex px-2"
               >
-                Facebook
+                <FaFacebook className="w-5 h-5"/>
               </a>
               <a
                 target="_blank"
-                href="https://www.instagram.com/avocode/"
                 aria-label="instagram"
-                className="sc-6w6m2h-0 ggzfjo"
+                className="flex px-2"
               >
-                Instagram
+                <FaInstagram className="w-5 h-5"/>
               </a>
               <a
                 target="_blank"
-                href="https://www.youtube.com/channel/UCaNsjhUdh3BxFL6tzyuhc9g"
                 aria-label="youtube"
-                className="sc-6w6m2h-0 ggzfjo"
+                className="flex px-2"
               >
-                YouTube
+                <FaYoutube className="w-5 h-5"/>
               </a>
               <a
                 target="_blank"
-                href="https://dribbble.com/avocode"
                 aria-label="dribbble"
-                className="sc-6w6m2h-0 ggzfjo"
+                className="flex px-2"
               >
-                Dribble
+                <FaFigma className="w-5 h-5"/>
               </a>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/company/avocode-inc-"
                 aria-label="linkedin"
-                className="sc-6w6m2h-0 ggzfjo"
+                className="flex px-2"
               >
-                Linkedin
+                <FaLinkedin className="w-5 h-5"/>
               </a>
             </div>
-            <ul className="flex p-0 m-0 text-gray-500 ">
+            <ul className="flex flex-col md:flex-row p-0 m-0 text-gray-500 ">
               <li className="block sm:inline-block pl-2">
-                <a href="/terms-of-service" className="sc-6w6m2h-0 ggzfjo">
+                <a href="/terms-of-service" className="flex px-2 justify-center py-3">
                   Terms of service
                 </a>
               </li>
               <li className="block sm:inline-block pl-2">
-                <a href="/privacy-policy" className="sc-6w6m2h-0 ggzfjo">
+                <a href="/privacy-policy" className="flex px-2 justify-center py-3">
                   Privacy policy
                 </a>
               </li>
               <li className="block sm:inline-block pl-2">
-                <a href="/cookie-policy" className="sc-6w6m2h-0 ggzfjo">
+                <a href="/cookie-policy" className="flex px-2 justify-center py-3">
                   Cookies
                 </a>
               </li>
               <li className="block sm:inline-block pl-2">
-                <a href="/license-acknowledgements" className="sc-6w6m2h-0 ggzfjo">
+                <a href="/license-acknowledgements" className="flex px-2 justify-center py-3">
                   Licenses
                 </a>
               </li>
               <li className="block sm:inline-block pl-2">
-                <a href="/sitemap" className="sc-6w6m2h-0 ggzfjo">
+                <a href="/sitemap" className="flex px-2 justify-center py-3">
                   Sitemap
                 </a>
               </li>
             </ul>
-            <p className="sm:inline-block text-sm font-semibold text-gray-500 m-0">Copyright © 2021 Avocode</p>
+            <p className="sm:inline-block text-xs font-semibold text-gray-500 m-0 pt-3 md:pt-0 text-center">Copyright © 2021 WebWorks Dreams</p>
           </div>
         
       </div>
