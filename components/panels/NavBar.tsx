@@ -43,10 +43,12 @@ export const NavBar = () => {
         </div>
       </nav>
       <div className="hidden md:flex justify-center py-2 px-2 md:px-0">
-        <div className="container md:flex justify-between px-28">
+        <div className="container md:flex justify-between px-8 lg:px-28">
           <div className="flex items-center">
             <Image src={WebWorksDreamsLogo} width="50" height="50" />
-            <span className="text-lg text-gray-600 ml-1">WebWorks Dreams</span>
+            <span className="text-sm lg:text-lg text-gray-600 ml-1">
+              WebWorks Dreams
+            </span>
           </div>
           <div className="flex item-center">
             <ul className="flex flex-col md:flex-row text-xs font-bold text-greeny">
@@ -65,8 +67,10 @@ export const NavBar = () => {
               <li className="mr-8 hover:text-darkGreeny flex items-center">
                 <Link href="/contact">Contact Us</Link>
               </li>
-              <li className="text-white px-6 py-3 rounded-full flex items-center bg-gradient-to-r from-greeny to-lightGreeny">
-                <Link href="/quote">Get A Quote</Link>
+              <li className="flex items-center">
+                <div className="text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
+                  <Link href="/quote">Get A Quote</Link>
+                </div>
               </li>
             </ul>
           </div>

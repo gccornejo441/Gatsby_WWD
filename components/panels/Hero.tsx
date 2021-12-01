@@ -22,10 +22,10 @@ export const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row pb-10 md:pb-0">
-            <div className="text-white px-4 mb-16 md:mb-0 md:px-9 py-2 rounded-full flex items-center bg-greeny md:mr-10">
+            <div className="text-white text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny md:mr-10">
               <Link href="/">Get Started</Link>
             </div>
-            <div className="text-white px-4 mb-8 md:mb-0 md:px-9 py-2 rounded-full flex items-center bg-greeny">
+            <div className="text-white text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny">
               <Link href="/">More Info</Link>
             </div>
           </div>
@@ -53,8 +53,8 @@ export const Hero = () => {
               </span>
             </div>
             <div className="my-28">
-              <ul className="flex justify-between flex-col lg:flex-row">
-                <li className="flex flex-col pb-12 lg:pb-0">
+              <div className="flex justify-between flex-col lg:flex-row">
+                <div className="flex flex-col pb-12 lg:pb-0">
                   <Image
                     alt="Search Engine Optimization"
                     height={200}
@@ -71,8 +71,8 @@ export const Hero = () => {
                       customer satisfaction.
                     </span>
                   </div>
-                </li>
-                <li className="flex flex-col py-12 lg:py-0">
+                </div>
+                <div className="flex flex-col py-12 lg:py-0">
                   <Image
                     alt="Web Developement"
                     height={200}
@@ -90,8 +90,8 @@ export const Hero = () => {
                       companies in your field.
                     </span>
                   </div>
-                </li>
-                <li className="flex flex-col justify-center pt-12 lg:pt-0">
+                </div>
+                <div className="flex flex-col justify-center pt-12 lg:pt-0">
                   <Image
                     alt="Frameworks"
                     height={200}
@@ -108,8 +108,8 @@ export const Hero = () => {
                       liberty to compose dynamically responsive websites.
                     </span>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

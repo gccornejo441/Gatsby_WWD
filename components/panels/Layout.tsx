@@ -10,7 +10,7 @@ export const Layout = ({ children }: Props) => {
   return (
     <div>
       <NavBar />
-      <main>{children}</main>
+      <main className="pt-16 md:pt-0">{children}</main>
       <Footer />
     </div>
   );

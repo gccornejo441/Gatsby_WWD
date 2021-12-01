@@ -8,7 +8,7 @@ export const MobileNavBar = () => {
   return (
     <Menu
       as="div"
-      className="justify-center text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny"
+      className="justify-center text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny fixed z-10 w-full"
     >
       <div className="flex justify-between px-4">
         <div className="flex items-center">
@@ -29,7 +29,7 @@ export const MobileNavBar = () => {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items>
-          <div className="bg-white text-greeny text-md flex flex-col ">
+          <div className="bg-white text-greeny text-md flex flex-col absolute z-10 w-full drop-shadow-lg">
             <Menu.Item>
               {({ active }) => (
                 <a
