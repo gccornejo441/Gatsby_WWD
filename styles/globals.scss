@@ -25,7 +25,7 @@ a {
 
 @keyframes drop {
   0% {
-    transform: translate(-40px, -50px);
+    transform: translate(-60px, -70px);
     opacity: 0;
   }
   100% {
@@ -37,8 +37,8 @@ a {
 .shapes {
   // pink
   .object_1 {
-    position: relative;
-    left: -5em;
+    position: absolute;
+    right: 30em;
     animation: bob 3s alternate infinite;
   }
   // star
@@ -58,7 +58,7 @@ a {
   //tri
   .object_4 {
     position: absolute;
-    right: 5em;
+    right: 10em;
     top: 50em;
     animation: bob_3 3s alternate infinite;
   }
@@ -104,17 +104,26 @@ a {
   }
 }
 
-.rightBlob {
+.leftBlob {
   position: absolute;
   left: -300px;
   top: 90vh;
   z-index: -1;
 }
 
-.leftBlob {
+.rightBlob {
   position: absolute;
   right: -300px;
   top: 1400px;
-  z-index: 1;
+  z-index: -1;
 }
 
+
+@media (min-width: 1168px) {
+  .rightBlob {
+  position: absolute;
+  right: -300px;
+  top: 1400px;
+  z-index: 0;
+  }
+}

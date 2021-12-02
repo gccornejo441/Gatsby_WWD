@@ -1,16 +1,42 @@
-import React from "react";
+import * as React from "react";
 import Link from "next/link";
 import headerBlob from "../../public/images/headerBlob.svg";
 import Image from "next/image";
 import SEOImage from "../../public/images/SEO.svg";
 import WebDevelopment from "../../public/images/Web-Development.svg";
 import Frameworks from "../../public/images/Frameworks.svg";
+import { motion } from "framer-motion";
+
 
 export const Hero = () => {
+  const [scrollY, setScrollTop] = React.useState(0);
+
+  const position = () => {
+    setScrollTop(window.pageYOffset);
+  };
+
+  //REFs
+  const scrollRef1 = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const watchScroll = () => {
+      window.addEventListener("scroll", position);
+    };
+
+    scrollY >= 0 && scrollY < 530
+      ? scrollRef1.current?.classList.add("hero-text")
+      : scrollRef1.current?.classList.remove("hero-text");
+
+    return watchScroll();
+  });
+
   return (
     <div className="w-full container mx-auto justify-center px-22 md:px-12 lg:px-32">
       <div className="flex flex-col md:flex-row md:justify-between">
-        <div className="px-10 lg:mt-5 xl:mt-32 md:px-0 hero-text">
+        <div
+          ref={scrollRef1}
+          className="px-10 lg:mt-5 xl:mt-32 md:px-0 hero-text"
+        >
           <div className="my-8">
             <div className="text-5xl md:text-5xl lg:text-6xl font-bold text-gray-800 flex flex-col ">
               <span className="pb-5">You dream it,</span>
@@ -61,10 +87,10 @@ export const Hero = () => {
                     width={200}
                     src={SEOImage}
                   />
-                  <div className="text-center text-3xl md:text-xl lg:text-xl font-bold text-gray-800">
-                    <span>LOCAL SEARCH ENGINE OPTIMIZATION</span>
+                  <div className="text-center text-3xl md:text-xl lg:text-xl font-bold text-gray-800 py-4">
+                    <span>SEARCH ENGINE OPTIMIZATION</span>
                   </div>
-                  <div className="text-center px-10 lg:px-0 lg:max-w-prose">
+                  <div className="text-center px-10 lg:px-8 lg:max-w-prose">
                     <span className="text-gray-400 font-semibold text-xs md:text-sm">
                       Our websites are tailored to your needs and your user
                       demands, so we have cultivated our process to target
@@ -79,32 +105,31 @@ export const Hero = () => {
                     width={200}
                     src={WebDevelopment}
                   />
-                  <div className="text-center text-3xl md:text-xl lg:text-xl font-bold text-gray-800">
+                  <div className="text-center text-3xl md:text-xl lg:text-xl font-bold text-gray-800 py-4">
                     <span>WEBSITE DEVELOPMENT</span>
                   </div>
-                  <div className="text-center px-10 lg:px-0 lg:max-w-prose">
+                  <div className="text-center px-10 md:px-5 lg:px-8 lg:max-w-prose">
                     <span className="text-gray-400 font-semibold text-xs md:text-sm">
                       With little worry about speed and website responsiveness,
                       your customers will truly be receiving a quality
-                      experience that of the most technologically up-to-date
-                      companies in your field.
+                      experience.
                     </span>
                   </div>
                 </div>
-                <div className="flex flex-col justify-center pt-12 lg:pt-0">
+                <div className="flex flex-col py-12 lg:py-0">
                   <Image
                     alt="Frameworks"
                     height={200}
                     width={200}
                     src={Frameworks}
                   />
-                  <div className="text-center text-3xl md:text-xl lg:text-xl font-bold text-gray-800">
+                  <div className="text-center text-3xl md:text-xl lg:text-xl font-bold text-gray-800 py-4">
                     <span>MODERN WEBSITE FRAMEWORKS</span>
                   </div>
-                  <div className="text-center px-10 lg:px-0 lg:max-w-prose">
+                  <div className="text-center px-10 lg:px-8 lg:max-w-prose">
                     <span className="text-gray-400 font-semibold text-xs md:text-sm">
                       Creating modern websites has never been easier. With the
-                      power of CSS frameworks such as Tailwind CSS, we are at
+                      power of CSS framework, we are at
                       liberty to compose dynamically responsive websites.
                     </span>
                   </div>
