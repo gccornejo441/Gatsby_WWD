@@ -23,7 +23,7 @@ export const Hero = () => {
       window.addEventListener("scroll", position);
     };
 
-    scrollY >= 0 && scrollY < 530
+    scrollY >= 0 && scrollY < 550
       ? scrollRef1.current?.classList.add("hero-text")
       : scrollRef1.current?.classList.remove("hero-text");
 
@@ -38,7 +38,12 @@ export const Hero = () => {
           className="px-10 lg:mt-5 xl:mt-32 md:px-0 hero-text"
         >
           <div className="my-8">
-            <div className="text-5xl md:text-5xl lg:text-6xl font-bold text-gray-800 flex flex-col ">
+            <div className="smooch-text">
+              <span className=" text-greeny font-normal text-6xl md:text-3xl">
+                Welcome
+              </span>
+            </div>
+            <div className="text-5xl md:text-5xl lg:text-6xl font-bold text-gray-800 flex flex-col">
               <span className="pb-5">You dream it,</span>
               <span className="pb-5">we build it.</span>
             </div>
@@ -63,9 +68,9 @@ export const Hero = () => {
       <div className="flex flex-col mt-16">
         <div>
           <div className="flex flex-col">
-            <div className="flex justify-center">
-              <span className="bg-lighterGreen px-5 rounded-full text-greeny font-bold text-xs md:text-sm">
-                SERVICES
+            <div className="flex justify-center smooch-text">
+              <span className=" text-greeny font-normal text-6xl md:text-7xl">
+                Services
               </span>
             </div>
             <div className="text-center text-3xl md:text-xl lg:text-3xl font-bold text-gray-800">
@@ -87,7 +92,7 @@ export const Hero = () => {
                     width={200}
                     src={SEOImage}
                   />
-                  <div className="text-center text-3xl md:text-xl lg:text-xl font-bold text-gray-800 py-4">
+                  <div className="text-center text-lg md:text-xl lg:text-xl font-bold text-gray-800 py-4">
                     <span>SEARCH ENGINE OPTIMIZATION</span>
                   </div>
                   <div className="text-center px-10 lg:px-8 lg:max-w-prose">
@@ -105,7 +110,7 @@ export const Hero = () => {
                     width={200}
                     src={WebDevelopment}
                   />
-                  <div className="text-center text-3xl md:text-xl lg:text-xl font-bold text-gray-800 py-4">
+                  <div className="text-center text-lg md:text-xl lg:text-xl font-bold text-gray-800 py-4">
                     <span>WEBSITE DEVELOPMENT</span>
                   </div>
                   <div className="text-center px-10 md:px-5 lg:px-8 lg:max-w-prose">
@@ -123,14 +128,14 @@ export const Hero = () => {
                     width={200}
                     src={Frameworks}
                   />
-                  <div className="text-center text-3xl md:text-xl lg:text-xl font-bold text-gray-800 py-4">
+                  <div className="text-center text-lg md:text-xl lg:text-xl font-bold text-gray-800 py-4">
                     <span>MODERN WEBSITE FRAMEWORKS</span>
                   </div>
                   <div className="text-center px-10 lg:px-8 lg:max-w-prose">
                     <span className="text-gray-400 font-semibold text-xs md:text-sm">
                       Creating modern websites has never been easier. With the
-                      power of CSS framework, we are at
-                      liberty to compose dynamically responsive websites.
+                      power of CSS framework, we are at liberty to compose
+                      dynamically responsive websites.
                     </span>
                   </div>
                 </div>

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+$Smooch-font: 'Smooch', cursive;
+
 html,
 body {
   padding: 0;
@@ -21,6 +23,17 @@ a {
 
 .hero-text {
   animation: drop 0.7s linear 1 normal forwards;
+}
+
+.smooch-text {
+  font-family: $Smooch-font;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 2px #025754, 0 0 2em #63e6e1, 0 0 3em #5CBDB9;
+}
+
+.hero-heading {
+  font-family: $Smooch-font;
+  letter-spacing: 5px;
 }
 
 @keyframes drop {
