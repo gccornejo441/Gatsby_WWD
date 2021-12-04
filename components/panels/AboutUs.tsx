@@ -20,9 +20,9 @@ export const About = () => {
               </div>
               <div className="md:text-left text-center md:w-96 mx-auto">
                 <span className="text-gray-400 font-semibold text-sm lg:text-md">
-                  If you're in the market for modern solutions, WebWorks Dreams
-                  offers the means to empower newcomers to explore the newest
-                  and innovative software capabilities.
+                  If you&apos;re in the market for modern solutions, WebWorks
+                  Dreams offers the means to empower newcomers to explore the
+                  newest and innovative software capabilities.
                 </span>
               </div>
             </div>

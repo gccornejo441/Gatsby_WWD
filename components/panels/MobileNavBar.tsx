@@ -3,6 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import { Fragment } from "react";
 import Image from "next/image";
 import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
+import Link from "next/link";
 
 export const MobileNavBar = () => {
   return (
@@ -12,7 +13,12 @@ export const MobileNavBar = () => {
     >
       <div className="flex justify-between px-4">
         <div className="flex items-center">
-          <Image src={WebWorksDreamsLogo} width="30" height="30" />
+          <Image
+            src={WebWorksDreamsLogo}
+            width="30"
+            height="30"
+            alt="WebWorks Dreams Logo"
+          />
           <span className="text-lg text-white ml-1">WebWorks Dreams</span>
         </div>
         <Menu.Button>
@@ -32,74 +38,80 @@ export const MobileNavBar = () => {
           <div className="bg-white text-greeny text-md flex flex-col absolute z-10 w-full drop-shadow-lg">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                  href="/"
-                >
-                  Home
-                </a>
+                <Link href="/">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Home
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                  href="/about"
-                >
-                  About Us
-                </a>
+                <Link href="/about">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    About Us
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                  href="/services"
-                >
-                  Services
-                </a>
+                <Link href="/services">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Services
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                  href="/blog"
-                >
-                  Blog
-                </a>
+                <Link href="/blog">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Blog
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                  href="/contact"
-                >
-                  Contact Us
-                </a>
+                <Link href="/contact">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Contact Us
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                  href="/quote"
-                >
-                  Get A Quote
-                </a>
+                <Link href="/quote">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Get A Quote
+                  </a>
+                </Link>
               )}
             </Menu.Item>
           </div>

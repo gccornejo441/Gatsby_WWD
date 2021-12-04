@@ -78,9 +78,9 @@ export const Hero = () => {
             </div>
             <div className="text-center w-72 md:w-96 mx-auto">
               <span className="text-gray-400 font-semibold text-xs md:text-sm">
-                If you're in the market for modern solutions, WebWorks Dreams
-                offers the means to empower newcomers to explore the newest and
-                innovative software capabilities.
+                If you&apos;re in the market for modern solutions, WebWorks
+                Dreams offers the means to empower newcomers to explore the
+                newest and innovative software capabilities.
               </span>
             </div>
             <div className="my-28">
