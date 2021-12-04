@@ -39,26 +39,26 @@ export const Hero = () => {
         >
           <div className="my-8">
             <div className="smooch-text">
-              <span className=" text-greeny font-normal text-6xl md:text-3xl">
+              <span className=" text-greeny font-normal text-4xl md:text-3xl">
                 Welcome
               </span>
             </div>
-            <div className="text-5xl md:text-5xl lg:text-6xl font-bold text-gray-800 flex flex-col">
+            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 flex flex-col">
               <span className="pb-5">You dream it,</span>
               <span className="pb-5">we build it.</span>
             </div>
-            <div className="text-gray-400 font-semibold mt-2 leading-loose">
+            <div className="text-gray-400 font-semibold mt-2 leading-loose text-sm md:text-normal">
               The right website is waiting for you, and we are here to make it
               happen.
             </div>
           </div>
           <div className="flex flex-col md:flex-row pb-10 md:pb-0">
-            <div className="text-white text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny md:mr-10">
+            <button className="text-white text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny md:mr-10">
               <Link href="/">Get Started</Link>
-            </div>
-            <div className="text-white text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny">
+            </button>
+            <button className="text-white text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny">
               <Link href="/">More Info</Link>
-            </div>
+            </button>
           </div>
         </div>
         <div>
