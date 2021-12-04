@@ -22,7 +22,7 @@ export const MobileNavBar = () => {
           <span className="text-lg text-white ml-1">WebWorks Dreams</span>
         </div>
         <Menu.Button>
-          <FiMenu className="h-16 w-auto py-1" />
+          <FiMenu className="h-12 w-auto py-1" />
         </Menu.Button>
       </div>
       <Transition
