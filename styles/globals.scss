@@ -64,19 +64,6 @@ a {
   }
 }
 
-.load_dot {
-  animation: loadDot 1s alternate infinite;
-}
-
-@keyframes loadDot {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes ball1 {
   0% {
     box-shadow: 30px 0 0 #ffd79aff;
