@@ -64,13 +64,13 @@ export const NavBar = () => {
                 <Link href="/about">About Us</Link>
               </li>
               <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/service">Services</Link>
+                <Link href="/services/web-services">Services</Link>
               </li>
               <li className="mr-8 hover:text-darkGreeny flex items-center">
                 <Link href="/blog">Blog</Link>
               </li>
               <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/services">Contact Us</Link>
               </li>
               <li className="flex items-center">
                 <div className="text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
