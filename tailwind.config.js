@@ -18,6 +18,9 @@ module.exports = {
         rosey: "#e3342f",
         lighterGreen: "#EDFEFC",
       },
+      backgroundImage: {
+        "scale-background": "url('/images/background.svg')",
+      },
     },
   },
   variants: {

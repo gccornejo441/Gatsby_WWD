@@ -92,7 +92,7 @@ const webServices = () => {
         </div>
       </main>
       <div className="w-full md:mt-12">
-        <div className="md:absolute z-10 w-full bg-lightGreeny md:bg-transparent p-10">
+        <div className="w-full h-full bg-scale-background">
           <div className="container xs:px-5 sm:px-14 md:px-0 xl:px-32 w-full mx-auto">
             <div className="md:grid grid-cols-2 gap-4">
               <div>
@@ -120,9 +120,6 @@ const webServices = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-full hidden md:block">
-          <Image src={Background} alt="green texture background" />
         </div>
         <div className="flex justify-center bg-gradient-to-t from-gray-100 to-white">
           <div className="my-20 text-center py-5">
