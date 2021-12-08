@@ -5,7 +5,6 @@ import Image from "next/image";
 import SEOImage from "../../public/images/SEO.svg";
 import WebDevelopment from "../../public/images/Web-Development.svg";
 import Frameworks from "../../public/images/Frameworks.svg";
-import { motion } from "framer-motion";
 
 
 export const Hero = () => {
