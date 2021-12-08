@@ -4,17 +4,26 @@ import "tailwindcss/tailwind.css";
 import "../styles/globals.scss";
 import { Layout } from "../components/panels/Layout";
 import { PreLoader } from "../components/shapes/PreLoader";
+import { ServicesLayout } from "../components/panels/ServicesLayout";
 
 interface PageProps {
   load: boolean;
 }
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
     setLoading(true);
   }, []);
+
+  if (router.pathname.startsWith("/services/")) {
+    return (
+      <ServicesLayout>
+        <Component {...pageProps} />
+      </ServicesLayout>
+    );
+  }
 
   return (
     <>

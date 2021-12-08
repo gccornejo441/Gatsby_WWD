@@ -1,16 +1,16 @@
 import React from "react";
-import { NavBar } from "./NavBar";
+import { NavBarServices } from "./NavBarServices";
 import { Footer } from "./Footer";
 
 type Props = {
   children: React.ReactNode;
 };
 
-export const Layout: React.FC<Props> = ({ children }: Props) => {
+export const ServicesLayout: React.FC<Props> = ({ children }: Props) => {
   return (
     <>
       <div>
-        <NavBar />
+        <NavBarServices />
         <main className="pt-16 md:pt-0">{children}</main>
         <Footer />
       </div>
