@@ -60,7 +60,7 @@ const webServices = () => {
                 </h3>
               </div>
               <div>
-                A Website's design has many uses which extend beyond aesthetics
+                A website's design has many uses which extend beyond aesthetics
                 and appearances. What does this exactly mean? This means that
                 our team places a strong emphasis on the visual experience of
                 the entire website, from the Landing page to the Frequently

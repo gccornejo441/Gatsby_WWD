@@ -17,6 +17,7 @@ module.exports = {
         lightGreeny: "#9DCCCA",
         rosey: "#e3342f",
         lighterGreen: "#EDFEFC",
+        midGreen: "#9BDBD8",
       },
       backgroundImage: {
         "scale-background": "url('/images/background.svg')",

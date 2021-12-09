@@ -45,11 +45,11 @@ export const NavBar = () => {
       <div className="hidden md:flex justify-center py-2 px-2 md:px-0">
         <div className="container md:flex justify-between px-8 lg:px-28">
           <div className="flex items-center">
-            <Image 
-            src={WebWorksDreamsLogo} 
-            width="50" 
-            height="50" 
-            alt="WebWorks Dreams Logo"
+            <Image
+              src={WebWorksDreamsLogo}
+              width="50"
+              height="50"
+              alt="WebWorks Dreams Logo"
             />
             <span className="text-sm lg:text-lg text-gray-600 ml-1">
               WebWorks Dreams

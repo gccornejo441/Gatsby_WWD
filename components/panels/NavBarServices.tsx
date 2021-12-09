@@ -61,13 +61,13 @@ export const NavBarServices = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/web-services/pricing">Pricing</Link>
+                <Link href="/services/pricing">Pricing</Link>
               </li>
               <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/web-services/products">Products</Link>
+                <Link href="/services/products">Products</Link>
               </li>
               <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/web-services/portfolio">Portfolio</Link>
+                <Link href="/services/portfolio">Portfolio</Link>
               </li>
               <li className="mr-8 hover:text-darkGreeny flex items-center">
                 <Link href="/services">Contact Us</Link>
