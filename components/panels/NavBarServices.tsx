@@ -44,17 +44,19 @@ export const NavBarServices = () => {
       </nav>
       <div className="hidden md:flex justify-center py-2 px-2 md:px-0">
         <div className="container md:flex justify-between px-8 lg:px-28">
-          <div className="flex items-center">
-            <Image
-              src={WebWorksDreamsLogo}
-              width="50"
-              height="50"
-              alt="WebWorks Dreams Logo"
-            />
-            <span className="text-sm lg:text-lg text-gray-600 ml-1">
-              WebWorks Dreams
-            </span>
-          </div>
+          <Link href="/">
+            <div className="flex items-center cursor-pointer">
+              <Image
+                src={WebWorksDreamsLogo}
+                width="50"
+                height="50"
+                alt="WebWorks Dreams Logo"
+              />
+              <span className="text-sm lg:text-lg text-gray-600 ml-1">
+                WebWorks Dreams
+              </span>
+            </div>
+          </Link>
           <div className="flex item-center">
             <ul className="flex flex-col md:flex-row text-xs font-bold text-greeny">
               <li className="mr-8 hover:text-darkGreeny flex items-center">
@@ -70,7 +72,7 @@ export const NavBarServices = () => {
                 <Link href="/services/portfolio">Portfolio</Link>
               </li>
               <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/services">Contact Us</Link>
+                <Link href="/contact">Contact Us</Link>
               </li>
               <li className="flex items-center">
                 <div className="text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">

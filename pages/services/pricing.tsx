@@ -41,35 +41,35 @@ const Pricing = () => {
                     <tbody>
                       <tr>
                         <td className="md:pl-5 text-sm sm:text-lg">
-                          <div>{headerInfo.price.pricing}</div>
+                          <div>{headerInfo.price?.pricing}</div>
                         </td>
                         <td className="text-darkGreeny text-xs sm:text-lg">
                           <div className="flex-col">
                             <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
-                              {headerInfo.price.price1}
+                              {headerInfo.price?.price1}
                             </div>
                             <div className="text-darkGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
-                              {headerInfo.price.disc1}
+                              {headerInfo.price?.disc1}
                             </div>
                           </div>
                         </td>
                         <td className="text-darkGreeny text-xs sm:text-lg">
                           <div className="flex-col">
                             <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
-                              {headerInfo.price.price2}
+                              {headerInfo.price?.price2}
                             </div>
                             <div className="text-darkGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
-                              {headerInfo.price.disc2}
+                              {headerInfo.price?.disc2}
                             </div>
                           </div>
                         </td>
                         <td className="text-darkGreeny text-xs sm:text-lg">
                           <div className="flex-col">
                             <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
-                              {headerInfo.price.price3}
+                              {headerInfo.price?.price3}
                             </div>
                             <div className="text-darkGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
-                              {headerInfo.price.disc3}
+                              {headerInfo.price?.disc3}
                             </div>
                           </div>
                         </td>

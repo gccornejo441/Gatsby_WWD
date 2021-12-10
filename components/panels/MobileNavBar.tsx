@@ -12,15 +12,17 @@ export const MobileNavBar = () => {
       className="justify-center text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny fixed z-10 w-full"
     >
       <div className="flex justify-between px-4">
-        <div className="flex items-center">
-          <Image
-            src={WebWorksDreamsLogo}
-            width="30"
-            height="30"
-            alt="WebWorks Dreams Logo"
-          />
-          <span className="text-lg text-white ml-1">WebWorks Dreams</span>
-        </div>
+        <Link href="/">
+          <div className="flex items-center cursor-pointer">
+            <Image
+              src={WebWorksDreamsLogo}
+              width="30"
+              height="30"
+              alt="WebWorks Dreams Logo"
+            />
+            <span className="text-lg text-white ml-1">WebWorks Dreams</span>
+          </div>
+        </Link>
         <Menu.Button>
           <FiMenu className="h-12 w-auto py-1" />
         </Menu.Button>
@@ -51,19 +53,6 @@ export const MobileNavBar = () => {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link href="/about">
-                  <a
-                    className={`${
-                      active && "bg-greeny text-white"
-                    } ${"py-3 px-4"}`}
-                  >
-                    About Us
-                  </a>
-                </Link>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
                 <Link href="/services/web-services">
                   <a
                     className={`${
@@ -71,19 +60,6 @@ export const MobileNavBar = () => {
                     } ${"py-3 px-4"}`}
                   >
                     Services
-                  </a>
-                </Link>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <Link href="/blog">
-                  <a
-                    className={`${
-                      active && "bg-greeny text-white"
-                    } ${"py-3 px-4"}`}
-                  >
-                    Blog
                   </a>
                 </Link>
               )}
