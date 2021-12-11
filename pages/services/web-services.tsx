@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { FaTeamspeak } from "react-icons/fa";
+import { MdOutlineWhatshot } from "react-icons/md";
 
 import DesignImage from "../../public/images/Design-team.svg";
 import WebDesignOffice from "../../public/images/web-design-office.jpg";
@@ -75,18 +75,12 @@ const webServices = () => {
           <div className="flex my-10 px-10">
             <ul>
               <li className="flex">
+                <MdOutlineWhatshot className="w-7 h-7 text-orange-600" />
                 <span className="text-gray-800 fo">
                   &nbsp;&nbsp;&nbsp;&nbsp;A user's first impression is what
                   makes or breaks a website.
                 </span>
               </li>
-              {/* <li className="flex">
-              <AcademicCapIcon classNameName="w-7 h-7 text-yellow-500" />
-                <span className="text-gray-800 fo">
-                  &nbsp;&nbsp;&nbsp;&nbsp;A user's first impression is what
-                  makes or breaks a website.
-                </span>
-              </li> */}
             </ul>
           </div>
         </div>
@@ -96,12 +90,12 @@ const webServices = () => {
           <div className="container xs:px-5 sm:px-14 md:px-0 xl:px-32 w-full mx-auto">
             <div className="md:grid grid-cols-2 gap-4">
               <div>
-                <div className="p-2 md:mt-8 lg:mt-6 xl:mt-8">
+                <div className="px-10 pt-5 md:pt-0 md:my-8 lg:my-6 xl:my-8">
                   <Image src={WebDesign} alt="Web Design Layout" />
                 </div>
               </div>
-              <div className="">
-                <div className="p-2 md:mt-0 lg:mt-5 xl:mt-8 text-center md:text-left">
+              <div>
+                <div className="px-10 py-5 md:mt-0 lg:mt-5 xl:mt-4 text-center md:text-left">
                   <h3 className="text-lg md:text-2xl font-bold text-gray-800">
                     Web Design & Web Development
                   </h3>
