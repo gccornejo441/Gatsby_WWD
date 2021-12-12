@@ -32,13 +32,8 @@ export const Footer = () => {
                 </li>
 
                 <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">
-                  <Link href="/">
-                    <a className="cursor-pointer">About</a>
-                  </Link>
-                </li>
-                <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">
-                  <Link href="/">
-                    <a className="cursor-pointer">Portfolio</a>
+                  <Link href="/services/web-services">
+                    <a className="cursor-pointer">Services</a>
                   </Link>
                 </li>
                 <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">
@@ -89,11 +84,6 @@ export const Footer = () => {
                 <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">
                   <Link href="/services/pricing">
                     <a className="cursor-pointer">Pricing</a>
-                  </Link>
-                </li>
-                <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">
-                  <Link href="/services/products">
-                    <a className="cursor-pointer">Products</a>
                   </Link>
                 </li>
                 <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">

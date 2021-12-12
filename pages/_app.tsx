@@ -19,9 +19,20 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
   if (router.pathname.startsWith("/services/")) {
     return (
-      <ServicesLayout>
-        <Component {...pageProps} />
-      </ServicesLayout>
+      <>
+        {loading ? (
+          <ServicesLayout>
+            <Component {...pageProps} />
+          </ServicesLayout>
+        ) : (
+          <div className="h-screen flex flex-col md:flex-row justify-center items-center smooch-text">
+            <PreLoader />
+            <span className="text-greeny font-normal text-5xl md:text-7xl pt-60 md:pl-28">
+              Loading...
+            </span>
+          </div>
+        )}
+      </>
     );
   }
 

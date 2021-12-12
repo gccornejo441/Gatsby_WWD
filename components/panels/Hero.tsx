@@ -53,10 +53,10 @@ export const Hero = () => {
           </div>
           <div className="flex flex-col md:flex-row pb-10 md:pb-0">
             <button className="text-white text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny md:mr-10">
-              <Link href="/">Get Started</Link>
+              <Link href="/services/pricing">Get Started</Link>
             </button>
             <button className="text-white text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny">
-              <Link href="/">More Info</Link>
+              <Link href="/services/web-services">More Info</Link>
             </button>
           </div>
         </div>

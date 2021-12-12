@@ -37,7 +37,7 @@ const contact = () => {
                             id="FirstName"
                             name="FirstName"
                             maxLength={255}
-                            className="border border-lightGreeny focus:border-darkGreeny mt-1 block w-full text-black font-semibold rounded-md p-2 focus:outline-none focus:shadow-outline"
+                            className="border border-lightGreeny focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 mt-1 block w-full text-black font-semibold rounded-md p-2 "
                             required
                           />
                         </label>
@@ -51,7 +51,7 @@ const contact = () => {
                             id="LastName"
                             name="LastName"
                             maxLength={255}
-                            className="border border-lightGreeny focus:border-darkGreeny mt-1 block w-full text-black font-semibold rounded-md p-2 focus:outline-none focus:shadow-outline"
+                            className="border border-lightGreeny focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 mt-1 block w-full text-black font-semibold rounded-md p-2 "
                             required
                           />
                         </label>
@@ -65,14 +65,14 @@ const contact = () => {
                             type="email"
                             name="Email"
                             maxLength={255}
-                            className="border border-lightGreeny focus:border-darkGreeny mt-1 block w-full text-black font-semibold rounded-md p-2 focus:outline-none focus:shadow-outline"
+                            className="border border-lightGreeny focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 mt-1 block w-full text-black font-semibold rounded-md p-2 "
                             required
                           />
                         </label>
 
                         <label
                           htmlFor="Details"
-                          className="block text-left focus:outline-none focus:shadow-outline"
+                          className="block text-left "
                         >
                           <span className="pr-1 text-red-600">*</span>
                           <span className="text-greeny text-lg md:text-lg">
@@ -83,7 +83,7 @@ const contact = () => {
                             id="Details"
                             name="Details"
                             typeof="text"
-                            className="border border-lightGreeny focus:border-darkGreeny mt-1 block w-full text-black font-semibold rounded-md p-2 focus:outline-none focus:shadow-outline"
+                            className="border border-lightGreeny focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 mt-1 block w-full text-black font-semibold rounded-md p-2 "
                             rows={5}
                           ></textarea>
                         </label>

@@ -14,9 +14,9 @@ export const tableInfo = [
     revisions: "Revisions",
     price: {
       pricing: "Pricing",
-      price1: "$750 USD",
-      price2: "$1500 USD",
-      price3: "$2000 USD",
+      price1: "$150",
+      price2: "$500",
+      price3: "$1000",
       disc1:
         "This excellent bundle has been put together for hobbyists who are looking to share their ideas with the web.",
       disc2:
@@ -35,7 +35,7 @@ export const tableInfo = [
         className="h-5 w-5 text-green-500"
       />
     ),
-    dash: <AiOutlineMinus className="stroke-current text-blue-500 h-5 w-5" />,
+    dash: <AiOutlineMinus className="stroke-current text-darkGreeny h-5 w-5" />,
     packages: {
       starter: "Starter",
       premium: "Premium",
@@ -44,26 +44,4 @@ export const tableInfo = [
   },
 ];
 
-export const products = [
-  {
-    id: 1,
-    name: "Out of Stock",
-    price: "$" + 0,
-    category: "Website",
-    image: "/outOfStock.png",
-  },
-  {
-    id: 2,
-    name: "Out of Stock",
-    price: "$" + 0,
-    category: "Website",
-    image: "/outOfStock.png",
-  },
-  {
-    id: 3,
-    name: "Out of Stock",
-    price: "$" + 0,
-    category: "Website",
-    image: "/outOfStock.png",
-  },
-];
+

@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { tableInfo } from "../../public/scripts/tableData";
 import TableHead from "../../components/table/TableHead";
 import TableBody from "../../components/table/TableBody";
 import Balloons from "../../public/images/Balloons.svg";
-
 
 const Pricing = () => {
     
@@ -16,12 +16,15 @@ const Pricing = () => {
     <div>
       <main>
         <div className="flex justify-center px-2 sm:px-5 md:px-10">
-          <div className="container md:text-center block md:flex justify-between my-8 md:mt-36 xl:px-40">
+          <div className="container md:text-center block md:flex flex-col my-8 xl:px-40">
+            <div className="container">
+              <h1 className="uppercase flex justify-center md:justify-start text-2xl md:text-4xl font-bold text-gray-800">
+                Pricing
+              </h1>
+              <div className="md:h-1 md:w-24 md:bg-greeny"></div>
+            </div>
             <div className="w-full inline-flex justify-center">
               <div className="text-center w-full">
-                <p className="sm:text-2xl md:text-3xl lg:text-4xl text-darkGreeny">
-                  Pricing
-                </p>
                 <p className="pb-4 text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-darkGreeny font-bold">
                   Purchasing made easy
                 </p>
@@ -32,10 +35,10 @@ const Pricing = () => {
                   <table className="table-auto border-darkGreeny">
                     <thead className="border-b border-darkGreeny">
                       <tr>
-                        <th className="w-1/4 text-xs sm:text-lg">Packages</th>
-                        <th className="w-1/4 text-xs sm:text-lg">Starter</th>
-                        <th className="w-1/4 text-xs sm:text-lg">Premium</th>
-                        <th className="w-1/4 text-xs sm:text-lg">Executive</th>
+                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">Packages</th>
+                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">Starter</th>
+                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">Premium</th>
+                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">Executive</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -172,25 +175,30 @@ const Pricing = () => {
               <div className="md:text-left flex justify-center my-auto">
                 <div className="w-full">
                   <div className="container mx-auto flex justify-center md:my-32 my-12">
-                    <div className="text-darkGreeny px-5 text-xl md:text-2xl lg:text-3xl xl:text-4xl">
-                      Don't know where to begin?
-                    </div>
-                    <a href="../message" className="text-darkGreeny">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="md:h-10 md:w-10 lg:h-10 lg:w-10 h-6 w-6 animate-spin"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
+                    <Link href="/contact">
+                      <a
+                        href="../message"
+                        className="text-darkGreeny flex hover:underline"
                       >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
-                    </a>
+                        <div className="text-darkGreeny px-5 text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                          Don't know where to begin?
+                        </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="md:h-10 md:w-10 lg:h-10 lg:w-10 h-6 w-6 animate-spin"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>

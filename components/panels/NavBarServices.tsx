@@ -5,7 +5,7 @@ import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookF, FaInstagram, FaTwitter, FaFigma } from "react-icons/fa";
 import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
-import { MobileNavBar } from "./MobileNavBar";
+import { MobileNavBarServices } from "./MobileNavBarServices";
 
 export const NavBarServices = () => {
   return (
@@ -66,17 +66,11 @@ export const NavBarServices = () => {
                 <Link href="/services/pricing">Pricing</Link>
               </li>
               <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/services/products">Products</Link>
-              </li>
-              <li className="mr-8 hover:text-darkGreeny flex items-center">
                 <Link href="/services/portfolio">Portfolio</Link>
-              </li>
-              <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/contact">Contact Us</Link>
               </li>
               <li className="flex items-center">
                 <div className="text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
-                  <Link href="/quote">Get A Quote</Link>
+                  <Link href="/contact">Get A Quote</Link>
                 </div>
               </li>
             </ul>
@@ -84,7 +78,7 @@ export const NavBarServices = () => {
         </div>
       </div>
       <div className="md:hidden">
-        <MobileNavBar />
+        <MobileNavBarServices />
       </div>
     </>
   );

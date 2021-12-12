@@ -18,14 +18,6 @@ const webServices = () => {
               Web Design Services
             </h1>
             <div className="md:h-1 md:w-56 md:bg-greeny"></div>
-            <div>
-              <div className="flex justify-center md:justify-end text-sm md:text-xl font-semibold">
-                <Link href="/">
-                  <a className="hover:text-gray-800 text-greeny">Home</a>
-                </Link>
-                &nbsp;&nbsp;{">"}&nbsp;&nbsp;Overview
-              </div>
-            </div>
           </div>
         </div>
         <div className="container mx-auto">
@@ -123,7 +115,7 @@ const webServices = () => {
             <a
               href="../message"
               type="button"
-              className="text-lg md:text-xl bg-gray-800 hover:bg-darkGreeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline"
+              className="text-lg md:text-xl bg-greeny hover:bg-darkGreeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline"
             >
               Get Started!
             </a>
