@@ -10,9 +10,6 @@ interface Props {
 const Home: React.FC<Props> = () => {
   return (
     <>
-      <Head>
-        <title>WebWorks Dreams</title>
-      </Head>
       <main className="flex flex-col">
         <Shapes />
         <Hero />

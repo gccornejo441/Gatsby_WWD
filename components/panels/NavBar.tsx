@@ -29,7 +29,7 @@ export const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/" passHref>
+                <Link href="https://twitter.com/WebWorksDreams" passHref>
                   <FaTwitter className="text-white text-lg mr-1" />
                 </Link>
               </li>

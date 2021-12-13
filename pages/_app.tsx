@@ -11,35 +11,50 @@ interface PageProps {
 }
 
 function MyApp({ Component, pageProps, router }: AppProps) {
-  const [loading, setLoading] = React.useState(false);
-
+  const [ loading, setLoading ] = React.useState(false);
+  const [ title, setTitle ] = React.useState("WebWorks Dreams");
+  
   React.useEffect(() => {
+    console.log("ROUTER.PATHNAME: ", router.pathname);
+    
+    if (router.pathname == "/services/web-services") {
+      setTitle("Services Overview | WebWorks Dreams");
+    } else if (router.pathname == "/services/portfolio") {
+      setTitle("Portfolio | WebWorks Dreams");
+    } else if (router.pathname == "/services/pricing") {
+      setTitle("Pricing | WebWorks Dreams");
+    } else {
+      setTitle("Pricing | WebWorks Dreams");
+    }
+
     setLoading(true);
   }, []);
 
   if (router.pathname.startsWith("/services/")) {
-    return (
-      <>
-        {loading ? (
-          <ServicesLayout>
-            <Component {...pageProps} />
-          </ServicesLayout>
-        ) : (
-          <div className="h-screen flex flex-col md:flex-row justify-center items-center smooch-text">
-            <PreLoader />
-            <span className="text-greeny font-normal text-5xl md:text-7xl pt-60 md:pl-28">
-              Loading...
-            </span>
-          </div>
-        )}
-      </>
-    );
+
+    
+      return (
+        <>
+          {loading ? (
+            <ServicesLayout title={title}>
+              <Component {...pageProps} />
+            </ServicesLayout>
+          ) : (
+            <div className="h-screen flex flex-col md:flex-row justify-center items-center smooch-text">
+              <PreLoader />
+              <span className="text-greeny font-normal text-5xl md:text-7xl pt-60 md:pl-28">
+                Loading...
+              </span>
+            </div>
+          )}
+        </>
+      );
   }
 
   return (
     <>
       {loading ? (
-        <Layout>
+        <Layout title="WebWorks Dreams">
           <Component {...pageProps} />
         </Layout>
       ) : (

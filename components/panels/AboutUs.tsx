@@ -5,7 +5,7 @@ import Man_Working  from '../../public/images/Man_Working.svg';
 
 export const About = () => {
     return (
-      <div className="w-full md:mt-16 flex justify-center bg-gradient-to-t from-gray-100 to-white">
+      <div className="w-full md:mt-16 flex justify-center bg-gradient-to-t from-gray-50 to-white">
         <div className="container flex flex-col justify-center md:flex-row md:justify-between px-8 lg:px-32 relative z-1">
           <Image height={700} width={700} src={Man_Working} alt="Man Working" />
           <div className="my-10 md:my-0 md:pl-10 md:flex flex-wrap content-center md:pb-16">
