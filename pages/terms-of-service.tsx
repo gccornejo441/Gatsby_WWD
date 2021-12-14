@@ -1,19 +1,19 @@
-import Privacy from "../components/panels/Privacy";
+import Terms from "../components/panels/Terms";
 
 const message = () => {
   return (
     <main className="bg-gradient-to-t from-gray-50 to-white">
       <div className="w-full grid justify-items-center my-20">
-        <div className="container flex justify-center text-cnter">
+        <div className="container flex justify-center text-center">
           <div className="flex smooch-text">
             <span className="text-greeny font-normal text-6xl md:text-7xl">
-              Privacy Policy
+              Terms of Service
             </span>
           </div>
         </div>
       </div>
       <div className="container mx-auto pb-20">
-        <Privacy />
+        <Terms />
       </div>
     </main>
   );

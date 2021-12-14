@@ -17,11 +17,13 @@ const Privacy = () => {
           <div className="px-3">
             <table>
               <tr>
-                <th className="md:text-large py-2">Categories</th>
+                <th className="md:text-large py-2 text-gray-800">Categories</th>
               </tr>
               {tableContents.map((item) => (
                 <tr>
-                  <td className="md:text-sm py-2 font-normal">{item}</td>
+                  <td className="md:text-sm py-2 font-normal text-gray-800">
+                    {item}
+                  </td>
                 </tr>
               ))}
             </table>
@@ -31,7 +33,7 @@ const Privacy = () => {
           className="lg:mx-auto lg:w-3/4 overflow-y-scroll mx-8 h-[60vh]"
           id="privacy"
         >
-          <div className="text-center md:text-left flex flex-col">
+          <div className="text-center md:text-left flex flex-col text-gray-800">
             <span className="text-xl sm:text-2xl">OVERVIEW</span>
             <span className="text-xl sm:text-2xl">
               This Privacy Policy describes our privacy practices at Webworks
@@ -39,7 +41,7 @@ const Privacy = () => {
             </span>
             <span className="text-xl sm:text-2xl">May 22nd, 2021</span>
           </div>
-          <div className=" text-lg text-blue-700">
+          <div className=" text-lg text-darkGreeny">
             <ul>
               <li>
                 <div className="py-4">
@@ -75,7 +77,7 @@ const Privacy = () => {
               </li>
             </ul>
           </div>
-          <div id="personal-data" className="text-lg text-blue-700">
+          <div id="personal-data" className="text-lg text-darkGreeny">
             <ul>
               <li className="py-4 font-bold">
                 1. What kind of personal data does WebWorks Dreams collect and
@@ -147,10 +149,12 @@ const Privacy = () => {
                   contact us.
                 </li>
                 <li className="py-1 ml-10">
-                  a. <span className="font-bold">Invoice and Billing:</span> Stripe
+                  a. <span className="font-bold">Invoice and Billing:</span>{" "}
+                  Stripe
                 </li>
                 <li className="py-1 ml-10">
-                  b. <span className="font-bold">Web and Mobile Analytics:</span>{" "}
+                  b.{" "}
+                  <span className="font-bold">Web and Mobile Analytics:</span>{" "}
                   Google Analytics
                 </li>
                 <li className="py-1 ml-10">
@@ -185,9 +189,11 @@ const Privacy = () => {
                 </li>
                 <li className="py-1 ml-10">a. IP Address</li>
                 <li className="py-1 ml-10">b. Browser Type</li>
-                <li className="py-1 ml-10">c. Internet Service Provider Address</li>
+                <li className="py-1 ml-10">
+                  c. Internet Service Provider Address
+                </li>
                 <li className="py-1 ml-10">d. Referring pages</li>
-                <li className="py-1 ml-10" >
+                <li className="py-1 ml-10">
                   e. HTML pages, graphics, or other files viewed on our site
                 </li>
                 <li className="py-1 ml-10">f. Operating systems</li>
@@ -311,7 +317,9 @@ const Privacy = () => {
             </div>
             <div>
               <ul>
-                <li className="py-4 font-bold">Changes to the Privacy Policy</li>
+                <li className="py-4 font-bold">
+                  Changes to the Privacy Policy
+                </li>
                 <li>
                   To the extent allowed by applicable law, WebWorks Dreams
                   reserves the right to change this Privacy Policy at any time
