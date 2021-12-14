@@ -17,11 +17,11 @@ const Privacy = () => {
           <div className="px-3">
             <table>
               <tr>
-                <th className="md:text-large py-2 text-gray-800">Categories</th>
+                <th className="md:text-large py-2 text-gray-700">Categories</th>
               </tr>
               {tableContents.map((item) => (
                 <tr>
-                  <td className="md:text-sm py-2 font-normal text-gray-800">
+                  <td className="md:text-sm py-2 font-normal text-gray-700">
                     {item}
                   </td>
                 </tr>

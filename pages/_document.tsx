@@ -6,7 +6,7 @@ type Props = {};
 class Document extends NextDocument<Props> {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta charSet="UTF-8" />
           <meta name="keywords" content="titla, meta, nextjs" />

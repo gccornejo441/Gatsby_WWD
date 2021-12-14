@@ -11,7 +11,7 @@ type Props = {
 export const Layout: React.FC<Props> = ({ children, title = 'WebWorks Dreams' }: Props) => {
   return (
     <>
-      <div>
+      <div className="selection:bg-darkestGreeny selection:text-lighterGreen">
         <Head>
           <title>{title}</title>
         </Head>

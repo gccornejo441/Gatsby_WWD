@@ -30,7 +30,7 @@ export const Hero = () => {
   });
 
   return (
-    <div className="w-full container mx-auto justify-center px-22 md:px-12 lg:px-32">
+    <div className="w-full container mx-auto justify-center px-22 md:px-12 lg:px-32 relative z-0">
       <div className="flex flex-col md:flex-row md:justify-between">
         <div
           ref={scrollRef1}
@@ -38,24 +38,24 @@ export const Hero = () => {
         >
           <div className="my-8">
             <div className="smooch-text">
-              <span className=" text-greeny font-normal text-4xl md:text-3xl">
+              <span className="font-normal text-greeny text-4xl md:text-4xl">
                 Welcome
               </span>
             </div>
-            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 flex flex-col">
+            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-700 flex flex-col">
               <span className="pb-5">You dream it,</span>
               <span className="pb-5">we build it.</span>
             </div>
-            <div className="text-gray-400 font-semibold mt-2 leading-loose text-sm md:text-normal">
+            <div className="text-slate-500 font-semibold mt-2 leading-loose text-sm md:text-normal">
               The right website is waiting for you, and we are here to make it
               happen.
             </div>
           </div>
           <div className="flex flex-col md:flex-row pb-10 md:pb-0">
-            <button className="text-white text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny md:mr-10">
+            <button className="text-white bg-gray-700 font-semibold hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
               <Link href="/services/pricing">Get Started</Link>
             </button>
-            <button className="text-white text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center bg-greeny">
+            <button className="text-white bg-gray-700 font-semibold hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
               <Link href="/services/web-services">More Info</Link>
             </button>
           </div>
@@ -68,7 +68,7 @@ export const Hero = () => {
         <div>
           <div className="flex flex-col">
             <div className="flex justify-center smooch-text">
-              <span className=" text-greeny font-normal text-6xl md:text-7xl">
+              <span className="text-greeny font-normal text-6xl md:text-7xl">
                 Services
               </span>
             </div>
@@ -76,7 +76,7 @@ export const Hero = () => {
               <span>What We Offer</span>
             </div>
             <div className="text-center w-72 md:w-96 mx-auto">
-              <span className="text-gray-400 font-semibold text-xs md:text-sm">
+              <span className="text-slate-500 font-semibold text-xs md:text-sm">
                 If you&apos;re in the market for modern solutions, WebWorks
                 Dreams offers the means to empower newcomers to explore the
                 newest and innovative software capabilities.
@@ -95,7 +95,7 @@ export const Hero = () => {
                     <span>SEARCH ENGINE OPTIMIZATION</span>
                   </div>
                   <div className="text-center px-10 lg:px-8 lg:max-w-prose">
-                    <span className="text-gray-400 font-semibold text-xs md:text-sm">
+                    <span className="text-slate-500 font-semibold text-xs md:text-sm">
                       Our websites are tailored to your needs and your user
                       demands, so we have cultivated our process to target
                       customer satisfaction.
@@ -113,7 +113,7 @@ export const Hero = () => {
                     <span>WEBSITE DEVELOPMENT</span>
                   </div>
                   <div className="text-center px-10 md:px-5 lg:px-8 lg:max-w-prose">
-                    <span className="text-gray-400 font-semibold text-xs md:text-sm">
+                    <span className="text-slate-500 font-semibold text-xs md:text-sm">
                       With little worry about speed and website responsiveness,
                       your customers will truly be receiving a quality
                       experience.
@@ -131,7 +131,7 @@ export const Hero = () => {
                     <span>MODERN WEBSITE FRAMEWORKS</span>
                   </div>
                   <div className="text-center px-10 lg:px-8 lg:max-w-prose">
-                    <span className="text-gray-400 font-semibold text-xs md:text-sm">
+                    <span className="text-slate-500 font-semibold text-xs md:text-sm">
                       Creating modern websites has never been easier. With the
                       power of CSS framework, we are at liberty to compose
                       dynamically responsive websites.

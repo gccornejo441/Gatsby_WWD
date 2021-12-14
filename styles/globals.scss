@@ -105,7 +105,7 @@ a {
 
 .smooch-text {
   font-family: $Smooch-font;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   text-shadow: 1px 1px 2px #025754, 0 0 2em #63e6e1, 0 0 3em #5CBDB9;
 }
 
@@ -204,17 +204,17 @@ a {
 
 .rightBlob {
   position: absolute;
-  right: -300px;
+  right: 0px;
   top: 1400px;
   z-index: -1;
 }
 
 
-@media (min-width: 1168px) {
-  .rightBlob {
-  position: absolute;
-  right: 0px;
-  top: 1400px;
-  z-index: 0;
-  }
-}
+// @media (min-width: 1168px) {
+//   .rightBlob {
+//   position: absolute;
+//   right: 0px;
+//   top: 1400px;
+//   z-index: 0;
+//   }
+// }

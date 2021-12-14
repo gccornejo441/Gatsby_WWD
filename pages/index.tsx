@@ -10,7 +10,7 @@ interface Props {
 const Home: React.FC<Props> = () => {
   return (
     <>
-      <main className="flex flex-col">
+      <main className="flex flex-col bg-gradient-to-t from-gray-50 to-white">
         <Shapes />
         <Hero />
         <About />

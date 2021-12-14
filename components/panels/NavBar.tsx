@@ -58,7 +58,7 @@ export const NavBar = () => {
             </div>
           </Link>
           <div className="flex item-center">
-            <ul className="flex flex-col md:flex-row text-xs font-bold text-greeny">
+            <ul className="flex flex-col md:flex-row text-xs font-bold text-darkestGreeny">
               <li className="mr-8 hover:text-darkGreeny flex items-center">
                 <Link href="/">Home</Link>
               </li>

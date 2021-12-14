@@ -67,22 +67,22 @@ export const Footer = () => {
         </div>
         <div className="text-xs pt-6 pb-20 flex justify-between flex-col md:flex-row">
           <div className="flex justify-center">
-            <a target="_blank" aria-label="twitter" className="flex pr-2">
+            <a target="_blank" className="flex pr-2">
               <FaTwitter className="w-5 h-5" />
             </a>
-            <a target="_blank" aria-label="facebook" className="flex px-2">
+            <a target="_blank" className="flex px-2">
               <FaFacebook className="w-5 h-5" />
             </a>
-            <a target="_blank" aria-label="instagram" className="flex px-2">
+            <a target="_blank" className="flex px-2">
               <FaInstagram className="w-5 h-5" />
             </a>
-            <a target="_blank" aria-label="youtube" className="flex px-2">
+            <a target="_blank" className="flex px-2">
               <FaYoutube className="w-5 h-5" />
             </a>
-            <a target="_blank" aria-label="dribbble" className="flex px-2">
+            <a target="_blank" className="flex px-2">
               <FaFigma className="w-5 h-5" />
             </a>
-            <a target="_blank" aria-label="linkedin" className="flex px-2">
+            <a target="_blank" className="flex px-2">
               <FaLinkedin className="w-5 h-5" />
             </a>
           </div>
@@ -101,22 +101,6 @@ export const Footer = () => {
                 className="flex px-2 justify-center py-3"
               >
                 Privacy policy
-              </a>
-            </li>
-            <li className="block sm:inline-block pl-2">
-              <a
-                href="/cookie-policy"
-                className="flex px-2 justify-center py-3"
-              >
-                Cookies
-              </a>
-            </li>
-            <li className="block sm:inline-block pl-2">
-              <a
-                href="/license-acknowledgements"
-                className="flex px-2 justify-center py-3"
-              >
-                Licenses
               </a>
             </li>
             <li className="block sm:inline-block pl-2">

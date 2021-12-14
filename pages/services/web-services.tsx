@@ -5,7 +5,6 @@ import { MdOutlineWhatshot } from "react-icons/md";
 
 import DesignImage from "../../public/images/Design-team.svg";
 import WebDesignOffice from "../../public/images/web-design-office.jpg";
-import Background from "../../public/images/background.svg";
 import WebDesign from "../../public/images/web-design.jpg";
 
 const webServices = () => {
@@ -115,7 +114,7 @@ const webServices = () => {
             <a
               href="../message"
               type="button"
-              className="text-lg md:text-xl bg-greeny hover:bg-darkGreeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline"
+              className="text-lg md:text-xl bg-darkestGreeny hover:bg-greeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline"
             >
               Get Started!
             </a>

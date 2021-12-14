@@ -52,7 +52,7 @@ const Terms = () => {
                 <div className="w-screen h-[50vh] p-2 rounded-xl shadow-xl shadow-gray-400 grid grid-col bg-gray-50 fixed top-40 p-18 overflow-y-auto">
                   <table>
                     <tr>
-                      <th className="md:text-large py-2 ">Categories</th>
+                      <th className="md:text-large py-2">Categories</th>
                     </tr>
                     {tableContents.map((item) => (
                       <tr>
@@ -72,11 +72,11 @@ const Terms = () => {
           <div className="px-3">
             <table>
               <tr>
-                <th className="md:text-large py-2 text-gray-800">Sections</th>
+                <th className="md:text-large py-2 text-gray-700">Sections</th>
               </tr>
               {tableContents.map((item) => (
                 <tr>
-                  <th className="md:text-sm py-2 font-normal text-gray-800">
+                  <th className="md:text-sm py-2 font-normal text-gray-700">
                     {item}
                   </th>
                 </tr>

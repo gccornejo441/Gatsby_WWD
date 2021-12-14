@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         greeny: "#5CBDB9",
         darkGreeny: "#388885",
+        darkestGreeny: "#205550",
         lightGreeny: "#9DCCCA",
         rosey: "#e3342f",
         lighterGreen: "#EDFEFC",

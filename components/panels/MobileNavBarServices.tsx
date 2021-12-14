@@ -24,7 +24,7 @@ export const MobileNavBarServices = () => {
           </div>
         </Link>
         <Menu.Button>
-          <FiMenu className="h-12 w-auto py-1" />
+          <FiMenu aria-label="Menu Button" className="h-12 w-auto py-1" />
         </Menu.Button>
       </div>
       <Transition

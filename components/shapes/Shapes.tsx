@@ -2,7 +2,7 @@ import React from "react";
 
 export const Shapes = () => {
   return (
-    <div className="shapes hidden md:inline">
+    <div className="shapes hidden md:inline relative z-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 150 150"

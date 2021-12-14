@@ -25,15 +25,15 @@ const Pricing = () => {
             </div>
             <div className="w-full inline-flex justify-center">
               <div className="text-center w-full">
-                <p className="pb-4 text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-darkGreeny font-bold">
+                <p className="pb-4 text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-darkestGreeny font-bold">
                   Purchasing made easy
                 </p>
-                <p className="sm:text-2xl md:text-3xl lg:text-3xl text-darkGreeny mb-12">
+                <p className="sm:text-2xl md:text-3xl lg:text-3xl text-darkestGreeny mb-12">
                   Our pricing plans have been designed to meet your needs.
                 </p>
                 <section className="text-left">
-                  <table className="table-auto border-darkGreeny">
-                    <thead className="border-b border-darkGreeny">
+                  <table className="table-auto border-darkestGreeny">
+                    <thead className="border-b border-darkestGreeny">
                       <tr>
                         <th className="w-1/4 text-xs sm:text-lg text-gray-700">Packages</th>
                         <th className="w-1/4 text-xs sm:text-lg text-gray-700">Starter</th>
@@ -46,32 +46,32 @@ const Pricing = () => {
                         <td className="md:pl-5 text-sm sm:text-lg">
                           <div>{headerInfo.price?.pricing}</div>
                         </td>
-                        <td className="text-darkGreeny text-xs sm:text-lg">
+                        <td className="text-darkestGreeny text-xs sm:text-lg">
                           <div className="flex-col">
                             <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
                               {headerInfo.price?.price1}
                             </div>
-                            <div className="text-darkGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
+                            <div className="text-darkestGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
                               {headerInfo.price?.disc1}
                             </div>
                           </div>
                         </td>
-                        <td className="text-darkGreeny text-xs sm:text-lg">
+                        <td className="text-darkestGreeny text-xs sm:text-lg">
                           <div className="flex-col">
                             <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
                               {headerInfo.price?.price2}
                             </div>
-                            <div className="text-darkGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
+                            <div className="text-darkestGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
                               {headerInfo.price?.disc2}
                             </div>
                           </div>
                         </td>
-                        <td className="text-darkGreeny text-xs sm:text-lg">
+                        <td className="text-darkestGreeny text-xs sm:text-lg">
                           <div className="flex-col">
                             <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
                               {headerInfo.price?.price3}
                             </div>
-                            <div className="text-darkGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
+                            <div className="text-darkestGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
                               {headerInfo.price?.disc3}
                             </div>
                           </div>
@@ -83,7 +83,7 @@ const Pricing = () => {
                           <form action="./package/starter">
                             <button
                               type="submit"
-                              className="text-xs sm:text-sm md:text-xl bg-darkGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-3/4"
+                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-3/4"
                             >
                               Starter
                             </button>
@@ -93,7 +93,7 @@ const Pricing = () => {
                           <form action="./package/business">
                             <button
                               type="submit"
-                              className="text-xs sm:text-sm md:text-xl bg-darkGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-3/4"
+                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-3/4"
                             >
                               Small Business
                             </button>
@@ -103,7 +103,7 @@ const Pricing = () => {
                           <form action="./package/executive">
                             <button
                               type="submit"
-                              className="text-xs sm:text-sm md:text-xl bg-darkGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-3/4"
+                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-3/4"
                             >
                               Executive
                             </button>
@@ -178,9 +178,9 @@ const Pricing = () => {
                     <Link href="/contact">
                       <a
                         href="../message"
-                        className="text-darkGreeny flex hover:underline"
+                        className="text-darkestGreeny flex hover:underline"
                       >
-                        <div className="text-darkGreeny px-5 text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                        <div className="text-darkestGreeny px-5 text-xl md:text-2xl lg:text-3xl xl:text-4xl">
                           Don't know where to begin?
                         </div>
                         <svg
