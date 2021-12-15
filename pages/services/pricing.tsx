@@ -35,10 +35,18 @@ const Pricing = () => {
                   <table className="table-auto border-darkestGreeny">
                     <thead className="border-b border-darkestGreeny">
                       <tr>
-                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">Packages</th>
-                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">Starter</th>
-                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">Premium</th>
-                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">Executive</th>
+                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">
+                          Packages
+                        </th>
+                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">
+                          Starter
+                        </th>
+                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">
+                          Premium
+                        </th>
+                        <th className="w-1/4 text-xs sm:text-lg text-gray-700">
+                          Executive
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -79,35 +87,35 @@ const Pricing = () => {
                       </tr>
                       <tr>
                         <td> </td>
-                        <td>
-                          <form action="./package/starter">
-                            <button
+                        <td className="px-1 md:px-2">
+                          <Link href="/services/starter?cost=150">
+                            <a
                               type="submit"
-                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-3/4"
+                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center"
                             >
                               Starter
-                            </button>
-                          </form>
+                            </a>
+                          </Link>
                         </td>
-                        <td>
-                          <form action="./package/business">
-                            <button
+                        <td className="px-1 md:px-2">
+                          <Link href="/services/small%20business?cost=500">
+                            <a
                               type="submit"
-                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-3/4"
+                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center"
                             >
                               Small Business
-                            </button>
-                          </form>
+                            </a>
+                          </Link>
                         </td>
-                        <td>
-                          <form action="./package/executive">
-                            <button
+                        <td className="px-1 md:px-2">
+                          <Link href="/services/executive?cost=1000">
+                            <a
                               type="submit"
-                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-3/4"
+                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center"
                             >
                               Executive
-                            </button>
-                          </form>
+                            </a>
+                          </Link>
                         </td>
                       </tr>
                     </tbody>
