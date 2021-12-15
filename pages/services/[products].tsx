@@ -1,10 +1,24 @@
 import * as React from "react";
 import { useRouter } from "next/router";
-import { FaCheckCircle } from "react-icons/fa";
+import { useForm, SubmitHandler } from "react-hook-form";
+
+type FormValues = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  company: string;
+  address: string;
+  property_type: string;
+  city: string;
+  zip: string;
+  phone: string;
+};
 
 const Checkout = () => {
-const router = useRouter();
-const { products, cost } = router.query;
+  const router = useRouter();
+  const { products, cost } = router.query;
+  const { register, handleSubmit } = useForm<FormValues>();
+  const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data);
 
   return (
     <div className="my-24">
@@ -17,7 +31,7 @@ const { products, cost } = router.query;
                 Contact information
               </h2>
             </span>
-            <form onSubmit={(e) => e.preventDefault()} method="POST">
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <div className="py-3 pt-5">
                   <label
@@ -28,9 +42,7 @@ const { products, cost } = router.query;
                   </label>
                   <input
                     className="p-1 w-full mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                    name="email"
-                    id="email"
-                    type="email"
+                    {...register("email")}
                   />
                 </div>
                 <hr className="my-5 " />
@@ -49,9 +61,7 @@ const { products, cost } = router.query;
                     </label>
                     <input
                       className="p-1 mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                      name="firstName"
-                      id="firstName"
-                      type="text"
+                      {...register("firstName")}
                     />
                   </div>
                   <div className="flex flex-col">
@@ -63,9 +73,7 @@ const { products, cost } = router.query;
                     </label>
                     <input
                       className="p-1 mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                      name="lastName"
-                      id="lastName"
-                      type="text"
+                      {...register("lastName")}
                     />
                   </div>
                 </div>
@@ -79,9 +87,7 @@ const { products, cost } = router.query;
                 </label>
                 <input
                   className="p-1 w-full mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                  name="company"
-                  id="company"
-                  type="text"
+                  {...register("company")}
                 />
               </div>
               <div className="pb-5">
@@ -93,23 +99,19 @@ const { products, cost } = router.query;
                 </label>
                 <input
                   className="p-1 w-full mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                  name="address"
-                  id="address"
-                  type="text"
+                  {...register("address")}
                 />
               </div>
               <div className="pb-5">
                 <label
-                  htmlFor="apartment"
+                  htmlFor="property_type"
                   className="block text-gray-700 text-sm font-semibold mb-2"
                 >
                   Apartment, suite, etc.
                 </label>
                 <input
                   className="p-1 w-full mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                  name="apartment"
-                  id="apartment"
-                  type="text"
+                  {...register("property_type")}
                 />
               </div>
               <div className="pb-5 flex flex-col md:grid md:grid-rows-1 md:grid-flow-col gap-4">
@@ -122,58 +124,23 @@ const { products, cost } = router.query;
                   </label>
                   <input
                     className="p-1 mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                    name="city"
-                    id="city"
-                    type="text"
+                    {...register("city")}
                   />
                 </div>
                 <div className="flex flex-col">
                   <label
-                    htmlFor="country"
+                    htmlFor="zip"
                     className="block text-gray-700 text-sm font-semibold mb-2"
                   >
-                    Country
-                  </label>
-                  <select
-                    className="mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md p-1 pr-16 text-gray-500"
-                    name="country"
-                    id="country"
-                  >
-                    <option value="united_states">United States</option>
-                    <option value="china">China</option>
-                  </select>
-                </div>
-              </div>
-              <div className="pb-5 flex flex-col md:grid md:grid-rows-2 lg:grid-rows-1 md:grid-flow-col gap-4">
-                <div className="flex flex-col w-auto">
-                  <label
-                    htmlFor="province"
-                    className="block text-gray-700 text-sm font-semibold mb-2"
-                  >
-                    Province
+                    Zip code
                   </label>
                   <input
                     className="p-1 mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                    name="province"
-                    id="province"
-                    type="text"
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="postal"
-                    className="block text-gray-700 text-sm font-semibold mb-2"
-                  >
-                    Postal code
-                  </label>
-                  <input
-                    className="p-1 mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                    name="postal"
-                    id="postal"
-                    type="text"
+                    {...register("zip")}
                   />
                 </div>
               </div>
+
               <div className="pb-5">
                 <label
                   htmlFor="phone"
@@ -183,10 +150,7 @@ const { products, cost } = router.query;
                 </label>
                 <input
                   className="p-1 w-full mt-1 focus:ring-gray-400 focus:border-gray-400 block border border-gray-300 rounded-md"
-                  name="phone"
-                  id="phone"
-                  type="tel"
-                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  {...register("phone")}
                 />
               </div>
             </form>
