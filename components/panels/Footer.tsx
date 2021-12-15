@@ -2,8 +2,14 @@ import React from "react";
 import WebWorksDream from "../../public/images/WWD.2.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaTwitter, FaFigma, FaYoutube, FaLinkedin } from "react-icons/fa";
-
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaFigma,
+  FaYoutube,
+  FaLinkedin,
+} from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -67,22 +73,44 @@ export const Footer = () => {
         </div>
         <div className="text-xs pt-6 pb-20 flex justify-between flex-col md:flex-row">
           <div className="flex justify-center">
-            <a target="_blank" className="flex pr-2">
+            <a
+              href="https://twitter.com/WebWorksDreams"
+              target="_blank"
+              aria-label="twitter"
+              className="flex pr-2"
+            >
               <FaTwitter className="w-5 h-5" />
             </a>
-            <a target="_blank" className="flex px-2">
+            <a
+              href="https://www.facebook.com/WebWorksDreams"
+              target="_blank"
+              aria-label="facebook"
+              className="flex px-2"
+            >
               <FaFacebook className="w-5 h-5" />
             </a>
-            <a target="_blank" className="flex px-2">
-              <FaInstagram className="w-5 h-5" />
-            </a>
-            <a target="_blank" className="flex px-2">
+            <a
+              href="https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A/featured"
+              target="_blank"
+              aria-label="youtube"
+              className="flex px-2"
+            >
               <FaYoutube className="w-5 h-5" />
             </a>
-            <a target="_blank" className="flex px-2">
+            <a
+              href="/"
+              target="_blank"
+              aria-label="dribbble"
+              className="flex px-2"
+            >
               <FaFigma className="w-5 h-5" />
             </a>
-            <a target="_blank" className="flex px-2">
+            <a
+              href="/"
+              target="_blank"
+              aria-label="linkedin"
+              className="flex px-2"
+            >
               <FaLinkedin className="w-5 h-5" />
             </a>
           </div>

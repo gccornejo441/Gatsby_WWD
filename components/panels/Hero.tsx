@@ -56,7 +56,7 @@ export const Hero = () => {
               <Link href="/services/pricing">Get Started</Link>
             </button>
             <button className="text-white bg-gray-700 font-semibold hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
-              <Link href="/services/web-services">More Info</Link>
+              <Link href="/services/web-services">Web Services</Link>
             </button>
           </div>
         </div>
