@@ -14,7 +14,7 @@ const Pricing = () => {
 
   return (
     <div>
-      <main>
+      <main className="bg-gradient-to-t from-gray-50 to-white">
         <div className="flex justify-center px-2 sm:px-5 md:px-10">
           <div className="container md:text-center block md:flex flex-col my-8 xl:px-40">
             <div className="container">
