@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { MdEmail } from "react-icons/md";
-import { FaFacebookF, FaInstagram, FaTwitter, FaFigma } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaTwitter } from "react-icons/fa";
 import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
 import { MobileNavBarServices } from "./MobileNavBarServices";
 
@@ -19,24 +19,34 @@ export const NavBarServices = () => {
           <div>
             <ul className="flex">
               <li>
-                <Link href="/" passHref>
+                <a
+                  href="https://www.facebook.com/WebWorksDreams"
+                  target="_blank"
+                  aria-label="facebook"
+                  rel="noreferrer"
+                >
                   <FaFacebookF className="text-white text-lg mr-1" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/" passHref>
-                  <FaInstagram className="text-white text-lg mr-1" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/" passHref>
+                <a
+                  href="https://twitter.com/WebWorksDreams"
+                  target="_blank"
+                  aria-label="twitter"
+                  rel="noreferrer"
+                >
                   <FaTwitter className="text-white text-lg mr-1" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href="/" passHref>
-                  <FaFigma className="text-white text-lg mr-1" />
-                </Link>
+                <a
+                  href="https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A"
+                  target="_blank"
+                  aria-label="youtube"
+                  rel="noreferrer"
+                >
+                  <FaYoutube className="text-white text-lg mr-1" />
+                </a>
               </li>
             </ul>
           </div>

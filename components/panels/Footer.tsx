@@ -92,7 +92,7 @@ export const Footer = () => {
               <FaFacebook className="w-5 h-5" />
             </a>
             <a
-              href="https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A/featured"
+              href="https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A"
               target="_blank"
               aria-label="youtube"
               rel="noreferrer"
