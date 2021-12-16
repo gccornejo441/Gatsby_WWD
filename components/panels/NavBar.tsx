@@ -44,7 +44,7 @@ export const NavBar = () => {
       </nav>
       <div className="hidden md:flex justify-center py-2 px-2 md:px-0">
         <div className="container md:flex justify-between px-8 lg:px-28">
-          <Link href="/">
+          <Link href="/" passHref>
             <div className="flex items-center cursor-pointer">
               <Image
                 src={WebWorksDreamsLogo}

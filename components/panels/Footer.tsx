@@ -77,6 +77,7 @@ export const Footer = () => {
               href="https://twitter.com/WebWorksDreams"
               target="_blank"
               aria-label="twitter"
+              rel="noreferrer"
               className="flex pr-2"
             >
               <FaTwitter className="w-5 h-5" />
@@ -85,6 +86,7 @@ export const Footer = () => {
               href="https://www.facebook.com/WebWorksDreams"
               target="_blank"
               aria-label="facebook"
+              rel="noreferrer"
               className="flex px-2"
             >
               <FaFacebook className="w-5 h-5" />
@@ -93,48 +95,29 @@ export const Footer = () => {
               href="https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A/featured"
               target="_blank"
               aria-label="youtube"
+              rel="noreferrer"
               className="flex px-2"
             >
               <FaYoutube className="w-5 h-5" />
             </a>
-            <a
-              href="/"
-              target="_blank"
-              aria-label="dribbble"
-              className="flex px-2"
-            >
-              <FaFigma className="w-5 h-5" />
-            </a>
-            <a
-              href="/"
-              target="_blank"
-              aria-label="linkedin"
-              className="flex px-2"
-            >
-              <FaLinkedin className="w-5 h-5" />
-            </a>
           </div>
           <ul className="flex flex-col md:flex-row p-0 m-0 text-gray-500 ">
             <li className="block sm:inline-block pl-2">
-              <a
-                href="/terms-of-service"
-                className="flex px-2 justify-center py-3"
-              >
-                Terms of service
-              </a>
+              <Link href="/terms-of-service">
+                <a className="flex px-2 justify-center py-3">
+                  Terms of service
+                </a>
+              </Link>
             </li>
             <li className="block sm:inline-block pl-2">
-              <a
-                href="/privacy-policy"
-                className="flex px-2 justify-center py-3"
-              >
-                Privacy policy
-              </a>
+              <Link href="/privacy-policy">
+                <a className="flex px-2 justify-center py-3">Privacy policy</a>
+              </Link>
             </li>
             <li className="block sm:inline-block pl-2">
-              <a href="/sitemap" className="flex px-2 justify-center py-3">
-                Sitemap
-              </a>
+              <Link href="/sitemap">
+                <a className="flex px-2 justify-center py-3">Sitemap</a>
+              </Link>
             </li>
           </ul>
           <p className="sm:inline-block text-xs font-semibold text-gray-500 m-0 pt-3 md:pt-0 text-center">

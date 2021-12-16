@@ -51,12 +51,13 @@ const webServices = () => {
                 </h3>
               </div>
               <div>
-                A website's design has many uses which extend beyond aesthetics
-                and appearances. What does this exactly mean? This means that
-                our team places a strong emphasis on the visual experience of
-                the entire website, from the Landing page to the Frequently
-                Asked Questions page. Here at WebWorks Dreams, we take design
-                beyond looks to build websites that fit our clients' needs.{" "}
+                A website&apos;s design has many uses which extend beyond
+                aesthetics and appearances. What does this exactly mean? This
+                means that our team places a strong emphasis on the visual
+                experience of the entire website, from the Landing page to the
+                Frequently Asked Questions page. Here at WebWorks Dreams, we
+                take design beyond looks to build websites that fit our
+                clients&apos; needs.{" "}
               </div>
             </div>
             <div className="pl-10">
@@ -68,7 +69,7 @@ const webServices = () => {
               <li className="flex">
                 <MdOutlineWhatshot className="w-7 h-7 text-orange-600" />
                 <span className="text-gray-800 fo">
-                  &nbsp;&nbsp;&nbsp;&nbsp;A user's first impression is what
+                  &nbsp;&nbsp;&nbsp;&nbsp;A user&apos;s first impression is what
                   makes or breaks a website.
                 </span>
               </li>
@@ -95,11 +96,11 @@ const webServices = () => {
                     looks. In addition, we aim to build websites that generate
                     leads and growth for our customers. As a result, our team of
                     web designers practice an active approach when determining
-                    which design layouts are a precise fit for our client's end
-                    goals. This is to assure nothing is left on the table and
-                    clients are satisfied with the results in action. Chiefly,
-                    our expertise are dependent on modern tools such as Shopify,
-                    WordPress, and WooCommerce.
+                    which design layouts are a precise fit for our client&apos;s
+                    end goals. This is to assure nothing is left on the table
+                    and clients are satisfied with the results in action.
+                    Chiefly, our expertise are dependent on modern tools such as
+                    Shopify, WordPress, and WooCommerce.
                   </div>
                 </div>
               </div>
@@ -111,13 +112,14 @@ const webServices = () => {
             <h3 className="text-lg md:text-2xl font-bold text-gray-800 pb-10">
               Contact us to schedule a consulting.
             </h3>
-            <a
-              href="../message"
-              type="button"
-              className="text-lg md:text-xl bg-darkestGreeny hover:bg-greeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline"
-            >
-              Get Started!
-            </a>
+            <Link href="../contact">
+              <a
+                type="button"
+                className="text-lg md:text-xl bg-darkestGreeny hover:bg-greeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline"
+              >
+                Get Started!
+              </a>
+            </Link>
           </div>
         </div>
       </div>

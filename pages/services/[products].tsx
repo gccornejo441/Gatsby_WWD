@@ -3,18 +3,7 @@ import { useRouter } from "next/router";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-
-type FormValues = {
-  firstName: string;
-  lastName: string;
-  email: string;
-  company: string;
-  address: string;
-  property_type: string;
-  city: string;
-  zip: string;
-  phone: string;
-};
+import { FormValues } from "../../public/scripts/types";
 
 const phoneRegExp =
   /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -36,7 +25,15 @@ const Checkout = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<FormValues>({ resolver: yupResolver(schema) });
-  const onSubmit = (data: FormValues) => console.log(data);
+  const onSubmit = (data: FormValues) => {
+    fetch("/api/sales", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+  };
 
   return (
     <div className="my-24 bg-gradient-to-t from-gray-50 to-white pb-10">

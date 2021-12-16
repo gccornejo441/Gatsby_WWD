@@ -13,15 +13,12 @@ const contact = () => {
                 Contact Hub
               </h1>
               <p className="text-xl md:text-2xl text-black font-light text-center">
-                Need additional information? Complete the form below and we'll
-                reach out soon.
+                Need additional information? Complete the form below and
+                we&apos;ll reach out soon.
               </p>
               <div className="grid grid-cols-4 gap-4">
                 <div className="hidden md:block col-span-2 md:p-5 mt-28 xl:mt-12">
-                  <Image 
-                  src={Contacting} 
-                  alt="Office hall" 
-                  />
+                  <Image src={Contacting} alt="Office hall" />
                 </div>
                 <div className="rounded-md col-span-4 md:col-span-2 lg:p-10">
                   <div className="mt-8">
@@ -70,10 +67,7 @@ const contact = () => {
                           />
                         </label>
 
-                        <label
-                          htmlFor="Details"
-                          className="block text-left "
-                        >
+                        <label htmlFor="Details" className="block text-left ">
                           <span className="pr-1 text-red-600">*</span>
                           <span className="text-greeny text-lg md:text-lg">
                             Details

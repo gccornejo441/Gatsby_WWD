@@ -12,7 +12,7 @@ export const MobileNavBarServices = () => {
       className="justify-center text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny fixed z-10 w-full"
     >
       <div className="flex justify-between px-4">
-        <Link href="/">
+        <Link href="/" passHref>
           <div className="flex items-center cursor-pointer">
             <Image
               src={WebWorksDreamsLogo}

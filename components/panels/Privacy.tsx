@@ -19,8 +19,8 @@ const Privacy = () => {
               <tr>
                 <th className="md:text-large py-2 text-gray-700">Categories</th>
               </tr>
-              {tableContents.map((item) => (
-                <tr>
+              {tableContents.map((item, index) => (
+                <tr key={index}>
                   <td className="md:text-sm py-2 font-normal text-gray-700">
                     {item}
                   </td>
@@ -88,10 +88,10 @@ const Privacy = () => {
               </li>
               <li className="py-2">
                 We collect your personal information directly from you when you
-                register to use WebWorks Dreams's products and services, when
-                you contact us via our website contact form, when you sent us
-                email or mail. We may collect the following personal information
-                from you:
+                register to use WebWorks Dreams&apos;s products and services,
+                when you contact us via our website contact form, when you sent
+                us email or mail. We may collect the following personal
+                information from you:
               </li>
             </ul>
             <div>
@@ -242,7 +242,7 @@ const Privacy = () => {
                   d. We may share information with any successor to all or part
                   of our business. This may occur in the acquisition, in whole
                   or in part, of WebWorks Dreams, or in a sale of some or all of
-                  WebWorks Dreams' assets, a merger, a bankruptcy, or other
+                  WebWorks Dreams&apos; assets, a merger, a bankruptcy, or other
                   transition of the business.
                 </li>
                 <li className="py-1 ml-10">

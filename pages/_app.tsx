@@ -15,8 +15,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   const [ title, setTitle ] = React.useState("WebWorks Dreams");
   
   React.useEffect(() => {
-    console.log("ROUTER.PATHNAME: ", router.pathname);
-    
     if (router.pathname == "/services/web-services") {
       setTitle("Services Overview | WebWorks Dreams");
     } else if (router.pathname == "/services/portfolio") {
@@ -28,7 +26,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     }
 
     setLoading(true);
-  }, []);
+  }, [router.pathname]);
 
   if (router.pathname.startsWith("/services/")) {
 
