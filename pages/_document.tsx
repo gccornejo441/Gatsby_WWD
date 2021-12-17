@@ -8,13 +8,6 @@ class Document extends NextDocument<Props> {
     return (
       <Html lang="en">
         <Head>
-          <meta charSet="UTF-8" />
-          <meta name="keywords" content="titla, meta, nextjs" />
-          <meta name="author" content="Syamlal CM" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"

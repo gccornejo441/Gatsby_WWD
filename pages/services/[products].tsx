@@ -1,6 +1,8 @@
 import * as React from "react";
+import Head from "next/head";
+import Link from "next/dist/client/link";
 import { useRouter } from "next/router";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { FormValues } from "../../public/scripts/types";
@@ -33,10 +35,26 @@ const Checkout = () => {
       },
       body: JSON.stringify(data),
     });
-  };
+  };  
+
+  let pageTitle: string;
+  switch (products) {
+    case 'starter':
+      pageTitle = 'Starter';
+      break;
+    case 'small business':
+      pageTitle = "Small Business";
+      break;
+    case 'executive':
+      pageTitle = "Executive";
+      break;
+  }
 
   return (
     <div className="my-24 bg-gradient-to-t from-gray-50 to-white pb-10">
+      <Head>
+        <title>{pageTitle!} | WebWorks Dreams</title>
+      </Head>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="border border-gray-200 bg-gray-50 flex flex-col md:flex md:flex-row max-w-screen-xl mx-auto rounded-md">
           <div className="md:w-1/2 m-7">
@@ -182,6 +200,9 @@ const Checkout = () => {
                 <p className="text-xs text-red-600">{errors.phone?.message}</p>
               </div>
             </div>
+              <Link href="/">
+                <a className="text-red-500 text-sm font-light">Back</a>
+              </Link>
           </div>
           <div className="md:w-3/5">
             <div>

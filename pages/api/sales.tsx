@@ -1,7 +1,6 @@
 import { MongoClient } from "mongodb";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-
 const uri: string = process.env.MONGODB_URI!;
 let dbName: string = process.env.MONGODB_DB!;
 let sales_collection: string = process.env.MONGODB_COLLECTION_SALES!;
@@ -43,9 +42,9 @@ const sales = async (req: NextApiRequest, res: NextApiResponse) => {
       console.log("Error: ", err);
     } finally {
       await client.close();
+      return res.redirect("/");
     }
-
-    return res.redirect("/");
+    
   }
 };
 

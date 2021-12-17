@@ -1,8 +1,12 @@
 import Terms from "../components/panels/Terms";
+import Head from 'next/head';
 
 const message = () => {
   return (
     <main className="bg-gradient-to-t from-gray-50 to-white">
+      <Head>
+        <title>Terms of Service | WebWorks Dreams</title>
+      </Head>
       <div className="w-full grid justify-items-center my-20">
         <div className="container flex justify-center text-center">
           <div className="flex smooch-text">

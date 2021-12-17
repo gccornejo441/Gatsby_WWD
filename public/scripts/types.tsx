@@ -9,3 +9,10 @@ export type FormValues = {
   zip: string;
   phone: string;
 };
+
+export type MessageValues = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  message: string;
+}
