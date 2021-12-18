@@ -1,0 +1,7 @@
+Sitemap: https://webworksdreams.com/api/sitemap
+
+
+User-Agent: *
+Allow: /
+
+Disallow: /api/*
