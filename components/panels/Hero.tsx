@@ -60,8 +60,8 @@ export const Hero = () => {
             </button>
           </div>
         </div>
-        <div>
-          <Image src={headerBlob} alt="Hero Image" height={650} width={650} />
+        <div className="px-10 md:px-0">
+          <Image src={headerBlob} alt="Hero Image" height={650} width={500} />
         </div>
       </div>
       <div className="flex flex-col mt-16">
@@ -120,7 +120,7 @@ export const Hero = () => {
                     </span>
                   </div>
                 </div>
-                <div className="flex flex-col py-12 lg:py-0">
+                <div className="flex flex-col pt-12 lg:py-0">
                   <Image
                     alt="Frameworks"
                     height={200}

@@ -200,7 +200,7 @@ const Checkout = () => {
                 <p className="text-xs text-red-600">{errors.phone?.message}</p>
               </div>
             </div>
-              <Link href="/">
+              <Link href="/services/pricing">
                 <a className="text-red-500 text-sm font-light">Back</a>
               </Link>
           </div>
