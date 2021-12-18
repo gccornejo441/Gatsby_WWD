@@ -27,6 +27,8 @@ const webServices = () => {
                 src={WebDesignOffice}
                 width={500}
                 height={700}
+                loading="lazy"
+                placeholder="blur"
               />
             </div>
             <div className="text-center md:text-left w-3/4 mx-auto xl:mx-12 md:w-full text-sm md:text-xl lg:text-2xl md:ml-12 leading-10 font-light">
@@ -60,20 +62,9 @@ const webServices = () => {
                 clients&apos; needs.{" "}
               </div>
             </div>
-            <div className="pl-10">
+            <div className="p-10 md:pl-10">
               <Image src={DesignImage} alt="Design Team" />
             </div>
-          </div>
-          <div className="flex my-10 px-10">
-            <ul>
-              <li className="flex">
-                <MdOutlineWhatshot className="w-7 h-7 text-orange-600" />
-                <span className="text-gray-800 fo">
-                  &nbsp;&nbsp;&nbsp;&nbsp;A user&apos;s first impression is what
-                  makes or breaks a website.
-                </span>
-              </li>
-            </ul>
           </div>
         </div>
       </main>
@@ -83,7 +74,12 @@ const webServices = () => {
             <div className="md:grid grid-cols-2 gap-4">
               <div>
                 <div className="px-10 pt-5 md:pt-0 md:my-8 lg:my-6 xl:my-8">
-                  <Image src={WebDesign} alt="Web Design Layout" />
+                  <Image
+                    src={WebDesign}
+                    alt="Web Design Layout"
+                    loading="lazy"
+                    placeholder="blur"
+                  />
                 </div>
               </div>
               <div>
@@ -113,10 +109,7 @@ const webServices = () => {
               Contact us to schedule a consulting.
             </h3>
             <Link href="../contact">
-              <a
-                type="button"
-                className="text-lg md:text-xl bg-darkestGreeny hover:bg-greeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline"
-              >
+              <a className="text-lg md:text-xl bg-darkestGreeny hover:bg-greeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline">
                 Get Started!
               </a>
             </Link>

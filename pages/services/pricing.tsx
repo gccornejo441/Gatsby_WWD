@@ -8,9 +8,8 @@ import TableBody from "../../components/table/TableBody";
 import Balloons from "../../public/images/Balloons.svg";
 
 const Pricing = () => {
-    
-    let headerInfo = tableInfo[0];
-    let bodyInfo = tableInfo[1];
+  let headerInfo = tableInfo[0];
+  let bodyInfo = tableInfo[1];
 
   return (
     <div>
@@ -54,32 +53,32 @@ const Pricing = () => {
                         <td className="md:pl-5 text-sm sm:text-lg">
                           <div>{headerInfo.price?.pricing}</div>
                         </td>
-                        <td className="text-darkestGreeny text-xs sm:text-lg">
-                          <div className="flex-col">
+                        <td className="text-darkestGreeny text-xs sm:text-lg align-top">
+                          <div>
                             <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
                               {headerInfo.price?.price1}
                             </div>
-                            <div className="text-darkestGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
+                            <div className="text-darkestGreeny md:pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
                               {headerInfo.price?.disc1}
                             </div>
                           </div>
                         </td>
-                        <td className="text-darkestGreeny text-xs sm:text-lg">
-                          <div className="flex-col">
+                        <td className="text-darkestGreeny text-xs sm:text-lg align-top">
+                          <div>
                             <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
                               {headerInfo.price?.price2}
                             </div>
-                            <div className="text-darkestGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
+                            <div className="text-darkestGreeny md:pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
                               {headerInfo.price?.disc2}
                             </div>
                           </div>
                         </td>
-                        <td className="text-darkestGreeny text-xs sm:text-lg">
-                          <div className="flex-col">
+                        <td className="text-darkestGreeny text-xs sm:text-lg align-top">
+                          <div>
                             <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
                               {headerInfo.price?.price3}
                             </div>
-                            <div className="text-darkestGreeny pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
+                            <div className="text-darkestGreeny md:pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
                               {headerInfo.price?.disc3}
                             </div>
                           </div>
@@ -88,33 +87,27 @@ const Pricing = () => {
                       <tr>
                         <td> </td>
                         <td className="px-1 md:px-2">
-                          <Link href="/services/starter?cost=150">
-                            <a
-                              type="submit"
-                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center"
-                            >
+                          <Link href="/services/starter?cost=150" passHref>
+                            <div className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Starter
-                            </a>
+                            </div>
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
-                          <Link href="/services/small%20business?cost=500">
-                            <a
-                              type="submit"
-                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center"
-                            >
+                          <Link
+                            href="/services/small%20business?cost=500"
+                            passHref
+                          >
+                            <div className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Small Business
-                            </a>
+                            </div>
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
-                          <Link href="/services/executive?cost=1000">
-                            <a
-                              type="submit"
-                              className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center"
-                            >
+                          <Link href="/services/executive?cost=1000" passHref>
+                            <div className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Executive
-                            </a>
+                            </div>
                           </Link>
                         </td>
                       </tr>

@@ -79,7 +79,7 @@ export const MobileNavBar = () => {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link href="/quote">
+                <Link href="/contact">
                   <a
                     className={`${
                       active && "bg-greeny text-white"

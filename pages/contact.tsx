@@ -6,6 +6,7 @@ import * as yup from "yup";
 import Head from "next/head";
 
 import { MessageValues } from "../public/scripts/types";
+import Contacting from "../public/images/contacting.jpg";
 
 const schema = yup
   .object({
@@ -49,7 +50,13 @@ const Contact = () => {
             </p>
             <div className="grid grid-cols-4 gap-4">
               <div className="hidden md:block col-span-2 md:p-5 mt-4 xl:mt-12">
-                
+                <Image 
+                src={Contacting} 
+                alt="Office hall" 
+                layout="intrinsic" 
+                loading="lazy"
+                placeholder="blur"
+                />
               </div>
               <div className="rounded-md col-span-4 md:col-span-2 lg:p-10">
                 <div className="mt-8">
