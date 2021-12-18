@@ -28,7 +28,7 @@ const portfolio = () => {
         <div className="bg-gradient-to-t from-gray-50 to-white">
           <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="flex justify-center smooch-text">
-              <span className="text-greeny font-normal text-6xl md:text-7xl ">
+              <span className="text-greeny font-normal text-6xl md:text-7xl">
                 Portfolio
               </span>
             </div>
