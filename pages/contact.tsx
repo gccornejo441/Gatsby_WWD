@@ -49,8 +49,13 @@ const Contact = () => {
               we&apos;ll reach out soon.
             </p>
             <div className="grid grid-cols-4 gap-4">
-              <div className="hidden md:block col-span-2 md:p-5 mt-28 xl:mt-12">
-                <Image src={Contacting} alt="Office hall" />
+              <div className="hidden md:block col-span-2 md:p-5 mt-4 xl:mt-12">
+                <Image 
+                src={Contacting} 
+                alt="Office hall" 
+                layout="intrinsic" 
+                loading="lazy"
+                />
               </div>
               <div className="rounded-md col-span-4 md:col-span-2 lg:p-10">
                 <div className="mt-8">
