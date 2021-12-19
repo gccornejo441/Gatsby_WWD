@@ -22,7 +22,7 @@ export const Hero = () => {
       window.addEventListener("scroll", position);
     };
 
-    scrollY >= 0 && scrollY < 550
+    scrollY >= 0 && scrollY < 550 && window.screen.width >= 768
       ? scrollRef1.current?.classList.add("hero-text")
       : scrollRef1.current?.classList.remove("hero-text");
 

@@ -42,7 +42,6 @@ const sales = async (req: NextApiRequest, res: NextApiResponse) => {
       console.log("Error: ", err);
     } finally {
       await client.close();
-      return res.redirect("/");
     }
     
   }

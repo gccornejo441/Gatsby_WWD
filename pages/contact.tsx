@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
+import { useRouter } from "next/router";
+
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import Head from "next/head";
 
 import { MessageValues } from "../public/scripts/types";
 import Contacting from "../public/images/contacting.jpg";
@@ -18,6 +20,8 @@ const schema = yup
   .required();
 
 const Contact = () => {
+    const router = useRouter();
+
   const {
     register,
     handleSubmit,
@@ -26,11 +30,14 @@ const Contact = () => {
   const onSubmit = (data: MessageValues) => {
     fetch("/api/message", {
       method: "POST",
+      redirect: "follow",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     });
+
+    router.push('/')
   };
 
   return (
@@ -60,7 +67,7 @@ const Contact = () => {
               </div>
               <div className="rounded-md col-span-4 md:col-span-2 lg:p-10">
                 <div className="mt-8">
-                  <form onSubmit={handleSubmit(onSubmit)}>
+                  <form action="/api/message" method="POST" onSubmit={handleSubmit(onSubmit)}>
                     <div className="grid grid-cols-1 gap-6">
                       <label htmlFor="FirstName" className="block text-left">
                         <span className="pr-1 text-red-600">*</span>

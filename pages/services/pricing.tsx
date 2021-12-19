@@ -88,7 +88,7 @@ const Pricing = () => {
                         <td> </td>
                         <td className="px-1 md:px-2">
                           <Link href="/services/starter?cost=150" passHref>
-                            <div className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
+                            <div className="cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Starter
                             </div>
                           </Link>
@@ -98,14 +98,14 @@ const Pricing = () => {
                             href="/services/small%20business?cost=500"
                             passHref
                           >
-                            <div className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
+                            <div className="cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Small Business
                             </div>
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
                           <Link href="/services/executive?cost=1000" passHref>
-                            <div className="text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
+                            <div className="cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Executive
                             </div>
                           </Link>

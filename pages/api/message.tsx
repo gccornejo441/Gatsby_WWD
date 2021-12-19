@@ -12,6 +12,7 @@ export const message = async (
   req: NextApiRequest,
   res: NextApiResponse
 ) => {
+
   if (req.method === "POST") {
     let { firstName, lastName, email, message } = req.body;
 
@@ -30,10 +31,8 @@ export const message = async (
     } catch (err) {
       console.log(err);
     }
-      return res.redirect("/");
 
   } 
-  return res.redirect("/");
 };
 
 export default message;

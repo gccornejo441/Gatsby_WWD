@@ -35,17 +35,18 @@ const Checkout = () => {
       },
       body: JSON.stringify(data),
     });
-  };  
+    router.push("/");
+  };
 
   let pageTitle: string;
   switch (products) {
-    case 'starter':
-      pageTitle = 'Starter';
+    case "starter":
+      pageTitle = "Starter";
       break;
-    case 'small business':
+    case "small business":
       pageTitle = "Small Business";
       break;
-    case 'executive':
+    case "executive":
       pageTitle = "Executive";
       break;
   }
@@ -200,9 +201,9 @@ const Checkout = () => {
                 <p className="text-xs text-red-600">{errors.phone?.message}</p>
               </div>
             </div>
-              <Link href="/services/pricing">
-                <a className="text-red-500 text-sm font-light">Back</a>
-              </Link>
+            <Link href="/services/pricing">
+              <a className="text-red-500 text-sm font-light">Back</a>
+            </Link>
           </div>
           <div className="md:w-3/5">
             <div>
