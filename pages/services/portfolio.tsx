@@ -22,6 +22,7 @@ const products = [
     description: "An independent reator listing website.",
   },
 ];
+
 const portfolio = () => {
     return (
       <div>
@@ -34,12 +35,17 @@ const portfolio = () => {
             </div>
             <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-1 lg:grid-cols-1 xl:gap-x-8">
               {products.map((product) => (
-                <div key={product.id} className="group relative lg:px-28 xl:px-48">
+                <div
+                  key={product.id}
+                  className="group relative lg:px-28 xl:px-48"
+                >
                   <div className="w-auto h-auto bg-gray-200 rounded-md overflow-hidden group-hover:opacity-75">
-                    <Image 
-                    src={product.imageSrc} 
-                    alt={product.imageAlt} 
-                    layout="responsive"
+                    <Image
+                      src={product.imageSrc}
+                      alt={product.imageAlt}
+                      layout="responsive"
+                      loading="lazy"
+                      placeholder="blur"
                     />
                   </div>
                   <div className="mt-4 flex justify-between">

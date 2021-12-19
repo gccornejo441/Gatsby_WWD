@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { MdOutlineWhatshot } from "react-icons/md";
-
 import DesignImage from "../../public/images/Design-team.svg";
 import WebDesignOffice from "../../public/images/web-design-office.jpg";
 import WebDesign from "../../public/images/web-design.jpg";
