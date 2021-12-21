@@ -23,7 +23,7 @@ const products = [
   },
 ];
 
-const portfolio = () => {
+const Portfolio = () => {
     return (
       <div>
         <div className="bg-gradient-to-t from-gray-50 to-white">
@@ -73,4 +73,4 @@ const portfolio = () => {
     );
 }
 
-export default portfolio;
+export default Portfolio;
