@@ -32,6 +32,7 @@ export const Layout: React.FC<Props> = ({
             name="description"
             content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
           />
+          <meta property="og:site_name" content="WebWorks Dreams" />
           <meta
             name="keywords"
             content="Web Development Company, Custom Web Development Company, Web Development Service, Web Design Services, Nextjs Web Development, Web Development Services, Best Web Developers, Web Development Agency, Web Design, Custom Web Development, Best Web Development, Web Development USA, Web Development Company in the USA, Web Development Services USA, WordPress Website"
@@ -42,11 +43,12 @@ export const Layout: React.FC<Props> = ({
             content="https://www.webworksdreams.com/sharecard.jpg"
           />
           <meta property="og:url" content="https://www.webworksdreams.com/" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@webworksdreams" />
           <meta
             name="twitter:title"
             content="Welcome to WebWorks Dreams where dreams come true | WebWorks Dreams"
           />
-          <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:description"
             content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
@@ -55,6 +57,7 @@ export const Layout: React.FC<Props> = ({
             name="twitter:image"
             content="https://www.webworksdreams.com/sharecard.jpg"
           />
+          <meta name="twitter:image:alt" content="A developer hard at work" />
           <title>{title}</title>
         </Head>
         <NavBar />
