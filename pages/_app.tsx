@@ -5,6 +5,7 @@ import "../styles/globals.scss";
 import { Layout } from "../components/panels/Layout";
 import { PreLoader } from "../components/shapes/PreLoader";
 import { ServicesLayout } from "../components/panels/ServicesLayout";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   const [loading, setLoading] = React.useState(false);
@@ -23,12 +24,21 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
     setLoading(true);
   }, [router.pathname]);
+  const site = "https://webworksdreams.com";
+  const canonicalURL = site + router.pathname;
 
   if (router.pathname.startsWith("/services/")) {
     return (
       <>
         {loading ? (
           <ServicesLayout title={title}>
+            <Head>
+              {canonicalURL !== "https://webworksdreams.com/services/[products]" ? (
+                <link rel="canonical" href={canonicalURL} />
+              ) : (
+                <link rel="canonical" href="https://webworksdreams.com/services/pricing"/>
+              )}
+            </Head>
             <Component {...pageProps} />
           </ServicesLayout>
         ) : (
@@ -47,6 +57,9 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     <>
       {loading ? (
         <Layout title="WebWorks Dreams">
+          <Head>
+            <link rel="canonical" href={canonicalURL} />
+          </Head>
           <Component {...pageProps} />
         </Layout>
       ) : (

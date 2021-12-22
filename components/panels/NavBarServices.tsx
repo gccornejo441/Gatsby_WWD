@@ -79,7 +79,7 @@ export const NavBarServices = () => {
                 <Link href="/services/portfolio">Portfolio</Link>
               </li>
               <li className="flex items-center">
-                <Link href="/contact">
+                <Link href="/contact" passHref>
                   <div className="cursor-pointer text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
                     Get A Quote
                   </div>

@@ -40,50 +40,54 @@ export const MobileNavBarServices = () => {
           <div className="text-2xl bg-white text-darkestGreeny font-semibold h-screen text-md flex flex-col absolute z-10 w-full drop-shadow-lg">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/"
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                >
-                  Home
-                </a>
+                <Link href="/">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Home
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/services/pricing"
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                >
-                  Pricing
-                </a>
+                <Link href="/services/pricing">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Pricing
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/services/portfolio"
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                >
-                  Portfolio
-                </a>
+                <Link href="/services/portfolio">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Portfolio
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/contact"
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                >
-                  Get A Quote
-                </a>
+                <Link href="/contact">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Get A Quote
+                  </a>
+                </Link>
               )}
             </Menu.Item>
           </div>

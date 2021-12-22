@@ -6,7 +6,6 @@ import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
 import Link from "next/link";
 
 export const MobileNavBar = () => {
-  
   return (
     <Menu
       as="div"
@@ -41,14 +40,15 @@ export const MobileNavBar = () => {
           <div className="text-2xl bg-white text-darkestGreeny font-semibold h-screen text-md flex flex-col absolute z-10 w-full drop-shadow-lg">
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/"
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                >
-                  Home
-                </a>
+                <Link href="/">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Home
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
@@ -66,26 +66,28 @@ export const MobileNavBar = () => {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href="/contact"
-                  className={`${
-                    active && "bg-greeny text-white"
-                  } ${"py-3 px-4"}`}
-                >
-                  Contact Us
-                </a>
+                <Link href="/contact">
+                  <a
+                    className={`${
+                      active && "bg-greeny text-white"
+                    } ${"py-3 px-4"}`}
+                  >
+                    Contact Us
+                  </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
+                <Link href="/contact">
                   <a
-                    href="/contact"
                     className={`${
                       active && "bg-greeny text-white"
                     } ${"py-3 px-4"}`}
                   >
                     Get A Quote
                   </a>
+                </Link>
               )}
             </Menu.Item>
           </div>

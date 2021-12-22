@@ -51,6 +51,7 @@ const Checkout = () => {
       break;
   }
 
+
   return (
     <div className="my-24 bg-gradient-to-t from-gray-50 to-white pb-10">
       <Head>
