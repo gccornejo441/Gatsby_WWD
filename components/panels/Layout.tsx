@@ -34,7 +34,7 @@ export const Layout: React.FC<Props> = ({
           />
           <meta
             name="keywords"
-            content="Web Development Company, Custom Web Development Company, Web Development Service, Mobile Web Development Services, Android Web Development, iOS Web Development Services, Best Mobile Web Developers, Mobile Web Development Agency, Mobile Web Development, Custom Mobile Web Development, Best Mobile Web Development, Mobile Web Development USA, Web Development Company in USA, Web Development Services USA"
+            content="Web Development Company, Custom Web Development Company, Web Development Service, Web Design Services, Nextjs Web Development, Web Development Services, Best Web Developers, Web Development Agency, Web Design, Custom Web Development, Best Web Development, Web Development USA, Web Development Company in the USA, Web Development Services USA, WordPress Website"
           />
           <meta property="og:type" content="website" />
           <meta
