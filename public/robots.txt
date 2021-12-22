@@ -1,5 +1,7 @@
 Sitemap: https://webworksdreams.com/api/sitemap
 
+User-agent: Twitterbot
+Disallow:
 
 User-Agent: *
 Allow: /
