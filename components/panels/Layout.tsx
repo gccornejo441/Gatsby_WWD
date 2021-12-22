@@ -43,7 +43,7 @@ export const Layout: React.FC<Props> = ({
             content="https://www.webworksdreams.com/sharecard.jpg"
           />
           <meta property="og:url" content="https://www.webworksdreams.com/" />
-          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@webworksdreams" />
           <meta
             name="twitter:title"
