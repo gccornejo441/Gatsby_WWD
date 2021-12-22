@@ -18,10 +18,42 @@ export const Layout: React.FC<Props> = ({
         <Head>
           <meta charSet="UTF-8" />
           <meta name="keywords" content="titla, meta, nextjs" />
-          <meta name="author" content="Syamlal CM" />
+          <meta name="author" content="Gabriel Cornejo" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
+          />
+          <meta name="robots" content="all" />
+          <meta
+            property="og:title"
+            content="Welcome to WebWorks Dreams where dreams come true | WebWorks Dreams"
+          />
+          <meta
+            name="description"
+            content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+          />
+          <meta
+            name="keywords"
+            content="Web Development Company, Custom Web Development Company, Web Development Service, Mobile Web Development Services, Android Web Development, iOS Web Development Services, Best Mobile Web Developers, Mobile Web Development Agency, Mobile Web Development, Custom Mobile Web Development, Best Mobile Web Development, Mobile Web Development USA, Web Development Company in USA, Web Development Services USA"
+          />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:image"
+            content="https://www.webworksdreams.com/sharecard.jpg"
+          />
+          <meta property="og:url" content="https://www.webworksdreams.com/" />
+          <meta
+            name="twitter:title"
+            content="Welcome to WebWorks Dreams where dreams come true | WebWorks Dreams"
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:description"
+            content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+          />
+          <meta
+            name="twitter:image"
+            content="https://www.webworksdreams.com/sharecard.jpg"
           />
           <title>{title}</title>
         </Head>
