@@ -10,9 +10,9 @@ const message = () => {
       <div className="w-full grid justify-items-center my-20">
         <div className="container flex justify-center text-cnter">
           <div className="flex smooch-text">
-            <span className="text-greeny font-normal text-6xl md:text-7xl">
+            <h1 className="text-greeny font-normal text-6xl md:text-7xl">
               Privacy Policy
-            </span>
+            </h1>
           </div>
         </div>
       </div>

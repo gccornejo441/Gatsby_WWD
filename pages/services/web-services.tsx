@@ -9,13 +9,10 @@ const webServices = () => {
   return (
     <div>
       <main className="container sm:px-14 md:px-10 lg:px-10 xl:px-32 w-full mx-auto">
-        <div className="w-full grid justify-items-center mb-14 md:mb-20">
-          <div className="container">
-            <h1 className="uppercase flex justify-center md:justify-start text-2xl md:text-4xl font-bold mt-10 text-gray-800">
-              Web Design Services
-            </h1>
-            <div className="md:h-1 md:w-56 md:bg-greeny"></div>
-          </div>
+        <div className="w-full grid justify-items-center my-14 md:mb-20">
+          <h1 className="pb-4 text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-gray-800 font-bold">
+            Get All Your Web Services Done Better
+          </h1>
         </div>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row">
@@ -30,12 +27,14 @@ const webServices = () => {
               />
             </div>
             <div className="text-center md:text-left w-3/4 mx-auto xl:mx-12 md:w-full text-sm md:text-xl lg:text-2xl md:ml-12 leading-10 font-light">
-              <span className="text-gray-800 font-bold">WebWorks Dreams</span>{" "}
-              has captured modern tech tools to shape and engineer every clients
-              vision into a reality. When the need arises, WebWorks Dreams is
-              disposed to consult any of our clients needs. With our competitive
-              pricing, we are better able to focus our attention on our clients
-              needs.
+              <p>
+                <span className="text-gray-800 font-bold">WebWorks Dreams</span>{" "}
+                has captured modern tech tools to shape and engineer every
+                clients vision into a reality. When the need arises, WebWorks
+                Dreams is disposed to consult any of our clients needs. With our
+                competitive pricing, we are better able to focus our attention
+                on our clients needs.
+              </p>
             </div>
           </div>
           <div className="w-full flex my-12 md:hidden">
@@ -51,13 +50,15 @@ const webServices = () => {
                 </h3>
               </div>
               <div>
-                A website&apos;s design has many uses which extend beyond
-                aesthetics and appearances. What does this exactly mean? This
-                means that our team places a strong emphasis on the visual
-                experience of the entire website, from the Landing page to the
-                Frequently Asked Questions page. Here at WebWorks Dreams, we
-                take design beyond looks to build websites that fit our
-                clients&apos; needs.{" "}
+                <p>
+                  A website&apos;s design has many uses which extend beyond
+                  aesthetics and appearances. What does this exactly mean? This
+                  means that our team places a strong emphasis on the visual
+                  experience of the entire website, from the Landing page to the
+                  Frequently Asked Questions page. Here at WebWorks Dreams, we
+                  take design beyond looks to build websites that fit our
+                  clients&apos; needs.{" "}
+                </p>
               </div>
             </div>
             <div className="p-10 md:pl-10">
@@ -85,7 +86,7 @@ const webServices = () => {
                   <h3 className="text-lg md:text-2xl font-bold text-gray-800">
                     Web Design & Web Development
                   </h3>
-                  <div className="text-sm sm:text-sm md:text-md lg:text-xl leading-6 lg:leading-10 text-gray-600 font-light">
+                  <div className="text-sm sm:text-sm md:text-md lg:text-xl leading-6 lg:leading-10 text-gray-800 font-light">
                     We are fully committed to creating websites that go beyond
                     looks. In addition, we aim to build websites that generate
                     leads and growth for our customers. As a result, our team of

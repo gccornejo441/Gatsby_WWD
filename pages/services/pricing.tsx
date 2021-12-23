@@ -16,20 +16,14 @@ const Pricing = () => {
       <main className="bg-gradient-to-t from-gray-50 to-white">
         <div className="flex justify-center px-2 sm:px-5 md:px-10">
           <div className="container md:text-center block md:flex flex-col my-8 xl:px-40">
-            <div className="container">
-              <h1 className="uppercase flex justify-center md:justify-start text-2xl md:text-4xl font-bold text-gray-800">
-                Pricing
-              </h1>
-              <div className="md:h-1 md:w-24 md:bg-greeny"></div>
-            </div>
             <div className="w-full inline-flex justify-center">
               <div className="text-center w-full">
-                <p className="pb-4 text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-darkestGreeny font-bold">
+                <h1 className="pb-4 text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-gray-800 font-bold">
                   Purchasing made easy
-                </p>
-                <p className="sm:text-2xl md:text-3xl lg:text-3xl text-darkestGreeny mb-12">
+                </h1>
+                <h2 className="sm:text-2xl md:text-3xl lg:text-3xl text-gray-800 mb-12">
                   Our pricing plans have been designed to meet your needs.
-                </p>
+                </h2>
                 <section className="text-left">
                   <table className="table-auto border-darkestGreeny">
                     <thead className="border-b border-darkestGreeny">

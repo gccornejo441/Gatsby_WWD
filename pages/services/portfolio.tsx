@@ -28,10 +28,13 @@ const Portfolio = () => {
     <div>
       <div className="bg-gradient-to-t from-gray-50 to-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="flex justify-center smooch-text">
-            <span className="text-greeny font-normal text-6xl md:text-7xl">
-              Portfolio
-            </span>
+          <div className="flex justify-center flex-col text-center pb-12">
+            <h1 className="text-gray-800 font-bold text-6xl md:text-7xl">
+              Checkout Some Of Our Amazing Case Studies
+            </h1>
+            <h2 className="text-gray-800 font-normal pt-10 text-xl md:text-3xl">
+              Frame your dream website here
+            </h2>
           </div>
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-1 lg:grid-cols-1 xl:gap-x-8">
             {products.map((product) => (

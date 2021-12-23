@@ -43,10 +43,12 @@ export const Hero = () => {
               </span>
             </div>
             <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-700 flex flex-col">
-              <span className="pb-5">You dream it,</span>
-              <span className="pb-5">we build it.</span>
+              <h1 className="flex flex-col">
+                <span className="pb-5">You dream it,</span>
+                <span className="pb-5">we build it.</span>
+              </h1>
             </div>
-            <div className="text-slate-500 font-semibold mt-2 leading-loose text-sm md:text-normal">
+            <div className="text-slate-500 font-semibold mt-2 leading-loose text-sm md:text-lg">
               The right website is waiting for you, and we are here to make it
               happen.
             </div>
@@ -76,7 +78,7 @@ export const Hero = () => {
               <span>What We Offer</span>
             </div>
             <div className="text-center w-72 md:w-96 mx-auto">
-              <span className="text-slate-500 font-semibold text-xs md:text-sm">
+              <span className="text-slate-500 font-semibold text-xs md:text-lg">
                 If you&apos;re in the market for modern solutions, WebWorks
                 Dreams offers the means to empower newcomers to explore the
                 newest and innovative software capabilities.
@@ -95,7 +97,7 @@ export const Hero = () => {
                     <span>SEARCH ENGINE OPTIMIZATION</span>
                   </div>
                   <div className="text-center px-10 lg:px-8 lg:max-w-prose">
-                    <span className="text-slate-500 font-semibold text-xs md:text-sm">
+                    <span className="text-slate-500 font-semibold text-xs md:text-lg">
                       Our websites are tailored to your needs and your user
                       demands, so we have cultivated our process to target
                       customer satisfaction.
@@ -113,7 +115,7 @@ export const Hero = () => {
                     <span>WEBSITE DEVELOPMENT</span>
                   </div>
                   <div className="text-center px-10 md:px-5 lg:px-8 lg:max-w-prose">
-                    <span className="text-slate-500 font-semibold text-xs md:text-sm">
+                    <span className="text-slate-500 font-semibold text-xs md:text-lg">
                       With little worry about speed and website responsiveness,
                       your customers will truly be receiving a quality
                       experience.
@@ -131,7 +133,7 @@ export const Hero = () => {
                     <span>MODERN WEBSITE FRAMEWORKS</span>
                   </div>
                   <div className="text-center px-10 lg:px-8 lg:max-w-prose">
-                    <span className="text-slate-500 font-semibold text-xs md:text-sm">
+                    <span className="text-slate-500 font-semibold text-xs md:text-lg">
                       Creating modern websites has never been easier. With the
                       power of CSS framework, we are at liberty to compose
                       dynamically responsive websites.
