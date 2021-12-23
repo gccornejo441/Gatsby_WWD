@@ -3,7 +3,6 @@ import { AppProps } from "next/dist/shared/lib/router/router";
 import "tailwindcss/tailwind.css";
 import "../styles/globals.scss";
 import { Layout } from "../components/panels/Layout";
-import { PreLoader } from "../components/shapes/PreLoader";
 import { ServicesLayout } from "../components/panels/ServicesLayout";
 import Head from "next/head";
 

@@ -29,7 +29,7 @@ export const Layout: React.FC<Props> = ({
           <meta property="og:url" content="https://www.webworksdreams.com/" />
           <meta
             property="og:image"
-            content="https://www.webworksdreams.com/sharecard.jpg"
+            content="https://www.webworksdreams.com/images/sharecard.jpg"
           />
           <meta property="og:site_name" content="WebWorks Dreams" />
           <meta
@@ -55,9 +55,9 @@ export const Layout: React.FC<Props> = ({
           />
           <meta
             name="twitter:image"
-            content="https://www.webworksdreams.com/sharecard.jpg"
+            content="https://www.webworksdreams.com/images/sharecard.jpg"
           />
-          <meta name="twitter:image:alt" content="A developer hard at work" />
+          <meta name="twitter:image:alt" content="A web developer hard at work" />
           <meta
             name="keywords"
             content="Web Development Company, Custom Web Development Company, Web Development Service, Web Design Services, Nextjs Web Development, Web Development Services, Best Web Developers, Web Development Agency, Web Design, Custom Web Development, Best Web Development, Web Development USA, Web Development Company in the USA, Web Development Services USA, WordPress Website"
