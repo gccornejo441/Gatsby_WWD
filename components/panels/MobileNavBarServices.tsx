@@ -37,7 +37,7 @@ export const MobileNavBarServices = () => {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items>
-          <div className="text-2xl bg-white text-darkestGreeny font-semibold h-screen text-md flex flex-col absolute z-10 w-full drop-shadow-lg">
+          <div className="text-2xl bg-white text-darkestGreeny font-semibold h-auto text-md flex flex-col absolute z-10 w-full drop-shadow-2xl">
             <Menu.Item>
               {({ active }) => (
                 <Link href="/">

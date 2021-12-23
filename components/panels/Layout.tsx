@@ -38,6 +38,10 @@ export const Layout: React.FC<Props> = ({
             content="https://www.webworksdreams.com/images/sharecard.jpg"
           />
           <meta
+            property="og:image:alt"
+            content="A web developer hard at work"
+          />
+          <meta
             property="og:description"
             content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
           />

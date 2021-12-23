@@ -9,7 +9,7 @@ const webServices = () => {
   return (
     <div>
       <main className="container sm:px-14 md:px-10 lg:px-10 xl:px-32 w-full mx-auto">
-        <div className="w-full grid justify-items-center my-14 md:mb-20">
+        <div className="w-full grid justify-items-center my-14 md:mb-20 text-center md:text-left">
           <h1 className="pb-4 text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-gray-800 font-bold">
             Get All Your Web Services Done Better
           </h1>

@@ -28,8 +28,8 @@ const Portfolio = () => {
     <div>
       <div className="bg-gradient-to-t from-gray-50 to-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="flex justify-center flex-col text-center pb-12">
-            <h1 className="text-gray-800 font-bold text-6xl md:text-7xl">
+          <div className="mx-auto px-3 flex justify-center flex-col text-center md:text-left pb-12 lg:px-28 xl:px-48">
+            <h1 className="text-gray-800 font-bold text-3xl md:text-7xl">
               Checkout Some Of Our Amazing Case Studies
             </h1>
             <h2 className="text-gray-800 font-normal pt-10 text-xl md:text-3xl">
