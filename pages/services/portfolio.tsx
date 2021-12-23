@@ -13,14 +13,6 @@ const products = [
     imageAlt: "Jobbox",
     description: "A free professional resume builder.",
   },
-  {
-    id: 2,
-    name: "Grant Real Estate",
-    href: "#",
-    imageSrc: Homie,
-    imageAlt: "Homepage image of grantrealestate.com",
-    description: "An independent reator listing website.",
-  },
 ];
 
 const Portfolio = () => {
