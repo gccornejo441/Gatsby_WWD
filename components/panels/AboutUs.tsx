@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import Man_Working  from '../../public/images/Man_Working.svg';
+import Man_Working  from '../../public/images/Man_Working.png';
 
 export const About = () => {
     return (

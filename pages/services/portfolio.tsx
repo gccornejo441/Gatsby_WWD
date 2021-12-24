@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 
 import Jobbox from "../../public/images/jobbme.png";
-import Homie from "../../public/images/homie.png";
 
 const products = [
   {
@@ -12,14 +11,6 @@ const products = [
     imageSrc: Jobbox,
     imageAlt: "Jobbox",
     description: "A free professional resume builder.",
-  },
-  {
-    id: 2,
-    name: "Grant Real Estate",
-    href: "#",
-    imageSrc: Homie,
-    imageAlt: "Homepage image of grantrealestate.com",
-    description: "An independent reator listing website.",
   },
 ];
 

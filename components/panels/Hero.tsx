@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import headerBlob from "../../public/images/headerBlob.svg";
+import headerBlob from "../../public/images/Web-Design-Team.png";
 import Image from "next/image";
 import SEOImage from "../../public/images/SEO.svg";
 import WebDevelopment from "../../public/images/Web-Development.svg";
