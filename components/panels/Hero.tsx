@@ -6,7 +6,6 @@ import SEOImage from "../../public/images/SEO.svg";
 import WebDevelopment from "../../public/images/Web-Development.svg";
 import Frameworks from "../../public/images/Frameworks.svg";
 
-
 export const Hero = () => {
   const [scrollY, setScrollTop] = React.useState(0);
 
@@ -54,12 +53,16 @@ export const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row pb-10 md:pb-0">
-            <button className="text-white bg-gray-700 font-semibold hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
-              <Link href="/services/pricing">Get Started</Link>
-            </button>
-            <button className="text-white bg-gray-700 font-semibold hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
-              <Link href="/services/web-services">Web Services</Link>
-            </button>
+            <Link href="/services/pricing">
+              <a className="text-white bg-gray-700 font-semibold hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
+                Get Started
+              </a>
+            </Link>
+            <Link href="/services/web-services">
+              <a className="text-white bg-gray-700 font-semibold hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
+                Web Services
+              </a>
+            </Link>
           </div>
         </div>
         <div className="px-10 md:px-0">

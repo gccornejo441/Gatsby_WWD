@@ -76,9 +76,11 @@ export const NavBar = () => {
                 <Link href="/services/web-services">Services</Link>
               </li>
               <li className="flex items-center">
-                <div className="text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
-                  <Link href="/contact">Get A Quote</Link>
-                </div>
+                <Link href="/contact">
+                  <a className="text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
+                    Get A Quote
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
