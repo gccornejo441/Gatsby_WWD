@@ -1,18 +1,59 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 import { tableInfo } from "../../public/scripts/tableData";
 import TableHead from "../../components/table/TableHead";
 import TableBody from "../../components/table/TableBody";
 import Balloons from "../../public/images/Balloons.svg";
 
+const TITLE: string = "Website Design Price | WebWorks Dreams";
+
 const Pricing = () => {
   let headerInfo = tableInfo[0];
   let bodyInfo = tableInfo[1];
 
   return (
-    <div>
+    <>
+      <Head>
+        <meta name="robots" content="all" />
+
+        {/* OG */}
+        <meta property="fb:app_id" content="254907099748012" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.webworksdreams.com/" />
+        <meta property="og:title" content={TITLE} />
+        <meta
+          property="og:image"
+          content="https://www.webworksdreams.com/images/sharecard.jpg"
+        />
+        <meta property="og:image:alt" content="A web developer hard at work" />
+        <meta
+          property="og:description"
+          content="Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan."
+        />
+        <meta
+          name="description"
+          content="Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan."
+        />
+        <meta property="og:site_name" content="WebWorks Dreams" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@WebWorksDreams" />
+        <meta name="twitter:title" content={TITLE} />
+        <meta
+          name="twitter:description"
+          content="Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.webworksdreams.com/images/sharecard.jpg"
+        />
+        <meta name="twitter:image:alt" content="A web developer hard at work" />
+        <title>{TITLE}</title>
+      </Head>
       <main className="bg-gradient-to-t from-gray-50 to-white">
         <div className="flex justify-center px-2 sm:px-5 md:px-10">
           <div className="container md:text-center block md:flex flex-col my-8 xl:px-40">
@@ -201,7 +242,7 @@ const Pricing = () => {
           </div>
         </div>
       </main>
-    </div>
+    </>
   );
 };
 

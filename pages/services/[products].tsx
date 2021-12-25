@@ -41,20 +41,59 @@ const Checkout = () => {
   let pageTitle: string;
   switch (products) {
     case "starter":
-      pageTitle = "Starter";
+      pageTitle = "Starter package for simply made websites";
       break;
     case "small business":
-      pageTitle = "Small Business";
+      pageTitle = "Small Business package for your start-up";
       break;
     case "executive":
-      pageTitle = "Executive";
+      pageTitle = "Executive package for all your fast business needs";
       break;
   }
-
+const TITLE: string = `${pageTitle!} | WebWorks Dreams`;
 
   return (
     <div className="my-24 bg-gradient-to-t from-gray-50 to-white pb-10">
       <Head>
+        <meta name="robots" content="all" />
+
+        {/* OG */}
+        <meta property="fb:app_id" content="254907099748012" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.webworksdreams.com/" />
+        <meta property="og:title" content={TITLE} />
+        <meta
+          property="og:image"
+          content="https://www.webworksdreams.com/images/sharecard.jpg"
+        />
+        <meta property="og:image:alt" content="A web developer hard at work" />
+        <meta
+          property="og:description"
+          content="Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan.."
+        />
+        <meta
+          name="description"
+          content="Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan.."
+        />
+        <meta property="og:site_name" content="WebWorks Dreams" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@WebWorksDreams" />
+        <meta name="twitter:title" content={TITLE} />
+        <meta
+          name="twitter:description"
+          content="Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan.."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.webworksdreams.com/images/sharecard.jpg"
+        />
+        <meta name="twitter:image:alt" content="A web developer hard at work" />
+        <meta
+          name="keywords"
+          content="Web Development Company, Custom Web Development Company, Web Development Service, Web Design Services, Nextjs Web Development, Web Development Services, Best Web Developers, Web Development Agency, Web Design, Custom Web Development, Best Web Development, Web Development USA, Web Development Company in the USA, Web Development Services USA, WordPress Website"
+        />
         <title>{pageTitle!} | WebWorks Dreams</title>
       </Head>
       <form onSubmit={handleSubmit(onSubmit)}>

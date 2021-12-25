@@ -19,6 +19,8 @@ const schema = yup
   })
   .required();
 
+const TITLE: string = "Contact WebWorks Dreams | WebWorks Dreams";
+
 const Contact = () => {
     const router = useRouter();
 
@@ -43,7 +45,49 @@ const Contact = () => {
   return (
     <div>
       <Head>
-        <title>Contact Us | WebWorks Dreams</title>
+        <title>{TITLE}</title>
+        <meta charSet="UTF-8" />
+        <meta name="keywords" content="titla, meta, nextjs" />
+        <meta name="author" content="Gabriel Cornejo" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="all" />
+
+        {/* OG */}
+        <meta property="fb:app_id" content="254907099748012" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.webworksdreams.com/contact"
+        />
+        <meta property="og:title" content={TITLE} />
+        <meta
+          property="og:image"
+          content="https://www.webworksdreams.com/images/sharecard.jpg"
+        />
+        <meta property="og:image:alt" content="A web developer hard at work" />
+        <meta
+          property="og:description"
+          content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+        />
+        <meta
+          name="description"
+          content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+        />
+        <meta property="og:site_name" content="WebWorks Dreams" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@WebWorksDreams" />
+        <meta name="twitter:title" content={TITLE} />
+        <meta
+          name="twitter:description"
+          content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.webworksdreams.com/images/sharecard.jpg"
+        />
+        <meta name="twitter:image:alt" content="A web developer hard at work" />
       </Head>
       <div className="flex justify-center px-5 bg-gradient-to-t from-gray-50 to-white">
         <div className="container md:text-left block text-center md:flex py-12">
@@ -57,17 +101,21 @@ const Contact = () => {
             </p>
             <div className="grid grid-cols-4 gap-4">
               <div className="hidden md:block col-span-2 md:p-5 mt-4 xl:mt-12">
-                <Image 
-                src={Contacting} 
-                alt="Office hall" 
-                layout="intrinsic" 
-                loading="lazy"
-                placeholder="blur"
+                <Image
+                  src={Contacting}
+                  alt="Office hall"
+                  layout="intrinsic"
+                  loading="lazy"
+                  placeholder="blur"
                 />
               </div>
               <div className="rounded-md col-span-4 md:col-span-2 lg:p-10">
                 <div className="mt-8">
-                  <form action="/api/message" method="POST" onSubmit={handleSubmit(onSubmit)}>
+                  <form
+                    action="/api/message"
+                    method="POST"
+                    onSubmit={handleSubmit(onSubmit)}
+                  >
                     <div className="grid grid-cols-1 gap-6">
                       <label htmlFor="FirstName" className="block text-left">
                         <span className="pr-1 text-red-600">*</span>
