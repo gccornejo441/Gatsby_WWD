@@ -19,7 +19,7 @@ export const About = () => {
                 <span>What We Offer</span>
               </div>
               <div className="md:text-left text-center md:w-96 mx-auto">
-                <span className="text-slate-500 font-semibold text-sm lg:text-lg">
+                <span className="text-slate-500 font-semibold text-sm lg:text-base">
                   If you&apos;re in the market for modern solutions, WebWorks
                   Dreams offers the means to empower newcomers to explore the
                   newest and innovative software capabilities.
