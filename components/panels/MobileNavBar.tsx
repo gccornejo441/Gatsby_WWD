@@ -10,7 +10,7 @@ const Path = (props: any) => (
     fill="transparent"
     strokeWidth="3"
     stroke="hsl(0, 0%, 18.03921568627451%)"
-    strokeLinecap="round"
+    strokeLinecap="square"
     {...props}
   />
 );
@@ -44,7 +44,7 @@ export const MobileNavBar = () => {
                   className="p-3 my-2 rounded-full bg-teal-100"
                   aria-label="Menu Button"
                 >
-                  <svg width="23" height="23" viewBox="0 0 19 19">
+                  <svg width="19" height="19" viewBox="0 0 19 19">
                     <Path
                       variants={{
                         closed: { d: "M 2 2.5 L 20 2.5" },
