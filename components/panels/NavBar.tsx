@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,48 +6,44 @@ import { MdEmail } from "react-icons/md";
 import { FaFacebookF, FaYoutube, FaTwitter } from "react-icons/fa";
 import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
 import { MobileNavBar } from "./MobileNavBar";
+import Links from "../../public/scripts/Links.json";
+
+const Logo = (props  : any) => {
+  if (props.name == "facebook") {
+    return <FaFacebookF className="text-white text-lg mr-1" />;
+  } else if (props.name == "twitter") {
+    return <FaTwitter className="text-white text-lg mr-1" />;
+  } else {
+    return <FaYoutube className="text-white text-lg mr-1" />;
+  }
+}
 
 export const NavBar = () => {
   return (
     <>
       <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
-        <div className="container flex justify-between px-28">
+        <div className="container flex justify-between px-8 lg:px-28">
           <a className="flex" href="mailto:webworksdreams@gmail.com">
             <MdEmail className="text-white text-lg mr-1" />
             webworksdreams@gmail.com
           </a>
           <div>
             <ul className="flex">
-              <li>
-                <a
-                  href="https://www.facebook.com/WebWorksDreams"
-                  target="_blank"
-                  aria-label="facebook"
-                  rel="noreferrer"
-                >
-                  <FaFacebookF className="text-white text-lg mr-1" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/WebWorksDreams"
-                  target="_blank"
-                  aria-label="twitter"
-                  rel="noreferrer"
-                >
-                  <FaTwitter className="text-white text-lg mr-1" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A"
-                  target="_blank"
-                  aria-label="youtube"
-                  rel="noreferrer"
-                >
-                  <FaYoutube className="text-white text-lg mr-1" />
-                </a>
-              </li>
+              {Links.navbar.socials.map((item: any) => {
+                console.log("item item: ", item);
+                return (
+                  <li key={item._id}>
+                    <a
+                      href={item.href}
+                      target={item.target}
+                      aria-label={item.aria_label}
+                      rel={item.rel}
+                    >
+                      <Logo name={item.aria_label} />
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -69,19 +65,31 @@ export const NavBar = () => {
           </Link>
           <div className="flex item-center">
             <ul className="flex flex-col md:flex-row text-xs font-bold text-darkestGreeny">
-              <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="mr-8 hover:text-darkGreeny flex items-center">
-                <Link href="/services/web-services">Services</Link>
-              </li>
-              <li className="flex items-center">
-                <Link href="/contact">
-                  <a className="text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
-                    Get A Quote
-                  </a>
-                </Link>
-              </li>
+              {Links.navbar.links.map((item: any) => {
+                return (
+                  <div key={item._id}>
+                    {item._id !== 3 ? (
+                      <li>
+                        <div
+                          key={item._id}
+                          className="mr-8 md:mt-2 lg:mt-3 hover:text-darkGreeny flex items-center"
+                        >
+                          <Link href={item.href}>{item.name}</Link>
+                        </div>
+                      </li>
+                    ) : (
+                      <li>
+                        <div
+                          key={item._id}
+                          className="cursor-pointer text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny"
+                        >
+                          <Link href={item.href}>{item.name}</Link>
+                        </div>
+                      </li>
+                    )}
+                  </div>
+                );
+              })}
             </ul>
           </div>
         </div>
