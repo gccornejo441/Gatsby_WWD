@@ -1,24 +1,14 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import { MdEmail } from "react-icons/md";
-import { FaFacebookF, FaYoutube, FaTwitter } from "react-icons/fa";
 import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
 import { MobileNavBar } from "./MobileNavBar";
-import Links from "../../public/scripts/Links.json";
+import Logo from "./NavLogo";
 
-const Logo = (props  : any) => {
-  if (props.name == "facebook") {
-    return <FaFacebookF className="text-white text-lg mr-1" />;
-  } else if (props.name == "twitter") {
-    return <FaTwitter className="text-white text-lg mr-1" />;
-  } else {
-    return <FaYoutube className="text-white text-lg mr-1" />;
-  }
-}
 
-export const NavBar = () => {
+export const NavBar = ({links}: any) => {
   return (
     <>
       <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
@@ -29,8 +19,7 @@ export const NavBar = () => {
           </a>
           <div>
             <ul className="flex">
-              {Links.navbar.socials.map((item: any) => {
-                console.log("item item: ", item);
+              {links.navbar.socials.map((item: any) => {
                 return (
                   <li key={item._id}>
                     <a
@@ -65,7 +54,7 @@ export const NavBar = () => {
           </Link>
           <div className="flex item-center">
             <ul className="flex flex-col md:flex-row text-xs font-bold text-darkestGreeny">
-              {Links.navbar.links.map((item: any) => {
+              {links.navbar.links.map((item: any) => {
                 return (
                   <div key={item._id}>
                     {item._id !== 3 ? (
@@ -95,7 +84,7 @@ export const NavBar = () => {
         </div>
       </div>
       <div className="md:hidden">
-        <MobileNavBar />
+        <MobileNavBar links={links} />
       </div>
     </>
   );

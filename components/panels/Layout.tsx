@@ -6,11 +6,13 @@ import Head from "next/head";
 type Props = {
   children: React.ReactNode;
   title: string;
+  links: any;
 };
 
 export const Layout: React.FC<Props> = ({
   children,
   title = "WebWorks Dreams",
+  links,
 }: Props) => {
   
   return (
@@ -26,7 +28,7 @@ export const Layout: React.FC<Props> = ({
           />
           <title>{title}</title>
         </Head>
-        <NavBar />
+        <NavBar links={links} />
         <main className="pt-16 md:pt-0">{children}</main>
         <Footer />
       </div>

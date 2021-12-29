@@ -16,7 +16,7 @@ const Path = (props: any) => (
   />
 );
 
-export const MobileNavBarServices = () => {
+export const MobileNavBarServices = ({ links }: any) => {
   const containerRef = useRef(null);
   return (
     <Menu
@@ -84,54 +84,21 @@ export const MobileNavBarServices = () => {
               <div className="text-lg bg-white text-darkestGreeny font-semibold h-auto text-md flex flex-col absolute z-10 w-full drop-shadow-2xl">
                 <Menu.Item>
                   {({ active }) => (
-                    <Link href="/">
-                      <a
-                        className={`${
-                          active && "bg-greeny text-white"
-                        } ${"py-3 px-4 border-b-2 border-gray-100"}`}
-                      >
-                        Home
-                      </a>
-                    </Link>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link href="/services/pricing">
-                      <a
-                        className={`${
-                          active && "bg-greeny text-white"
-                        } ${"py-3 px-4 border-b-2 border-gray-100"}`}
-                      >
-                        Pricing
-                      </a>
-                    </Link>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link href="/services/portfolio">
-                      <a
-                        className={`${
-                          active && "bg-greeny text-white"
-                        } ${"py-3 px-4 border-b-2 border-gray-100"}`}
-                      >
-                        Portfolio
-                      </a>
-                    </Link>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <Link href="/contact">
-                      <a
-                        className={`${
-                          active && "bg-greeny text-white"
-                        } ${"py-3 px-4"}`}
-                      >
-                        Get A Quote
-                      </a>
-                    </Link>
+                    <>
+                      {links.navbar_services.mobile_links.map((link: any) => {
+                        return (
+                          <Link key={link._id} href={link.href}>
+                            <a
+                              className={`${
+                                active && "bg-greeny text-white"
+                              } ${"py-3 px-4 border-b-2 border-gray-100"}`}
+                            >
+                              {link.name}
+                            </a>
+                          </Link>
+                        );
+                      })}
+                    </>
                   )}
                 </Menu.Item>
               </div>
