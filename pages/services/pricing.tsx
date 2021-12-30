@@ -213,7 +213,7 @@ const Pricing = () => {
                   <div className="container mx-auto flex justify-center md:my-32 my-12">
                     <Link href="/contact">
                       <a
-                        href="../message"
+                        href="../contact"
                         className="text-darkestGreeny flex hover:underline"
                       >
                         <div className="text-darkestGreeny px-5 text-xl md:text-2xl lg:text-3xl xl:text-4xl">
