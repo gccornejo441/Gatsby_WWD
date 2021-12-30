@@ -24,19 +24,20 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
     setLoading(true);
   }, [router.pathname]);
-  const site = "https://webworksdreams.com";
+  const site = "https://www.webworksdreams.com";
   const canonicalURL = site + router.pathname;
 
   if (router.pathname.startsWith("/services/")) {
     return (
       <ServicesLayout links={Links} title={title}>
         <Head>
-          {canonicalURL !== "https://webworksdreams.com/services/[products]" ? (
+          {canonicalURL !==
+          "https://www.webworksdreams.com/services/[products]" ? (
             <link rel="canonical" href={canonicalURL} />
           ) : (
             <link
               rel="canonical"
-              href="https://webworksdreams.com/services/pricing"
+              href="https://www.webworksdreams.com/services/pricing"
             />
           )}
         </Head>

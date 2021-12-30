@@ -51,7 +51,6 @@ const Home: React.FC<Props> = () => {
           content="https://www.webworksdreams.com/images/sharecard.jpg"
         />
         <meta name="twitter:image:alt" content="A web developer hard at work" />
-        <link rel="canonical" href="https://www.webworksdreams.com/" />
       </Head>
       <main className="flex flex-col bg-gradient-to-t from-gray-50 to-white">
         <Shapes />
