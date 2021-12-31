@@ -6,7 +6,7 @@ import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const Path = (props: any) => (
+const Path = (props) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
@@ -16,7 +16,7 @@ const Path = (props: any) => (
   />
 );
 
-export const MobileNavBarServices = ({ links }: any) => {
+export const MobileNavBarServices = ({ links }) => {
   const containerRef = useRef(null);
   return (
     <Menu
@@ -85,7 +85,7 @@ export const MobileNavBarServices = ({ links }: any) => {
                 <Menu.Item>
                   {({ active }) => (
                     <>
-                      {links.navbar_services.mobile_links.map((link: any) => {
+                      {links.navbar_services.mobile_links.map((link) => {
                         return (
                           <Link key={link._id} href={link.href}>
                             <a

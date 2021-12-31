@@ -8,7 +8,7 @@ import { MobileNavBar } from "./MobileNavBar";
 import Logo from "./NavLogo";
 
 
-export const NavBar = ({links}: any) => {
+export const NavBar = ({links}) => {
   return (
     <>
       <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
@@ -19,7 +19,7 @@ export const NavBar = ({links}: any) => {
           </a>
           <div>
             <ul className="flex">
-              {links.navbar.socials.map((item: any) => {
+              {links.navbar.socials.map((item) => {
                 return (
                   <li key={item._id}>
                     <a
@@ -54,7 +54,7 @@ export const NavBar = ({links}: any) => {
           </Link>
           <div className="flex item-center">
             <ul className="flex flex-col md:flex-row text-xs font-bold text-darkestGreeny">
-              {links.navbar.links.map((item: any) => {
+              {links.navbar.links.map((item) => {
                 return (
                   <div key={item._id}>
                     {item._id !== 3 ? (

@@ -7,7 +7,7 @@ import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
 import { MobileNavBarServices } from "./MobileNavBarServices";
 import Logo from "./NavLogo";
 
-export const NavBarServices = ({ links }: any) => {
+export const NavBarServices = ({ links }) => {
   return (
     <>
       <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
@@ -18,7 +18,7 @@ export const NavBarServices = ({ links }: any) => {
           </a>
           <div>
             <ul className="flex">
-              {links.navbar.socials.map((item: any) => {
+              {links.navbar.socials.map((item) => {
                 return (
                   <li key={item._id}>
                     <a
@@ -53,7 +53,7 @@ export const NavBarServices = ({ links }: any) => {
           </Link>
           <div className="flex item-center">
             <ul className="flex flex-col md:flex-row text-xs font-bold text-darkestGreeny">
-              {links.navbar_services.links.map((item: any) => {
+              {links.navbar_services.links.map((item) => {
                 return (
                   <div key={item._id}>
                     {item._id !== 4 ? (
