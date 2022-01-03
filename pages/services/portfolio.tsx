@@ -2,15 +2,26 @@ import React from "react";
 import Image from "next/image";
 import Head from "next/head";
 import Jobbox from "../../public/images/jobbme.png";
+import HomeKeeper from "../../public/images/HomeKeeper-Face.png"
 
 const products = [
   {
     id: 1,
     name: "Jobbox",
-    href: "#",
+    href: "https://www.jobbox.me/",
     imageSrc: Jobbox,
-    imageAlt: "Jobbox",
-    description: "A free professional resume builder.",
+    imageAlt: "Jobbox Home Page",
+    description: "A Free Professional Resume Builder.",
+    target: "_blank",
+  },
+  {
+    id: 1,
+    name: "HomeKeeper",
+    href: "https://home-keeper.vercel.app/",
+    imageSrc: HomeKeeper,
+    imageAlt: "HomeKeeper Home Page",
+    description: "Achieve the American Dream Of Homeownership.",
+    target: "_blank",
   },
 ];
 
@@ -85,7 +96,7 @@ const Portfolio = () => {
                 <div className="mt-4 flex justify-between">
                   <div>
                     <h3 className="text-2xl text-gray-700">
-                      <a href={product.href}>
+                      <a href={product.href} target={product.target}>
                         <span aria-hidden="true" className="absolute inset-0" />
                         {product.name}
                       </a>
