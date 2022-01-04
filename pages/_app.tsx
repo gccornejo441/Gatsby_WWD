@@ -62,9 +62,9 @@ function MyApp({ Component, pageProps, router }: AppProps) {
               href="https://www.webworksdreams.com/services/pricing"
             />
           )}
-          <GTag />
         </Head>
         <Component {...pageProps} />
+        <GTag/>
       </ServicesLayout>
     );
   }
@@ -74,9 +74,9 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <Layout links={Links} title="WebWorks Dreams">
         <Head>
           <link rel="canonical" href={canonicalURL} />
-          <GTag />
         </Head>
         <Component {...pageProps} />
+        <GTag />
       </Layout>
     </>
   );
