@@ -6,6 +6,28 @@ import { Layout } from "../components/panels/Layout";
 import { ServicesLayout } from "../components/panels/ServicesLayout";
 import Head from "next/head";
 import Links from "../public/scripts/Links.json";
+import Script from "next/script";
+
+const GTag = () => {
+  return (
+    <>
+      {/* Global site tag (gtag.js) - Google Analytics  */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-T80JQX1QYQ"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T80JQX1QYQ');
+        `}
+      </Script>
+    </>
+  );
+};
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   const [loading, setLoading] = React.useState(false);
@@ -40,6 +62,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
               href="https://www.webworksdreams.com/services/pricing"
             />
           )}
+          <GTag />
         </Head>
         <Component {...pageProps} />
       </ServicesLayout>
@@ -51,6 +74,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <Layout links={Links} title="WebWorks Dreams">
         <Head>
           <link rel="canonical" href={canonicalURL} />
+          <GTag />
         </Head>
         <Component {...pageProps} />
       </Layout>
