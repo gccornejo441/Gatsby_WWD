@@ -24,14 +24,14 @@ const products = [
     description: "Achieve the American Dream Of Homeownership.",
     target: "_blank",
   },
-  {
-    id: 3,
-    name: "Klean Windows",
-    href: "#",
-    imageSrc: kleanWindows,
-    imageAlt: "Klean Windows Home Page",
-    description: "We'll clean your windows.",
-  },
+  // {
+  //   id: 3,
+  //   name: "Klean Windows",
+  //   href: "#",
+  //   imageSrc: kleanWindows,
+  //   imageAlt: "Klean Windows Home Page",
+  //   description: "We'll clean your windows.",
+  // },
 ];
 
 const TITLE: string = "WebWorks Dreams' best created websites | WebWorks Dreams";
