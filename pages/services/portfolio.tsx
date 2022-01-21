@@ -3,6 +3,7 @@ import Image from "next/image";
 import Head from "next/head";
 import Jobbox from "../../public/images/jobbme.png";
 import HomeKeeper from "../../public/images/HomeKeeper-Face.png"
+import kleanWindows from "../../public/images/klean-windows.png";
 
 const products = [
   {
@@ -15,13 +16,21 @@ const products = [
     target: "_blank",
   },
   {
-    id: 1,
+    id: 2,
     name: "HomeKeeper",
     href: "https://home-keeper.vercel.app/",
     imageSrc: HomeKeeper,
     imageAlt: "HomeKeeper Home Page",
     description: "Achieve the American Dream Of Homeownership.",
     target: "_blank",
+  },
+  {
+    id: 3,
+    name: "Klean Windows",
+    href: "#",
+    imageSrc: kleanWindows,
+    imageAlt: "Klean Windows Home Page",
+    description: "We'll clean your windows.",
   },
 ];
 
