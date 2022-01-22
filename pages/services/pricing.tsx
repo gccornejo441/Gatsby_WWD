@@ -122,7 +122,10 @@ const Pricing = () => {
                       <tr>
                         <td> </td>
                         <td className="px-1 md:px-2">
-                          <Link href="/services/starter?cost=150" passHref>
+                          <Link
+                            href={`/services/starter?cost=${headerInfo.price?.price1}`}
+                            passHref
+                          >
                             <div className="cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Starter
                             </div>
@@ -130,7 +133,7 @@ const Pricing = () => {
                         </td>
                         <td className="px-1 md:px-2">
                           <Link
-                            href="/services/small%20business?cost=500"
+                            href={`/services/small%20business?cost=${headerInfo.price?.price2}`}
                             passHref
                           >
                             <div className="cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
@@ -139,7 +142,10 @@ const Pricing = () => {
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
-                          <Link href="/services/executive?cost=1000" passHref>
+                          <Link
+                            href={`/services/executive?cost=${headerInfo.price?.price3}`}
+                            passHref
+                          >
                             <div className="cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Executive
                             </div>

@@ -261,7 +261,7 @@ const TITLE: string = `${pageTitle!} | WebWorks Dreams`;
                   <hr />
                   <div className="px-5 pt-5 font-medium text-lg text-gray-800 mb-5 flex justify-between">
                     <span>Subtotal</span>
-                    <span>{"$" + cost}</span>
+                    <span>{cost}</span>
                   </div>
                   <div className="px-5 font-medium text-lg text-gray-800 mb-5 flex justify-between">
                     <span>Estimated Sales Tax</span>
@@ -270,7 +270,7 @@ const TITLE: string = `${pageTitle!} | WebWorks Dreams`;
                   <hr />
                   <div className="p-5 font-semibold text-xl text-gray-800 mb-5 flex justify-between">
                     <span>Estimated Sales Tax</span>
-                    <span>{"$" + cost}</span>
+                    <span>{cost}</span>
                   </div>
                   <div className="border-t p-5 flex justify-center">
                     <input
