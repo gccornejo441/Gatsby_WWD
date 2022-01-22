@@ -14,7 +14,7 @@ export const tableInfo = [
     revisions: "Revisions",
     price: {
       pricing: "Pricing",
-      price1: "$150",
+      price1: "$300",
       price2: "$500",
       price3: "$1000",
       disc1:

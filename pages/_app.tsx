@@ -64,7 +64,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           )}
         </Head>
         <Component {...pageProps} />
-        <GTag/>
+        <GTag />
       </ServicesLayout>
     );
   }

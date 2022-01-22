@@ -17,23 +17,6 @@
           "href": "/contact"
         }
       ],
-      "mobile_links": [
-        {
-          "_id": 1,
-          "name": "Home",
-          "href": "/"
-        },
-        {
-          "_id": 2,
-          "name": "Services",
-          "href": "/services/web-services"
-        },
-        {
-          "_id": 3,
-          "name": "Get A Quote",
-          "href": "/contact"
-        }
-      ],
       "socials": [
         {
           "_id": 1,
@@ -63,28 +46,6 @@
     },
     "navbar_services": {
         "links": [
-            {
-                "_id": 1,
-                "name": "Home",
-                "href": "/"
-            },
-            {
-                "_id": 2,
-                "name": "Pricing",
-                "href": "/services/pricing"
-            },
-            {
-                "_id": 3,
-                "name": "Portfolio",
-                "href": "/services/portfolio"
-            },
-            {
-                "_id": 4,
-                "name": "Get A Quote",
-                "href": "/contact"
-            }
-        ],
-        "mobile_links": [
             {
                 "_id": 1,
                 "name": "Home",

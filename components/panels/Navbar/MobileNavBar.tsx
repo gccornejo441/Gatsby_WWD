@@ -1,10 +1,10 @@
 import { Menu, Transition } from "@headlessui/react";
-import { FiMenu } from "react-icons/fi";
 import { Fragment, useRef } from "react";
 import Image from "next/image";
-import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
+import WebWorksDreamsLogo from "../../../public/images/WWD.2.svg";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { MyLink } from "./navscripts";
 
 const Path = (props) => (
   <motion.path
@@ -16,7 +16,8 @@ const Path = (props) => (
   />
 );
 
-export const MobileNavBarServices = ({ links }) => {
+
+export const MobileNavBar = ({ links }) => {
   const containerRef = useRef(null);
   return (
     <Menu
@@ -80,26 +81,31 @@ export const MobileNavBarServices = ({ links }) => {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <Menu.Items>
+            <Menu.Items static>
               <div className="text-lg bg-white text-darkestGreeny font-semibold h-auto text-md flex flex-col absolute z-10 w-full drop-shadow-2xl">
                 <Menu.Item>
-                  {({ active }) => (
-                    <>
-                      {links.navbar_services.mobile_links.map((link) => {
-                        return (
-                          <Link key={link._id} href={link.href}>
-                            <a
-                              className={`${
-                                active && "bg-greeny text-white"
-                              } ${"py-3 px-4 border-b-2 border-gray-100"}`}
-                            >
-                              {link.name}
-                            </a>
-                          </Link>
-                        );
-                      })}
-                    </>
-                  )}
+                  <MyLink
+                    className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
+                    href="/"
+                  >
+                    Home
+                  </MyLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <MyLink
+                    className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
+                    href="/services/web-services"
+                  >
+                    Services
+                  </MyLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <MyLink
+                    className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
+                    href="/contact"
+                  >
+                    Get A Quote
+                  </MyLink>
                 </Menu.Item>
               </div>
             </Menu.Items>

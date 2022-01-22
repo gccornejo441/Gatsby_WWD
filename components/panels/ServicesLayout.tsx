@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import { NavBarServices } from "./NavBarServices";
+import { NavBarServices } from "./Navbar/NavBarServices";
 import { Footer } from "./Footer";
 
 type Props = {

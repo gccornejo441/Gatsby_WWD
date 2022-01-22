@@ -3,15 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { MdEmail } from "react-icons/md";
-import WebWorksDreamsLogo from "../../public/images/WWD.2.svg";
+import WebWorksDreamsLogo from "../../../public/images/WWD.2.svg";
 import { MobileNavBarServices } from "./MobileNavBarServices";
-import Logo from "./NavLogo";
+import Logo from "../NavLogo";
 
 export const NavBarServices = ({ links }) => {
   return (
     <>
       <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
-        <div className="container flex justify-between px-28">
+        <div className="w-full xl:container flex justify-between px-8 lg:px-12 xl:px-28">
           <a className="flex" href="mailto:webworksdreams@gmail.com">
             <MdEmail className="text-white text-lg mr-1" />
             webworksdreams@gmail.com
@@ -37,7 +37,7 @@ export const NavBarServices = ({ links }) => {
         </div>
       </nav>
       <div className="hidden md:flex justify-center py-2 px-2 md:px-0">
-        <div className="container md:flex justify-between px-8 lg:px-28">
+        <div className="w-full xl:container md:flex justify-between px-8 lg:px-12 xl:px-28">
           <Link href="/" passHref>
             <div className="flex items-center cursor-pointer">
               <Image

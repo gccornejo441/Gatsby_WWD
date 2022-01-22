@@ -29,7 +29,7 @@ export const Hero = () => {
   });
 
   return (
-    <div className="w-full container mx-auto justify-center px-22 md:px-12 lg:px-32 relative z-0">
+    <div className="w-full xl:container mx-auto justify-center px-22 md:px-12 lg:px-12 xl:px-32 relative z-0">
       <div className="flex flex-col md:flex-row md:justify-between">
         <div
           ref={scrollRef1}
