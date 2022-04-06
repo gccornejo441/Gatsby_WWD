@@ -4,10 +4,20 @@ import Head from "next/head";
 import Jobbox from "../../public/images/jobbme.png";
 import HomeKeeper from "../../public/images/HomeKeeper-Face.png"
 import kleanWindows from "../../public/images/klean-windows.png";
+import SIM from "../../public/images/Spiritual-Intervention-Ministries.webp"
 
 const products = [
   {
     id: 1,
+    name: "Spiritual Intervention Ministries",
+    href: "https://spiritualinterventionministries.org/",
+    imageSrc: SIM,
+    imageAlt: "Spiritual Intervention Ministries Home Page",
+    description: "Spiritual Intervention Ministries’ mission is to bring the message of Christ both to our neighbors and abroad through social, emotional, and spiritual support.",
+    target: "_blank",
+  },
+  {
+    id: 2,
     name: "Jobbox",
     href: "https://www.jobbox.me/",
     imageSrc: Jobbox,
@@ -16,22 +26,22 @@ const products = [
     target: "_blank",
   },
   {
-    id: 2,
-    name: "HomeKeeper",
+    id: 3,
+    name: "HomeKeeper (Model)",
     href: "https://home-keeper.vercel.app/",
     imageSrc: HomeKeeper,
     imageAlt: "HomeKeeper Home Page",
     description: "Achieve the American Dream Of Homeownership.",
     target: "_blank",
   },
-  // {
-  //   id: 3,
-  //   name: "Klean Windows",
-  //   href: "#",
-  //   imageSrc: kleanWindows,
-  //   imageAlt: "Klean Windows Home Page",
-  //   description: "We'll clean your windows.",
-  // },
+  {
+    id: 4,
+    name: "Klean Windows (Model)",
+    href: "#",
+    imageSrc: kleanWindows,
+    imageAlt: "Klean Windows Home Page",
+    description: "We'll clean your windows.",
+  },
 ];
 
 const TITLE: string = "WebWorks Dreams' best created websites | WebWorks Dreams";
