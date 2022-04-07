@@ -5,8 +5,13 @@ import Image from "next/image";
 import SEOImage from "../../public/images/SEO.svg";
 import WebDevelopment from "../../public/images/Web-Development.svg";
 import Frameworks from "../../public/images/Frameworks.svg";
+import GabeHeadShot from "../../public/images/Gabriel-headshot.jpg";
 
 export const Hero = () => {
+  //Author's name
+  const authorName = "Gabriel Cornejo"
+  const jobRole = "Website Designer"
+
   const [scrollY, setScrollTop] = React.useState(0);
 
   const position = () => {
@@ -41,37 +46,37 @@ export const Hero = () => {
                 Welcome
               </span>
             </div>
-            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-700 flex flex-col">
+            <div className="text-5xl md:text-5xl lg:text-7xl font-bold text-gray-700 flex flex-col">
               <h1 className="flex flex-col">
                 <span className="pb-5">You dream it,</span>
                 <span className="pb-5">we build it.</span>
               </h1>
             </div>
-            <div className="text-slate-500 font-semibold mt-2 leading-loose text-sm lg:text-base">
+            <div className="text-slate-500 font-light mt-2 leading-loose text-lg lg:text-xl">
               The right website is waiting for you, and we are here to make it
               happen.
             </div>
           </div>
           <div className="flex flex-col md:flex-row pb-10 md:pb-0">
             <Link href="/services/pricing">
-              <a className="text-white bg-gray-700 font-semibold hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
+              <a className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
                 Get Started
               </a>
             </Link>
             <Link href="/services/web-services">
-              <a className="text-white bg-gray-700 font-semibold hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
+              <a className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
                 Web Services
               </a>
             </Link>
           </div>
         </div>
         <div className="px-10 md:px-0 flex justify-center">
-          <Image 
-          src={headerBlob} 
-          alt="Web Design Creators" 
-          height={650} 
-          width={500} 
-          quality={85}
+          <Image
+            src={headerBlob}
+            alt="Web Design Creators"
+            height={650}
+            width={500}
+            quality={85}
           />
         </div>
       </div>
@@ -83,72 +88,114 @@ export const Hero = () => {
                 Services
               </span>
             </div>
-            <div className="text-center text-3xl md:text-xl lg:text-3xl font-bold text-gray-800">
-              <span>What We Offer</span>
+            <div className="text-center text-lg md:text-xl lg:text-base font-semibold text-[#5cbdb9] my-8">
+              <span className="bg-[#5cbdba33] px-3 py-2 rounded-full">What We Offer</span>
             </div>
-            <div className="text-center w-72 md:w-96 mx-auto">
-              <span className="text-slate-500 font-semibold text-sm lg:text-base">
-                If you&apos;re in the market for modern solutions, WebWorks
-                Dreams offers the means to empower newcomers to explore the
-                newest and innovative software capabilities.
-              </span>
+            <div className="text-center flex justify-center">
+              <div className="text-slate-900 font-bold text-xl lg:text-2xl lg:max-w-4xl px-4">
+                <p>"If you&apos;re in the market for modern solutions, WebWorks
+                  Dreams offers the means to empower nonprofits to explore the
+                  newest and innovative software capabilities."</p>
+              </div>
+            </div>
+            <div>
+              <div className="text-center my-8">
+                <Image
+                  className="rounded-full"
+                  alt="Web Designer Headshot"
+                  src={GabeHeadShot}
+                  height={100}
+                  width={100}
+                />
+                <span className="block font-semibold">{authorName}</span>
+                <span className="block">{jobRole}</span>
+              </div>
             </div>
             <div className="my-28">
-              <div className="flex justify-between flex-col lg:flex-row">
-                <div className="flex flex-col pb-12 lg:pb-0">
+              <div className="flex flex-col mx-4">
+                {/* SEO SVG */}
+                <div className="p-10 md:p-0 grid grid-cols-1 md:grid-cols-2 md:gap-[5rem] pb-12 lg:pb-0">
                   <Image
                     alt="Search Engine Optimization"
-                    height={200}
-                    width={200}
+                    height={400}
+                    width={400}
+                    layout="responsive"
                     src={SEOImage}
+                    className="md:slidein"
                   />
-                  <div className="text-center text-lg md:text-xl lg:text-xl font-bold text-gray-800 py-4">
-                    <span>SEARCH ENGINE OPTIMIZATION</span>
-                  </div>
-                  <div className="text-center px-10 lg:px-8 lg:max-w-prose">
-                    <span className="text-slate-500 font-semibold text-sm lg:text-base">
-                      Our websites are tailored to your needs and your user
-                      demands, so we have cultivated our process to target
-                      customer satisfaction.
-                    </span>
+                  <div className="flex flex-col self-center">
+                    <div className="text-center md:text-left text-lg md:text-xl lg:text-5xl font-bold text-gray-800 py-4">
+                      <span>SEARCH ENGINE OPTIMIZATION</span>
+                    </div>
+                    <div className="text-center md:text-left lg:max-w-prose">
+                      <span className="text-slate-700 font-light text-base lg:text-lg">
+                        Our websites are tailored to your needs and your user
+                        demands, so we have cultivated our process to target
+                        customer satisfaction.
+                      </span>
+                    </div>
+                    <Link href="/contact">
+                      <a className="mx-auto mt-4 md:mx-0 bg-greeny border-2 border-greeny hover:bg-transparent hover:text-greeny text-white w-max px-4 py-2 rounded-full  shadow-gray-400 shadow-lg">Learn More</a>
+                    </Link>
                   </div>
                 </div>
-                <div className="flex flex-col py-12 lg:py-0">
-                  <Image
-                    alt="Web Developement"
-                    height={200}
-                    width={200}
-                    src={WebDevelopment}
-                  />
-                  <div className="text-center text-lg md:text-xl lg:text-xl font-bold text-gray-800 py-4">
-                    <span>WEBSITE DEVELOPMENT</span>
+                {/* SEO SVG */}
+                {/* wEBDEV SVG */}
+                <div className="p-10 md:p-0 flex flex-col md:flex-row-reverse pb-12 lg:pb-0">
+                  <div className="w-full md:w-1/2">
+                    <Image
+                      alt="Web Developement"
+                      height={400}
+                      width={400}
+                      layout="responsive"
+                      src={WebDevelopment}
+                      className="md:slidein-right"
+                    />
                   </div>
-                  <div className="text-center px-10 md:px-5 lg:px-8 lg:max-w-prose">
-                    <span className="text-slate-500 font-semibold text-sm lg:text-base">
-                      With little worry about speed and website responsiveness,
-                      your customers will truly be receiving a quality
-                      experience.
-                    </span>
+                  <div className="flex flex-col self-center text-left md:pl-[4rem] md:w-1/2">
+                    <div className="text-center md:text-left text-lg md:text-xl lg:text-5xl font-bold text-gray-800 py-4">
+                      <span>WEBSITE DEVELOPMENT</span>
+                    </div>
+                    <div className="text-center md:text-left lg:max-w-prose">
+                      <span className="text-slate-700 font-light text-base lg:text-lg">
+                        With little worry about speed and website responsiveness,
+                        your customers will truly be receiving a quality
+                        experience.
+                      </span>
+                    </div>
+                    <Link href="/contact">
+                      <a className="mx-auto mt-4 md:mx-0 bg-greeny border-2 border-greeny hover:bg-transparent hover:text-greeny text-white w-max px-4 py-2 rounded-full  shadow-gray-400 shadow-lg">Learn More</a>
+                    </Link>
                   </div>
                 </div>
-                <div className="flex flex-col pt-12 lg:py-0">
+                {/* wEBDEV SVG */}
+                {/* Frameworks SVG */}
+                <div className="p-10 md:p-0 grid grid-cols-1 md:grid-cols-2 md:gap-[5rem] pb-12 lg:pb-0">
                   <Image
                     alt="Frameworks"
-                    height={200}
-                    width={200}
                     src={Frameworks}
+                    height={400}
+                    width={550}
+                  layout="responsive"
+                    className="md:slidein"
                   />
-                  <div className="text-center text-lg md:text-xl lg:text-xl font-bold text-gray-800 py-4">
-                    <span>MODERN WEBSITE FRAMEWORKS</span>
-                  </div>
-                  <div className="text-center px-10 lg:px-8 lg:max-w-prose">
-                    <span className="text-slate-500 font-semibold text-sm lg:text-base">
-                      Creating modern websites has never been easier. With the
-                      power of CSS framework, we are at liberty to compose
-                      dynamically responsive websites.
-                    </span>
+                  <div className="flex flex-col self-center">
+                    <div className="text-center md:text-left text-lg md:text-xl lg:text-5xl font-bold text-gray-800 py-4">
+                      <span>MODERN WEBSITE FRAMEWORKS</span>
+                    </div>
+                    <div className="text-center md:text-left lg:max-w-prose">
+                      <span className="text-slate-700 font-light text-base lg:text-lg">
+                        Creating modern websites has never been easier. With the
+                        power of CSS framework, we are at liberty to compose
+                        dynamically responsive websites.
+                      </span>
+                    </div>
+                    <Link href="/contact">
+                      <a className="mx-auto mt-4 md:mx-0 bg-greeny border-2 border-greeny hover:bg-transparent hover:text-greeny text-white w-max px-4 py-2 rounded-full  shadow-gray-400 shadow-lg">Learn More</a>
+                    </Link>
                   </div>
                 </div>
+                {/* Frameworks SVG */}
               </div>
             </div>
           </div>

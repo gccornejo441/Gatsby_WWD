@@ -37,6 +37,7 @@ class Document extends NextDocument<Props> {
             href="https://fonts.googleapis.com/css2?family=Smooch&display=swap"
             rel="stylesheet"
           ></link>
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
         </Head>
         <body>
           <Main />

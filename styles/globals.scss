@@ -8,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -212,11 +212,36 @@ a {
 }
 
 
-// @media (min-width: 1168px) {
-//   .rightBlob {
-//   position: absolute;
-//   right: 0px;
-//   top: 1400px;
-//   z-index: 0;
-//   }
-// }
+.slidein {
+  animation-duration: 1.3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:0%;
+  }
+
+  to {
+    margin-left: 8%;
+  }
+}
+
+.slidein-right {
+  animation-duration: 1.3s;
+  animation-name: slidein-right;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein-right {
+  from {
+    margin-left:8%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
