@@ -6,6 +6,7 @@ import SEOImage from "../../public/images/SEO.svg";
 import WebDevelopment from "../../public/images/Web-Development.svg";
 import Frameworks from "../../public/images/Frameworks.svg";
 import GabeHeadShot from "../../public/images/Gabriel-headshot.jpg";
+import { About } from "./AboutUs";
 
 export const Hero = () => {
   //Author's name
@@ -82,12 +83,7 @@ export const Hero = () => {
       </div>
       <div className="flex flex-col mt-16">
         <div>
-          <div className="flex flex-col">
-            <div className="flex justify-center smooch-text">
-              <span className="text-greeny font-normal text-6xl md:text-7xl">
-                Services
-              </span>
-            </div>
+          <div className="flex flex-col md:mt-[6rem]">
             <div className="text-center text-lg md:text-xl lg:text-base font-semibold text-[#5cbdb9] my-8">
               <span className="bg-[#5cbdba33] px-3 py-2 rounded-full">What We Offer</span>
             </div>
@@ -111,6 +107,9 @@ export const Hero = () => {
                 <span className="block">{jobRole}</span>
               </div>
             </div>
+
+            <About />
+
             <div className="my-28">
               <div className="flex flex-col mx-4">
                 {/* SEO SVG */}

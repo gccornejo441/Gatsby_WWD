@@ -1,33 +1,34 @@
 import React from 'react'
 import Image from 'next/image'
+import ReactPlayer from 'react-player';
 
-import Man_Working  from '../../public/images/Man_Working.png';
+
+import Man_Working from '../../public/images/Man_Working.png';
 
 export const About = () => {
-    return (
-      <div className="w-full flex justify-center mb-5">
-        <div className="container flex flex-col justify-center md:flex-row md:justify-between px-8 lg:px-32 relative z-1">
-          <Image height={700} width={700} src={Man_Working} alt="Man Working" />
-          <div className="my-10 md:my-0 md:pl-10 md:flex flex-wrap content-center md:pb-16">
-            <div>
-              <div className="md:text-left text-center smooch-text">
-                <span className=" text-greeny font-normal text-6xl md:text-7xl">
-                  About Us
-                </span>
-              </div>
-              <div className="md:text-left text-center text-3xl md:text-2xl lg:text-2xl font-bold text-gray-800 py-5">
-                <span>What We Offer</span>
-              </div>
-              <div className="md:text-left text-center md:w-96 mx-auto">
-                <span className="text-slate-500 font-semibold text-sm lg:text-base">
-                  If you&apos;re in the market for modern solutions, WebWorks
-                  Dreams offers the means to empower newcomers to explore the
-                  newest and innovative software capabilities.
-                </span>
-              </div>
-            </div>
+  return (
+    <div className="w-full flex justify-center my-[3rem] md:my-[10rem]">
+      <div className="mx-5 md:mx-0 first:container grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="md:text-left">
+          <h3 className="text-center md:text-left text-lg md:text-xl lg:text-5xl font-bold text-gray-800 py-4">
+            Professional nonprofit websites. 
+          </h3>
+          <p className="text-center md:text-left text-slate-700  font-light text-base lg:text-lg">
+            The right website makes all the difference. Start from dreaming your dream website to interacting with your powerful website.
+          </p>
+        </div>
+        <div>
+          <div className="pt-[56.25%] relative">
+            <ReactPlayer
+              className="absolute top-0 left-0"
+              width='100%'
+              height='100%'
+              url="https://youtu.be/GQWb7KgYkW8" />
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 }
+
+//          <Image height={700} width={700} src={Man_Working} alt="Man Working" />

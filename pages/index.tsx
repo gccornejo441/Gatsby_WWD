@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Hero } from "../components/panels/Hero";
-import { About } from "../components/panels/AboutUs";
 import { Shapes } from "../components/shapes/Shapes";
 import Head from "next/head";
 
@@ -55,7 +54,6 @@ const Home: React.FC<Props> = () => {
       <main className="flex flex-col bg-gradient-to-t from-gray-50 to-white">
         <Shapes />
         <Hero />
-        <About />
       </main>
     </>
   );
