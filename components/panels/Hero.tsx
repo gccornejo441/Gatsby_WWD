@@ -93,9 +93,9 @@ export const Hero = () => {
             </div>
             <div className="text-center flex justify-center">
               <div className="text-slate-900 font-bold text-xl lg:text-2xl lg:max-w-4xl px-4">
-                <p>"If you&apos;re in the market for modern solutions, WebWorks
+                <p>&quot;If you&apos;re in the market for modern solutions, WebWorks
                   Dreams offers the means to empower nonprofits to explore the
-                  newest and innovative software capabilities."</p>
+                  newest and innovative software capabilities.&quot;</p>
               </div>
             </div>
             <div>
