@@ -120,10 +120,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
               href="https://www.webworksdreams.com/services/pricing"
             />
           )}
+          <GTag/>
+          <FacebookPixel/>
         </Head>
         <Component {...pageProps} />
-        <GTag/>
-        <FacebookPixel/>
       </ServicesLayout>
     );
   }
@@ -133,10 +133,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <Layout links={Links} title="WebWorks Dreams">
         <Head>
           <link rel="canonical" href={canonicalURL} />
+          <GTag />
+          <FacebookPixel />
         </Head>
         <Component {...pageProps} />
-        <GTag />
-        <FacebookPixel />
       </Layout>
     </>
   );
