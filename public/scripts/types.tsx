@@ -8,6 +8,7 @@ export type FormValues = {
   city: string;
   zip: string;
   phone: string;
+  product: string;
 };
 
 export type MessageValues = {

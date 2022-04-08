@@ -20,6 +20,7 @@ const sales = async (req: NextApiRequest, res: NextApiResponse) => {
       city,
       zip,
       phone,
+      product,
     } = req.body;
 
     let entry = {
@@ -32,6 +33,7 @@ const sales = async (req: NextApiRequest, res: NextApiResponse) => {
       property_type: property_type,
       city: city,
       zip: zip,
+      product: product,
     };
 
     try {

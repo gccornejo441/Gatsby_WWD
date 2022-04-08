@@ -257,6 +257,7 @@ const TITLE: string = `${pageTitle!} | WebWorks Dreams`;
                 <div className="rounded-md bg-white border border-gray-200 h-full">
                   <div className="uppercase text-3xl text-darkestGreeny font-bold p-5">
                     <span>{products}</span>
+                    <input className="hidden" {...register("product")} defaultValue={products} />
                   </div>
                   <hr />
                   <div className="px-5 pt-5 font-medium text-lg text-gray-800 mb-5 flex justify-between">
