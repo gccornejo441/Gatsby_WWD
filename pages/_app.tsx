@@ -10,15 +10,33 @@ import Script from "next/script";
 
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { pageview, FB_PIXEL_ID } from '../lib/fpixel'
+
+export const FB_PIXEL_ID = process.env.FACEBOOK_PIXEL_ID
+
+
+declare global {
+  interface Window {
+    fbq: any;
+  }
+}
+
+export const pageview = () => {
+  window.fbq('track', 'PageView')
+}
+
+// https://developers.facebook.com/docs/facebook-pixel/advanced/
+export const event = (name, options = {}) => {
+  window.fbq('track', name, options)
+}
 
 const handleRouteChange = () => {
   pageview()
 }
 
+
 const FacebookPixel = () => {
   const router = useRouter()
-
+  
   useEffect(() => {
     // the below will only fire on route changes (not initial load - that is handled in the script below)
     router.events.on('routeChangeComplete', handleRouteChange)
@@ -26,7 +44,7 @@ const FacebookPixel = () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
-
+  
   return (
     <>
       <Script id="facebook-pixel">
