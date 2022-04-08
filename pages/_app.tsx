@@ -11,7 +11,6 @@ import Script from "next/script";
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
-
 declare global {
   interface Window {
     fbq: any;
@@ -60,7 +59,7 @@ const FacebookPixel = () => {
       `}
       </Script>
       <noscript><img height="1" width="1" style={{display:"none"}}
-        src='https://www.facebook.com/tr?id=401786405074161&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=401786405074161&ev=PageView&noscript=1"
       /></noscript>
     </>
   )
