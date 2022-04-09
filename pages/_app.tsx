@@ -67,8 +67,8 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '350579153769581');
-              fbq('track', 'PageView');
+               fbq('init', '373709194630320');
+               fbq('track', 'PageView');
           `,
             }}
           />
@@ -88,7 +88,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       </>
     );
   }
-  
+
   return (
     <>
       <Layout links={Links} title="WebWorks Dreams">
@@ -107,7 +107,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '350579153769581');
+               fbq('init', '373709194630320');
               fbq('track', 'PageView');
           `,
           }}
