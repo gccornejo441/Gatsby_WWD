@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', "306569451608490");
+            fbq('init', "350579153769581");
           `,
             }}
           />
@@ -106,7 +106,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', "306569451608490");
+            fbq('init', "350579153769581");
           `,
           }}
         />
