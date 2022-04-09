@@ -44,18 +44,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     }
 
     setLoading(true);
-    import('react-facebook-pixel')
-      .then((x) => x.default)
-      .then((ReactPixel) => {
-        ReactPixel.init('373709194630320') // facebookPixelId
-        ReactPixel.pageView()
-
-        router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView()
-        })
-      })
-
-  }, [router.pathname, router.events]);
+  }, [router.pathname]);
   const site = "https://www.webworksdreams.com";
   const canonicalURL = site + router.pathname;
 
@@ -64,6 +53,25 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <>
       <ServicesLayout links={Links} title={title}>
         <GTag />
+          {/* Global Site Code Pixel - Facebook Pixel */}
+          <Script
+            id="facebook-pixel"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+               fbq('init', '373709194630320');
+               fbq('track', 'PageView');
+          `,
+            }}
+          />
         <Head>
           {canonicalURL !==
             "https://www.webworksdreams.com/services/[products]" ? (
@@ -85,6 +93,25 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     <>
       <Layout links={Links} title="WebWorks Dreams">
         <GTag />
+        {/* Global Site Code Pixel - Facebook Pixel */}
+        <Script
+          id="facebook-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+               fbq('init', '373709194630320');
+              fbq('track', 'PageView');
+          `,
+          }}
+        />
         <Head>
           <link rel="canonical" href={canonicalURL} />
         </Head>

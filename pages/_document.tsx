@@ -40,6 +40,15 @@ class Document extends NextDocument<Props> {
             rel="stylesheet"
           ></link>
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+          <noscript>
+            <Image
+              height="1"
+              width="1"
+              className="hidden"
+              alt="facebook pixel"
+              src={`https://www.facebook.com/tr?id=373709194630320&ev=PageView&noscript=1`}
+            />
+          </noscript>
         </Head>
         <body>
           <Main />
