@@ -8,11 +8,6 @@ import Head from "next/head";
 import Links from "../public/scripts/Links.json";
 import Script from "next/script";
 
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
-import FacebookPixel from "../public/scripts/fbpixel"
-import * as fbq from '../lib/fpixel'
-
 const GTag = () => {
   return (
     <>
@@ -72,7 +67,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', "401786405074161");
+            fbq('init', "306569451608490");
           `,
             }}
           />
@@ -111,7 +106,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', "401786405074161");
+            fbq('init', "306569451608490");
           `,
           }}
         />

@@ -46,7 +46,7 @@ class Document extends NextDocument<Props> {
               width="1"
               className="hidden"
               alt="facebook pixel"
-              src={`https://www.facebook.com/tr?id=401786405074161&ev=PageView&noscript=1`}
+              src={`https://www.facebook.com/tr?id=306569451608490&ev=PageView&noscript=1`}
             />
           </noscript>
         </Head>
