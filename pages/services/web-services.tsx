@@ -103,7 +103,10 @@ const webServices = () => {
               </div>
             </div>
             <div className="p-10 md:pl-10">
-              <Image src={DesignImage} alt="Design Team" />
+              <Image
+                src={DesignImage}
+                alt="Design Team"
+              />
             </div>
           </div>
         </div>

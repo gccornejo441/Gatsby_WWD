@@ -3,7 +3,9 @@ import { Hero } from "../components/panels/Hero";
 import { Shapes } from "../components/shapes/Shapes";
 import Head from "next/head";
 
-interface Props {}
+
+interface Props {
+}
 
 const Home: React.FC<Props> = () => {
   return (

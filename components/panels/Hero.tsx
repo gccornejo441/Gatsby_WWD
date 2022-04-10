@@ -6,6 +6,7 @@ import SEOImage from "../../public/images/SEO.svg";
 import WebDevelopment from "../../public/images/Web-Development.svg";
 import Frameworks from "../../public/images/Frameworks.svg";
 import GabeHeadShot from "../../public/images/Gabriel-headshot.jpg";
+import WebFrameworks from "../../public/images/webframeworks.svg";
 import { About } from "./AboutUs";
 
 export const Hero = () => {
@@ -112,10 +113,10 @@ export const Hero = () => {
 
             <div className="my-28">
               <div className="flex flex-col mx-4">
-                {/* SEO SVG */}
+                {/* Frameworks SVG */}
                 <div className="p-10 md:p-0 grid grid-cols-1 md:grid-cols-2 md:gap-[5rem] pb-12 lg:pb-0">
                   <Image
-                    alt="Search Engine Optimization"
+                    alt="Web Frameworks"
                     height={400}
                     width={400}
                     layout="responsive"
@@ -124,21 +125,30 @@ export const Hero = () => {
                   />
                   <div className="flex flex-col self-center">
                     <div className="text-center md:text-left text-lg md:text-xl lg:text-5xl font-bold text-gray-800 py-4">
-                      <span>SEARCH ENGINE OPTIMIZATION</span>
+                      <span>MODERN WEBSITE FRAMEWORKS</span>
                     </div>
                     <div className="text-center md:text-left lg:max-w-prose">
                       <span className="text-slate-700 font-light text-base lg:text-lg">
-                        Our websites are tailored to your needs and your user
-                        demands, so we have cultivated our process to target
-                        customer satisfaction.
+                        Creating modern websites has never been easier. With the
+                        power of CSS framework, we are at liberty to compose
+                        dynamically responsive websites.
                       </span>
                     </div>
                     <Link href="/contact">
                       <a className="mx-auto mt-4 md:mx-0 bg-greeny border-2 border-greeny hover:bg-transparent hover:text-greeny text-white w-max px-4 py-2 rounded-full  shadow-gray-400 shadow-lg">Learn More</a>
                     </Link>
+                    <div className="mt-5">
+                      <Image
+                        alt="Web Fr"
+                        height={100}
+                        width={584}
+                        layout="responsive"
+                        src={WebFrameworks}
+                      />
+                    </div>
                   </div>
                 </div>
-                {/* SEO SVG */}
+                {/* Frameworks SVG */}
                 {/* wEBDEV SVG */}
                 <div className="p-10 md:p-0 flex flex-col md:flex-row-reverse pb-12 lg:pb-0">
                   <div className="w-full md:w-1/2">
@@ -168,25 +178,25 @@ export const Hero = () => {
                   </div>
                 </div>
                 {/* wEBDEV SVG */}
-                {/* Frameworks SVG */}
+                {/* SEO SVG */}
                 <div className="p-10 md:p-0 grid grid-cols-1 md:grid-cols-2 md:gap-[5rem] pb-12 lg:pb-0">
                   <Image
-                    alt="Frameworks"
+                    alt="Search Engine Optimization"
                     src={Frameworks}
                     height={400}
                     width={550}
-                  layout="responsive"
+                    layout="responsive"
                     className="md:slidein"
                   />
                   <div className="flex flex-col self-center">
                     <div className="text-center md:text-left text-lg md:text-xl lg:text-5xl font-bold text-gray-800 py-4">
-                      <span>MODERN WEBSITE FRAMEWORKS</span>
+                      <span>SEARCH ENGINE OPTIMIZATION</span>
                     </div>
                     <div className="text-center md:text-left lg:max-w-prose">
                       <span className="text-slate-700 font-light text-base lg:text-lg">
-                        Creating modern websites has never been easier. With the
-                        power of CSS framework, we are at liberty to compose
-                        dynamically responsive websites.
+                        Our websites are tailored to your needs and your user
+                        demands, so we have cultivated our process to target
+                        customer satisfaction.
                       </span>
                     </div>
                     <Link href="/contact">
@@ -194,7 +204,7 @@ export const Hero = () => {
                     </Link>
                   </div>
                 </div>
-                {/* Frameworks SVG */}
+                {/* SEO SVG */}
               </div>
             </div>
           </div>

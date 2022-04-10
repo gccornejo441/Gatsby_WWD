@@ -1,97 +1,102 @@
 {
-    "navbar": {
-      "links": [
-        {
-          "_id": 1,
-          "name": "Home",
-          "href": "/"
-        },
-        {
-          "_id": 2,
-          "name": "Services",
-          "href": "/services/web-services"
-        },
-        {
-          "_id": 3,
-          "name": "Get A Quote",
-          "href": "/contact"
-        }
-      ],
-      "socials": [
-        {
-          "_id": 1,
-          "href": "https://www.facebook.com/WebWorksDreams",
-          "target": "_blank",
-          "aria_label": "facebook",
-          "rel": "noreferrer",
-          "icon": "<FaFacebookF className='text-white text-lg mr-1' />"
-        },
-        {
-          "_id": 2,
-          "href": "https://twitter.com/WebWorksDreams",
-          "target": "_blank",
-          "aria_label": "twitter",
-          "rel": "noreferrer",
-          "icon": "<FaTwitter className='text-white text-lg mr-1' />"
-        },
-        {
-          "_id": 3,
-          "href": "https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A",
-          "target": "_blank",
-          "aria_label": "youtube",
-          "rel": "noreferrer",
-          "icon": "<FaYoutube className='text-white text-lg mr-1' />"
-        }
-      ]
-    },
-    "navbar_services": {
-        "links": [
-            {
-                "_id": 1,
-                "name": "Home",
-                "href": "/"
-            },
-            {
-                "_id": 2,
-                "name": "Pricing",
-                "href": "/services/pricing"
-            },
-            {
-                "_id": 3,
-                "name": "Portfolio",
-                "href": "/services/portfolio"
-            },
-            {
-                "_id": 4,
-                "name": "Get A Quote",
-                "href": "/contact"
-            }
-        ],
-        "socials": [
-            {
-                "_id": 1,
-                "href": "https://www.facebook.com/WebWorksDreams",
-                "target": "_blank",
-                "aria_label": "facebook",
-                "rel": "noreferrer",
-                "icon": "FaFacebookF"
-            },
-            {
-                "_id": 2,
-                "href": "https://twitter.com/WebWorksDreams",
-                "target": "_blank",
-                "aria_label": "twitter",
-                "rel": "noreferrer",
-                "icon": "FaTwitter"
-            },
-            {
-                "_id": 3,
-                "href": "https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A",
-                "target": "_blank",
-                "aria_label": "youtube",
-                "rel": "noreferrer",
-                "icon": "FaYoutube"
-            }
-        ]
-    }
+  "navbar": {
+    "links": [
+      {
+        "_id": 1,
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "_id": 2,
+        "name": "Services",
+        "href": "/services/web-services"
+      },
+      {
+        "_id": 3,
+        "name": "Blog",
+        "href": "/blog"
+      },
+      {
+        "_id": 4,
+        "name": "Get A Quote",
+        "href": "/contact"
+      }
+    ],
+    "socials": [
+      {
+        "_id": 1,
+        "href": "https://www.facebook.com/WebWorksDreams",
+        "target": "_blank",
+        "aria_label": "facebook",
+        "rel": "noreferrer",
+        "icon": "<FaFacebookF className='text-white text-lg mr-1' />"
+      },
+      {
+        "_id": 2,
+        "href": "https://twitter.com/WebWorksDreams",
+        "target": "_blank",
+        "aria_label": "twitter",
+        "rel": "noreferrer",
+        "icon": "<FaTwitter className='text-white text-lg mr-1' />"
+      },
+      {
+        "_id": 3,
+        "href": "https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A",
+        "target": "_blank",
+        "aria_label": "youtube",
+        "rel": "noreferrer",
+        "icon": "<FaYoutube className='text-white text-lg mr-1' />"
+      }
+    ]
+  },
+  "navbar_services": {
+    "links": [
+      {
+        "_id": 1,
+        "name": "Home",
+        "href": "/"
+      },
+      {
+        "_id": 2,
+        "name": "Pricing",
+        "href": "/services/pricing"
+      },
+      {
+        "_id": 3,
+        "name": "Portfolio",
+        "href": "/services/portfolio"
+      },
+      {
+        "_id": 4,
+        "name": "Get A Quote",
+        "href": "/contact"
+      }
+    ],
+    "socials": [
+      {
+        "_id": 1,
+        "href": "https://www.facebook.com/WebWorksDreams",
+        "target": "_blank",
+        "aria_label": "facebook",
+        "rel": "noreferrer",
+        "icon": "FaFacebookF"
+      },
+      {
+        "_id": 2,
+        "href": "https://twitter.com/WebWorksDreams",
+        "target": "_blank",
+        "aria_label": "twitter",
+        "rel": "noreferrer",
+        "icon": "FaTwitter"
+      },
+      {
+        "_id": 3,
+        "href": "https://www.youtube.com/channel/UC3RM0Ic1ERezJNHYNwXwa2A",
+        "target": "_blank",
+        "aria_label": "youtube",
+        "rel": "noreferrer",
+        "icon": "FaYoutube"
+      }
+    ]
+  }
 }

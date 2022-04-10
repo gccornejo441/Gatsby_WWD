@@ -10,6 +10,7 @@ import Balloons from "../../public/images/Balloons.svg";
 
 const TITLE: string = "Website Design Price | WebWorks Dreams";
 
+
 const Pricing = () => {
   let headerInfo = tableInfo[0];
   let bodyInfo = tableInfo[1];

@@ -1,7 +1,6 @@
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
 import Image from "next/image";
 import React from "react";
-import { FB_PIXEL_ID } from '../lib/fpixel'
 
 type Props = {};
 

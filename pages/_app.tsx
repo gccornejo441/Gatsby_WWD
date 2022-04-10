@@ -7,6 +7,16 @@ import { ServicesLayout } from "../components/panels/ServicesLayout";
 import Head from "next/head";
 import Links from "../public/scripts/Links.json";
 import Script from "next/script";
+import NProgress from 'nprogress';
+import Router from 'next/router'
+
+Router.events.on('routeChangeStart', (url) => {
+  console.log(`Loading: ${url}`)
+  NProgress.start()
+})
+Router.events.on('routeChangeComplete', () => NProgress.done())
+Router.events.on('routeChangeError', () => NProgress.done())
+
 
 const GTag = () => {
   return (
