@@ -39,6 +39,7 @@ Also, I'd like to hear what you've learned this far into your web-developer jour
 
 TL;DR: Know the foundations of your technology, gain a different perspective on things by reading more blogs, and finally, burnout is real, so be cognizant of your well-being.
 
+
 <https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/burnout/art-20046642>
 
 This article was originally posted on [Medium.com](https://medium.com/@gcornejo441/what-i-learned-after-two-years-of-self-taught-web-development-926d09df27ec)

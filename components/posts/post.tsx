@@ -18,8 +18,8 @@ export default function Post({ post }) {
                     </div>
                     <div className="">
                         <div className='mb-3 py-1 text-sm md:text-lg'>{post.frontmatter.date}</div>
-                        <h3 className="text-2xl lg:text-4xl xl:text-6xl font-bold md:font-semibold py-1">{post.frontmatter.title}</h3>
-                        <p className="py-1 text-gray-600 font-[500] text-sm md:text-lg">{post.frontmatter.excerpt}</p>
+                        <h3 className="text-2xl md:text-xl xl:text-3xl font-bold md:font-semibold py-1">{post.frontmatter.title}</h3>
+                        <p className="py-1 text-gray-600 font-[500] text-sm md:text-sm lg:text-lg">{post.frontmatter.excerpt}</p>
                     </div>
                 </a>
             </Link>

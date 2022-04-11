@@ -69,7 +69,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
                 <title>{TITLE}</title>
             </Head>
             <main className="flex justify-center bg-gradient-to-t from-gray-50 to-white text-gray-800">
-                <div className="container">
+                <div className="container mb-28">
                     <div className="flex px-4 md:px-16 md:py-16">
                         <div className="md:w-1/2 mt-10">
                             <h1 className="font-bold text-5xl lg:text-7xl lg:leading-[5rem]">
