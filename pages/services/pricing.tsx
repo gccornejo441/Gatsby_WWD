@@ -127,9 +127,9 @@ const Pricing = () => {
                             href={`/services/starter?cost=${headerInfo.price?.price1}`}
                             passHref
                           >
-                            <div className="cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
+                            <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Starter
-                            </div>
+                            </a>
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
@@ -137,9 +137,9 @@ const Pricing = () => {
                             href={`/services/small%20business?cost=${headerInfo.price?.price2}`}
                             passHref
                           >
-                            <div className="cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
+                            <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Small Business
-                            </div>
+                            </a>
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
@@ -147,9 +147,9 @@ const Pricing = () => {
                             href={`/services/executive?cost=${headerInfo.price?.price3}`}
                             passHref
                           >
-                            <div className="cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
+                            <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
                               Executive
-                            </div>
+                            </a>
                           </Link>
                         </td>
                       </tr>
