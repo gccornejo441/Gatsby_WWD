@@ -1,9 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
 import ReactPlayer from 'react-player';
-
-
-import Man_Working from '../../public/images/Man_Working.png';
 
 export const About = () => {
   return (
@@ -30,5 +26,3 @@ export const About = () => {
     </div>
   );
 }
-
-//          <Image height={700} width={700} src={Man_Working} alt="Man Working" />
