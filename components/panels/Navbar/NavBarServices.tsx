@@ -12,9 +12,9 @@ export const NavBarServices = ({ links }) => {
     <>
       <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
         <div className="w-full xl:container flex justify-between px-8 lg:px-12 xl:px-28">
-          <a className="flex" href="mailto:webworksdreams@gmail.com">
+          <a className="flex" href="mailto:gcornejo@webworksdreams.com">
             <MdEmail className="text-white text-lg mr-1" />
-            webworksdreams@gmail.com
+            gcornejo@webworksdreams.com
           </a>
           <div>
             <ul className="flex">
