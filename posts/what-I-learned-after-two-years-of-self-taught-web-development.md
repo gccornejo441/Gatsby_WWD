@@ -2,7 +2,7 @@
 title: 'What I learned after two years of self-taught web development'
 date: 'January 07, 2022'
 excerpt: 'Three important takeaways after two years of web dev.'
-cover_image: '/images/posts/img7.jpg'
+cover_image: '/images/posts/img1.jpg'
 ---
 
 ## The Beginning

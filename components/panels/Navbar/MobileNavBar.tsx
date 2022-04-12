@@ -102,6 +102,14 @@ export const MobileNavBar = ({ links }) => {
                 <Menu.Item>
                   <MyLink
                     className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
+                    href="/blog"
+                  >
+                    Blog
+                  </MyLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <MyLink
+                    className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
                     href="/contact"
                   >
                     Get A Quote

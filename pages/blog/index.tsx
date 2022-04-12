@@ -107,7 +107,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
         </>
     );
 };
-{/* <div className='container grid grid-cols-3 gap-10 px-16'> */ }
+
 
 export async function getStaticProps() {
     // Get files from the posts dir

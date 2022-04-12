@@ -67,7 +67,8 @@ export default function PostPage({
           </Link>
       </div>
       <div className="text-left post-body-w self-center">
-        <h1 className='font-bold text-2xl md:text-5xl pt-10'>{title}</h1>
+        <h1 className='font-bold text-3xl md:text-5xl pt-10'>{title}</h1>
+          <h2 className="py-4 text-lg md:text-2xl font-semibold text-greeny">{excerpt}</h2>
         <div className='pb-10 pt-2'>Posted on {date}</div>
         <Image
           src={cover_image}
