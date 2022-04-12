@@ -20,8 +20,8 @@ export default function FeaturePost({ post }) {
                     </div>
                     <div className="md:w-[40%]">
                         <div className='mb-3 py-b text-sm md:text-lg'>{post.frontmatter.date}</div>
-                        <h3 className="text-2xl lg:text-4xl xl:text-6xl font-bold md:font-semibold py-1">{post.frontmatter.title}</h3>
-                        <p className="py-1 text-gray-700 text-sm md:text-lg font-[500]">{post.frontmatter.excerpt}</p>
+                        <h3 className="text-2xl lg:text-4xl xl:text-4xl font-bold md:font-bold py-1">{post.frontmatter.title}</h3>
+                        <p className="py-1 text-gray-700 text-sm md:text-base lg:text-lg font-[500]">{post.frontmatter.excerpt}</p>
                     </div>
                 </a>
             </Link>
