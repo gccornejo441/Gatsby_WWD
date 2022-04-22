@@ -1,12 +1,14 @@
-import { FaFacebookF, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaTwitter, FaPhoneAlt } from "react-icons/fa";
 
 const Logo = (props) => {
   if (props.name == "facebook") {
     return <FaFacebookF className="text-white text-lg mr-1" />;
   } else if (props.name == "twitter") {
     return <FaTwitter className="text-white text-lg mr-1" />;
-  } else {
+  } else if (props.name == "youtube") {
     return <FaYoutube className="text-white text-lg mr-1" />;
+  } else {
+    return <FaPhoneAlt className="text-white text-lg mr-1" />;
   }
 };
 

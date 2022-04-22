@@ -9,6 +9,8 @@ import Links from "../public/scripts/Links.json";
 import Script from "next/script";
 import NProgress from 'nprogress';
 import Router from 'next/router'
+import * as gtag from "../utils/gtag";
+
 
 Router.events.on('routeChangeStart', (url) => {
   console.log(`Loading: ${url}`)
@@ -17,26 +19,6 @@ Router.events.on('routeChangeStart', (url) => {
 Router.events.on('routeChangeComplete', () => NProgress.done())
 Router.events.on('routeChangeError', () => NProgress.done())
 
-
-const GTag = () => {
-  return (
-    <>
-      {/* Global site tag (gtag.js) - Google Analytics  */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-T80JQX1QYQ"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-T80JQX1QYQ');
-        `}
-      </Script>
-    </>
-  );
-};
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   const [loading, setLoading] = React.useState(false);
@@ -58,11 +40,20 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   const site = "https://www.webworksdreams.com";
   const canonicalURL = site + router.pathname;
 
+  React.useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   if (router.pathname.startsWith("/services/")) {
     return (
       <>
-      <ServicesLayout links={Links} title={title}>
-        <GTag />
+        <ServicesLayout links={Links} title={title}>
           {/* Global Site Code Pixel - Facebook Pixel */}
           <Script
             id="facebook-pixel"
@@ -82,19 +73,35 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           `,
             }}
           />
-        <Head>
-          {canonicalURL !==
-            "https://www.webworksdreams.com/services/[products]" ? (
-            <link rel="canonical" href={canonicalURL} />
-          ) : (
-            <link
-              rel="canonical"
-              href="https://www.webworksdreams.com/services/pricing"
-            />
-          )}
-        </Head>
-        <Component {...pageProps} />
-      </ServicesLayout>
+          <Script
+            strategy="afterInteractive"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-215990650-1"
+          />
+          <Script
+          id="google-analytics"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+             window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-215990650-1');
+          `,
+            }}
+          />
+          <Head>
+            {canonicalURL !==
+              "https://www.webworksdreams.com/services/[products]" ? (
+              <link rel="canonical" href={canonicalURL} />
+            ) : (
+              <link
+                rel="canonical"
+                href="https://www.webworksdreams.com/services/pricing"
+              />
+            )}
+          </Head>
+          <Component {...pageProps} />
+        </ServicesLayout>
       </>
     );
   }
@@ -102,8 +109,23 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
       <Layout links={Links} title="WebWorks Dreams">
-        <GTag />
         {/* Global Site Code Pixel - Facebook Pixel */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-215990650-1"
+          />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+             window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-215990650-1');
+          `,
+          }}
+        />
         <Script
           id="facebook-pixel"
           strategy="afterInteractive"
@@ -122,6 +144,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           `,
           }}
         />
+    
         <Head>
           <link rel="canonical" href={canonicalURL} />
         </Head>
