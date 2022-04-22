@@ -62,7 +62,7 @@ export const Hero = () => {
           <div className="flex flex-col md:flex-row pb-10 md:pb-0">
             <Link href="/services/pricing">
               <a className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
-                Get Started
+                Contact Us
               </a>
             </Link>
             <Link href="/services/web-services">
