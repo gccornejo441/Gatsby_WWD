@@ -10,7 +10,7 @@ import Image from "next/image";
 import Bubbles from '../../public/images/bubbles.svg'
 
 
-const TITLE: string = "Blog | WebWorks Dreams";
+const TITLE: string = "Blogs about design code that really are worth reading | WebWorks Dreams";
 
 interface Props {
     posts: {
@@ -26,7 +26,6 @@ const Blog: React.FC<Props> = ({ posts }) => {
         <>
             <Head>
                 <meta name="robots" content="all" />
-
                 {/* OG */}
                 <meta property="fb:app_id" content="254907099748012" />
                 <meta property="og:type" content="website" />
