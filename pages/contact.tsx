@@ -19,7 +19,7 @@ const schema = yup
   })
   .required();
 
-const TITLE: string = "Contact WebWorks Dreams | WebWorks Dreams";
+const TITLE: string = "WebWorks Dreams support staff is available to assist you | WebWorks Dreams";
 
 const Contact = () => {
     const router = useRouter();
@@ -67,11 +67,11 @@ const Contact = () => {
         <meta property="og:image:alt" content="A web developer hard at work" />
         <meta
           property="og:description"
-          content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+          content="Do you find yourself daydreaming about your ideal website? Do you want to make it happen? Or do you just need to refresh your current site? Please do not hesitate to contact us."
         />
         <meta
           name="description"
-          content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+          content="Do you find yourself daydreaming about your ideal website? Do you want to make it happen? Or do you just need to refresh your current site? Please do not hesitate to contact us."
         />
         <meta property="og:site_name" content="WebWorks Dreams" />
 
@@ -81,7 +81,7 @@ const Contact = () => {
         <meta name="twitter:title" content={TITLE} />
         <meta
           name="twitter:description"
-          content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+          content="Do you find yourself daydreaming about your ideal website? Do you want to make it happen? Or do you just need to refresh your current site? Please do not hesitate to contact us."
         />
         <meta
           name="twitter:image"

@@ -32,8 +32,8 @@ const Blog: React.FC<Props> = ({ posts }) => {
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.webworksdreams.com/" />
                 <meta
-                    property="og:title"
-                    content="Welcome to WebWorks Dreams where dreams come true | WebWorks Dreams"
+                property="og:title" 
+                content="Blogs about design code that really are worth reading | WebWorks Dreams" 
                 />
                 <meta
                     property="og:image"
@@ -42,11 +42,11 @@ const Blog: React.FC<Props> = ({ posts }) => {
                 <meta property="og:image:alt" content="A web developer hard at work" />
                 <meta
                     property="og:description"
-                    content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+                    content="Are you seeking for product stories that involve design and coding? Routinely, we publish key performance insights  on a regular basis that will benefit your websites."
                 />
                 <meta
                     name="description"
-                    content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+                    content="Are you seeking for product stories that involve design and coding? Routinely, we publish key performance insights  on a regular basis that will benefit your websites."
                 />
                 <meta property="og:site_name" content="WebWorks Dreams" />
 
@@ -59,7 +59,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
                 />
                 <meta
                     name="twitter:description"
-                    content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
+                    content="Are you seeking for product stories that involve design and coding? Routinely, we publish key performance insights  on a regular basis that will benefit your websites."
                 />
                 <meta
                     name="twitter:image"
@@ -73,7 +73,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
                     <div className="flex px-4 md:px-16 md:py-16">
                         <div className="md:w-1/2 mt-10">
                             <h1 className="font-bold text-5xl lg:text-7xl lg:leading-[5rem]">
-                                Lastest advice
+                                Latest advice
                                 on how to improve
                                 your webspace
                             </h1>
