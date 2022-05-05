@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdPhone } from "react-icons/md";
 import WebWorksDreamsLogo from "../../../public/images/WWD.2.svg";
 import { MobileNavBarServices } from "./MobileNavBarServices";
 import Logo from "../NavLogo";
@@ -12,10 +12,16 @@ export const NavBarServices = ({ links }) => {
     <>
       <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
         <div className="w-full xl:container flex justify-between px-8 lg:px-12 xl:px-28">
-          <a className="flex" href="mailto:gcornejo@webworksdreams.com">
-            <MdEmail className="text-white text-lg mr-1" />
-            gcornejo@webworksdreams.com
-          </a>
+          <div className="grid grid-cols-2 gap-3">
+            <a className="flex hover:underline" href="mailto:gcornejo@webworksdreams.com">
+              <MdEmail className="text-white text-lg mr-1" />
+              gcornejo@webworksdreams.com
+            </a>
+            <a className="flex hover:underline" href="tel:951-254-2009">
+              <MdPhone className="text-white text-lg mr-1" />
+              (951) 254 - 2009
+            </a>
+          </div>
           <div>
             <ul className="flex">
               {links.navbar.socials.map((item) => {
