@@ -1,5 +1,5 @@
 ---
-title: How WordPress Works To Optimize Your Business Ideas'
+title: 'How WordPress Works To Optimize Your Business Ideas'
 date: 'May 2, 2022'
 excerpt: '5 top reasons to use WordPress.'
 cover_image: '/images/posts/wordpress-figma.png'
