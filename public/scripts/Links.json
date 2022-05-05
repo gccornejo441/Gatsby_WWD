@@ -49,10 +49,10 @@
       },
       {
         "_id": 4,
-        "href": "tel:+1-951-254-2009",
+        "href": "https://www.linkedin.com/company/webworks-dreams",
         "aria_label": "phone",
         "rel": "noreferrer",
-        "icon": "<FaPhoneAlt className='text-white text-lg mr-1' />"
+        "icon": "<FaLinkedin className='text-white text-lg mr-1' />"
       }
     ]
   },
@@ -106,10 +106,10 @@
       },
       {
         "_id": 4,
-        "href": "tel:+1-951-254-2009",
-        "aria_label": "phone",
+        "href": "https://www.linkedin.com/company/webworks-dreams",
+        "aria_label": "linkedin",
         "rel": "noreferrer",
-        "icon": "FaPhoneAlt"
+        "icon": "FaLinkedin"
       }
     ]
   }

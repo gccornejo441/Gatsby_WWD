@@ -9,7 +9,6 @@ import {
   FaFigma,
   FaYoutube,
   FaLinkedin,
-  FaPhoneAlt,
 } from "react-icons/fa";
 
 export const Footer = () => {
@@ -106,7 +105,7 @@ export const Footer = () => {
               rel="noreferrer"
               className="flex px-2"
             >
-              <FaPhoneAlt className="w-4 h-5" />
+              <FaLinkedin className="w-4 h-5" />
             </a>
           </div>
           <ul className="flex flex-col md:flex-row p-0 m-0 text-gray-500 ">

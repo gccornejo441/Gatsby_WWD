@@ -1,4 +1,4 @@
-import { FaFacebookF, FaYoutube, FaTwitter, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Logo = (props) => {
   if (props.name == "facebook") {
@@ -8,7 +8,7 @@ const Logo = (props) => {
   } else if (props.name == "youtube") {
     return <FaYoutube className="text-white text-lg mr-1" />;
   } else {
-    return <FaPhoneAlt className="text-white text-lg mr-1" />;
+    return <FaLinkedin className="text-white text-lg mr-1" />;
   }
 };
 
