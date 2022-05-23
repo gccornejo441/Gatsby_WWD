@@ -1,6 +1,7 @@
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
 import Image from "next/image";
 import React from "react";
+import { FBMessenger } from "../utils/MessengerCustomerChat";
 
 type Props = {};
 
@@ -53,6 +54,7 @@ class Document extends NextDocument<Props> {
           <Main />
           <NextScript />
         </body>
+        <FBMessenger/>
       </Html>
     );
   }
