@@ -151,8 +151,8 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         </Head>
         <Component {...pageProps} />
         <MessengerCustomerChat
-          pageId={process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID}
-          appId={process.env.NEXT_PUBLIC_FACEBOOK_APP_ID}
+          pageId="101980465442553"
+          appId="254907099748012"
         />
       </Layout>
     </>
