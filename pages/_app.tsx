@@ -10,6 +10,7 @@ import Script from "next/script";
 import NProgress from 'nprogress';
 import Router from 'next/router'
 import * as gtag from "../utils/gtag";
+import { FBMessenger } from "../utils/MessengerCustomerChat";
 
 
 Router.events.on('routeChangeStart', (url) => {
@@ -149,6 +150,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           <link rel="canonical" href={canonicalURL} />
         </Head>
         <Component {...pageProps} />
+        <FBMessenger />
       </Layout>
     </>
   );
