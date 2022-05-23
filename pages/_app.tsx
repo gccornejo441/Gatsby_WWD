@@ -10,7 +10,7 @@ import Script from "next/script";
 import NProgress from 'nprogress';
 import Router from 'next/router'
 import * as gtag from "../utils/gtag";
-import { FBMessenger } from "../utils/MessengerCustomerChat";
+import MessengerCustomerChat from 'react-messenger-customer-chat'
 
 
 Router.events.on('routeChangeStart', (url) => {
@@ -150,7 +150,12 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           <link rel="canonical" href={canonicalURL} />
         </Head>
         <Component {...pageProps} />
-        <FBMessenger />
+        <MessengerCustomerChat
+          pageId={process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID}
+          appId={process.env.NEXT_PUBLIC_FACEBOOK_APP_ID}
+          version={"v13.0"}
+          xfbml={true}
+        />
       </Layout>
     </>
   );
