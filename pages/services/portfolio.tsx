@@ -5,10 +5,19 @@ import Jobbox from "../../public/images/jobbme.png";
 import HomeKeeper from "../../public/images/HomeKeeper-Face.png"
 import kleanWindows from "../../public/images/klean-windows.png";
 import SIM from "../../public/images/Spiritual-Intervention-Ministries.webp"
+import ESG from "../../public/images/ADVANCE-ESG-IMAGE-min.png"
 
 const products = [
   {
-    id: 1,
+    id: 5,
+    name: "Advance ESG",
+    href: "https://www.advanceesg.org/",
+    imageSrc: ESG,
+    imageAlt: "Advance ESG Landing Page Card",
+    description: "Advance ESG members encourage corporations to prioritize environmental and social impacts in their business strategic decisions.",
+  },
+  {
+    id: 4,
     name: "Spiritual Intervention Ministries",
     href: "https://spiritualinterventionministries.org/",
     imageSrc: SIM,
@@ -17,7 +26,7 @@ const products = [
     target: "_blank",
   },
   {
-    id: 2,
+    id: 3,
     name: "Jobbox",
     href: "https://www.jobbox.me/",
     imageSrc: Jobbox,
@@ -26,7 +35,7 @@ const products = [
     target: "_blank",
   },
   {
-    id: 3,
+    id: 2,
     name: "HomeKeeper (Model)",
     href: "https://home-keeper.vercel.app/",
     imageSrc: HomeKeeper,
@@ -35,13 +44,13 @@ const products = [
     target: "_blank",
   },
   {
-    id: 4,
+    id: 1,
     name: "Klean Windows (Model)",
     href: "#",
     imageSrc: kleanWindows,
     imageAlt: "Klean Windows Home Page",
     description: "We'll clean your windows.",
-  },
+  }
 ];
 
 const TITLE: string = "WebWorks Dreams' best created websites | WebWorks Dreams";
