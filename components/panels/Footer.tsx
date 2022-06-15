@@ -9,6 +9,7 @@ import {
   FaFigma,
   FaYoutube,
   FaLinkedin,
+  FaInstagramSquare,
 } from "react-icons/fa";
 
 export const Footer = () => {
@@ -100,12 +101,20 @@ export const Footer = () => {
               <FaYoutube className="w-5 h-5" />
             </a>
             <a
-              href="tel:+1-951-254-2009"
-              aria-label="phone"
+              href="https://www.linkedin.com/company/webworks-dreams"
+              aria-label="LinkedIn"
               rel="noreferrer"
               className="flex px-2"
             >
               <FaLinkedin className="w-4 h-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/webworks_dreams/"
+              aria-label="Instagram"
+              rel="noreferrer"
+              className="flex px-2"
+            >
+              <FaInstagramSquare className="w-4 h-5" />
             </a>
           </div>
           <ul className="flex flex-col md:flex-row p-0 m-0 text-gray-500 ">
