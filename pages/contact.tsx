@@ -83,6 +83,7 @@ const Contact = () => {
                     <a
                       href="https://calendly.com/webworksdreams/"
                       target="_blank"
+                      rel="noreferrer"
                       className="px-12 py-4 text-white bg-greeny hover:bg-darkGreeny rounded-md focus:bg-lightGreeny focus:outline-none text-1xl sm:text-2xl md:text-2xl cursor-pointer block"
                     >Schedule</a>
                   </div>
