@@ -1,13 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import Jobbox from "../../public/images/jobbme.png";
-import HomeKeeper from "../../public/images/HomeKeeper-Face.png"
-import kleanWindows from "../../public/images/klean-windows.png";
-import SIM from "../../public/images/Spiritual-Intervention-Ministries.webp"
-import ESG from "../../public/images/ADVANCE-ESG-IMAGE-min.png"
+import Jobbox from "../../public/images/portfolio/Jobbox-portfolio-cover.webp";
+import HomeKeeper from "../../public/images/portfolio/Homekeeper-portfolio.webp"
+import kleanWindows from "../../public/images/portfolio/Klean-wash.webp";
+import SIM from "../../public/images/portfolio/Spiritual-Intervention-Ministries.webp"
+import ESG from "../../public/images/portfolio/ADVANCE-ESG-IMAGE.webp"
+import LARJP from "../../public/images/portfolio/LARJP-WORKS.webp"
 
 const products = [
+  {
+    id: 5,
+    name: "Lakes Area Restorative Justice Project",
+    href: "https://www.larjp.org/",
+    imageSrc: LARJP,
+    imageAlt: "LARJP Landing Page Card",
+    description: "LARJP gets case referrals from the County Attorney’s office and 6 county Police Departments as well as the schools in Crow Wing County.",
+    target: "_blank",
+  },
   {
     id: 5,
     name: "Advance ESG",
@@ -15,6 +25,7 @@ const products = [
     imageSrc: ESG,
     imageAlt: "Advance ESG Landing Page Card",
     description: "Advance ESG members encourage corporations to prioritize environmental and social impacts in their business strategic decisions.",
+    target: "_blank",
   },
   {
     id: 4,
@@ -50,6 +61,7 @@ const products = [
     imageSrc: kleanWindows,
     imageAlt: "Klean Windows Home Page",
     description: "We'll clean your windows.",
+    target: "_blank",
   }
 ];
 
@@ -68,7 +80,7 @@ const Portfolio = () => {
         <meta property="og:title" content={TITLE} />
         <meta
           property="og:image"
-          content="https://www.webworksdreams.com/images/sharecard.jpg"
+          content="https://www.webworksdreams.com/images/portfolio/sharecard.jpg"
         />
         <meta property="og:image:alt" content="A web developer hard at work" />
         <meta
@@ -91,7 +103,7 @@ const Portfolio = () => {
         />
         <meta
           name="twitter:image"
-          content="https://www.webworksdreams.com/images/sharecard.jpg"
+          content="https://www.webworksdreams.com/images/portfolio/sharecard.jpg"
         />
         <meta name="twitter:image:alt" content="A web developer hard at work" />
         <title>{TITLE}</title>
