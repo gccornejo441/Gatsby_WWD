@@ -12,7 +12,7 @@ import { About } from "./AboutUs";
 export const Hero = () => {
   //Author's name
   const authorName = "Gabriel Cornejo"
-  const jobRole = "Website Designer"
+  const jobRole = "Full Stack Developer"
 
   const [scrollY, setScrollTop] = React.useState(0);
 
@@ -99,7 +99,7 @@ export const Hero = () => {
               <div className="text-center my-8">
                 <Image
                   className="rounded-full"
-                  alt="Web Designer Headshot"
+                  alt="Full Stack Developer Headshot"
                   src={GabeHeadShot}
                   height={100}
                   width={100}
