@@ -3,13 +3,16 @@ title: 'A Web Framework To Help You With Search Engine Optimization (SEO)'
 date: 'February 01, 2022'
 excerpt: 'How Next.js can help developers design more SEO friendly websites.'
 cover_image: '/images/posts/SSR.png'
+alt: 'A process flow of static generation and server-side rendering for SEO friendly websites.'
+image_title: 'Static generation and server-side rendering'
+image_description: 'Photo by Gabe Cornejo on Unspash'
 ---
 
 Next.js was initially released sometime back in 2016, since, then Next.js has been a top-running front-end framework ahead of others. What sets Next.js apart from other software products is its seamlessly easy-to-use core concepts, which I believe puts the "next" in Next.js, as in the next generation front-end framework. One of the more alluring features in Next.js is its file-based routing comparable to React Router. With this out-of-the-box feature, the folks over at Next have enabled other superb components that give way to more salient embedded features, which grant Next.js its status as the next platform for best SEO and website speed.
 
 Quoted by Jason Miller from Web DevRel and Addy Osmani from Web Developer Relations, in their article "Rendering on the Web" on Google Developers, "*understanding the need to shift to server rendering or static rending over full-rehydration through performance can assist developers in implementing appropriate forms of rending in their application.*" What Miller and Osmani want developers to understand is the importance of utilizing proper tools when the need arises. If you don't know when that need is, inspect your website's performance using tools such as Google's Lighthouse.
 
-![](https://cdn-images-1.medium.com/max/1200/1*tXXS2-1u9jIkUy7q3Ie68g.jpeg)
+!["Google's Lighthouse performance score"](https://cdn-images-1.medium.com/max/1200/1*tXXS2-1u9jIkUy7q3Ie68g.jpeg 'Lighthouse performance score')
 
 
 Tracing back to Next.js, its creators have placed a strong focus on SEO, which is why they've implemented pre-rendering as part of the *pages* directory's design. If you don't know by now, pre-rendering allows for better SEO; read Miller and Osmani's blog post as they dive further in-depth. At its core, pre-rendering comes in two flavors, Static Generation and Server-Side Rendering (SSR).

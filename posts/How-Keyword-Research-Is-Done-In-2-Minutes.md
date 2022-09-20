@@ -3,6 +3,9 @@ title: 'How Keyword Research Is Done In 2 Minutes'
 date: 'May 24, 2022'
 excerpt: 'The following are two major takeaways from my SEO keyword study.'
 cover_image: '/images/posts/keyword-research.png'
+alt: 'Keyword research for SEO'
+image_title: 'Keyword research'
+image_description: 'Put together using Figma and the Vectary 3D Elements plugin by Vectary'
 ---
 
 ## Motivation

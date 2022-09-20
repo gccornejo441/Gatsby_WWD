@@ -3,6 +3,9 @@ title: 'How WordPress Works To Optimize Your Business Ideas'
 date: 'May 2, 2022'
 excerpt: '5 top reasons to use WordPress.'
 cover_image: '/images/posts/wordpress-figma.png'
+alt: 'WordPress icon with black triangles falling'
+image_title: 'WordPress icon'
+image_description: 'Photo by Gabe Cornejo using Figma'
 ---
 
 ## WordPress is free — Who doesn’t enjoy free software

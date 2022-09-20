@@ -71,7 +71,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
                 <div className="container mb-28">
                     <div className="flex px-4 md:px-16 md:py-16">
                         <div className="md:w-1/2 mt-10">
-                            <h1 className="font-bold text-5xl lg:text-7xl lg:leading-[5rem]">
+                            <h1 className="font-bold text-6xl md:text-5xl lg:text-7xl lg:leading-[5rem] mt-[40px] md:my-auto mb-[80px]">
                                 Latest advice
                                 on how to improve
                                 your webspace

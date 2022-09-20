@@ -3,6 +3,9 @@ title: 'Create a form using React Hook Form to POST and GET data from your Mongo
 date: 'January 12, 2022'
 excerpt: 'Form Creation and Validation'
 cover_image: '/images/posts/img2.jpg'
+alt: 'Online credit card form'
+image_title: 'Online credit card form'
+image_description: 'Designed by Alex Nikiforov on Dribbble'
 ---
 ## Part I: Form Creation and Validation
 

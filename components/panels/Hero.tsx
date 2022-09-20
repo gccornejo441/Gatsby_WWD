@@ -5,14 +5,14 @@ import Image from "next/image";
 import SEOImage from "../../public/images/SEO.svg";
 import WebDevelopment from "../../public/images/Web-Development.svg";
 import Frameworks from "../../public/images/Frameworks.svg";
-import GabeHeadShot from "../../public/images/Gabriel-headshot.jpg";
+import GabeHeadShot from "../../public/images/Gabriel-headshot.png";
 import WebFrameworks from "../../public/images/webframeworks.svg";
 import { About } from "./AboutUs";
 
 export const Hero = () => {
   //Author's name
   const authorName = "Gabriel Cornejo"
-  const jobRole = "Full Stack Developer"
+  const jobRole = "Frontend Web Developer"
 
   const [scrollY, setScrollTop] = React.useState(0);
 

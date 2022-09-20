@@ -3,6 +3,9 @@ title: 'Website Traffic Drops, but Social Media Marketers Have A Solution'
 date: 'April 29, 2022'
 excerpt: 'Everything on your website should serve a purpose.'
 cover_image: '/images/posts/maketing-funnel.png'
+alt: 'Graphic of marketing funnel'
+image_title: 'Marketing funnel'
+image_description: 'Photo by spacedigital'
 ---
 
 Have you ever caught yourself navigating a website in search of an item you were looking to purchase only to be discouraged and frustrated with the lack of direction on the website? Of course, this could be attributed to a user experience or terrible website design, but this problem can be fixed with the ideal web framework, i.e., Shopify or Woo Commerce. However, there is another key concept that seems to fly over many developers’ and designers’ heads, and that’s platform messaging.

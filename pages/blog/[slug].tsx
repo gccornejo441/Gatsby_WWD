@@ -10,7 +10,7 @@ const TITLE: string = "Blog | WebWorks Dreams";
 
 
 export default function PostPage({
-  frontmatter: { title, date, excerpt, cover_image },
+  frontmatter: { title, date, excerpt, cover_image, alt, image_title, image_description },
   slug,
   content,
 }) {
@@ -66,18 +66,22 @@ export default function PostPage({
             <a className="h-full text-xs text-gray-800 hover:underline">Go Back</a>
           </Link>
       </div>
-      <div className="text-left post-body-w self-center">
+      <div className="text-left post-body-w md:self-center">
         <h1 className='font-bold text-3xl md:text-5xl pt-10'>{title}</h1>
           <h2 className="py-4 text-lg md:text-2xl font-semibold text-greeny">{excerpt}</h2>
         <div className='pb-10 pt-2'>Posted on {date}</div>
-        <Image
-          src={cover_image}
-          alt={cover_image}
-          width={730}
-          height={400}
-          layout='intrinsic'
-          loading="lazy"
-        />
+        <figure>
+          <Image
+            src={cover_image}
+            alt={alt}
+            title={image_title}
+            width={730}
+            height={400}
+            layout='intrinsic'
+            loading="lazy"
+          />
+          <figcaption className="text-xs text-center">{image_description}</figcaption>
+        </figure>
         <div className='text-left post-body'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>

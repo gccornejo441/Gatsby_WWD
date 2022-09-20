@@ -1,19 +1,12 @@
 ---
-title: 'What I learned after two years of self-taught web development'
+title: 'Self-Taught Web Development'
 date: 'January 07, 2022'
-excerpt: 'Three important takeaways after two years of web dev.'
+excerpt: 'Three important takeaways of web dev.'
 cover_image: '/images/posts/img1.jpg'
+alt: 'Desk and Laptop Computer'
+image_title: 'Desk and Laptop Computer'
+image_description: 'Photo by Markus Spiske on Unspash'
 ---
-
-## The Beginning
-
-My story begins like many. It was the beginning of the COVID-19 pandemic, and being under quarantine orders to remain indoors, I began to reconsider what I wanted to do after college. At the time, I wanted to be an educator, specifically a math high school teacher, so I began making instructional math YouTube videos. That's when I came across the popular math YouTube Channel 3Blue1Brown. If you aren't familiar with his content, it's worth exploring especially, if you're considering a career as a Software Developer. What drew my attention was Grant Sanderson's ability to visually deliver complex mathematical topics, such as his video on [Bayes theorem](https://youtu.be/HZGCoVF3YvM). At this point, I wanted to follow his lead as many did after Khan Salman, the godfather of online instructional videos and the founder of Khan Academy, so I started researching Sanderson's work. In doing so, I found Sanderson's git repository, which housed his open-source mathematical animation library, [Manim](https://github.com/3b1b/manim), written in Python. The only problem was that I didn't understand a lick of how Git repositories are structured, so I didn't know where to start.
-
-I do have to mention that up to this point, although I didn't have a proper programming background, I had written a few 'for' loops and printed several 'Hello, world' to my console using Python. This was before giving up on programming for the second time.
-
-I ended up not creating instructional math videos instead concluded that after failing to follow through with learning how to program, I would start with the rudiments or baby steps.
-
-That brings us to the first thing I learn:
 
 ## Learn The Basics
 
