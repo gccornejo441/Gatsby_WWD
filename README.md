@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div>
+  <img alt="WebWorks Dreams Logo" src="https://www.webworksdreams.com/_next/static/media/WWD.2.76100857.svg" width="200px">
+</div>
 
-## Getting Started
+<hr />
 
-First, run the development server:
+**WebWorks Dreams** is a web design & development agencey. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This repository contains the code for the main WebWorks Dreams website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### macOS
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To build and view the site locally:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+    yarn update
+    yarn add node
+    yarn install
+    yarn dev
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    The generated site is available at `http://localhost:3000`
 
-## Learn More
+## Contributing
+We welcome any contributions to this project!!
 
-To learn more about Next.js, take a look at the following resources:
+## Building & Viewing ##
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+cd into the directory where you cloned this repository, update yarn with the latest node version with `yarn update` then install node with `yarn install node`. Then install the node packet manager with `yarn add`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Start the server in the current directory
 
-## Deploy on Vercel
+    yarn dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The generated site is available at `http://localhost:3001`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+MIT
