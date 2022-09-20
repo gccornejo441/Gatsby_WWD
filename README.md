@@ -2,12 +2,11 @@
   <img alt="WebWorks Dreams Logo" src="https://www.webworksdreams.com/_next/static/media/WWD.2.76100857.svg" width="200px">
 </div>
 
-# WebWorks Dreams is a web design & development agencey. 
-
+# WebWorks Dreams
 <hr />
 
 ## About WebWorks Dreams
-This repository contains the code for the main WebWorks Dreams website
+This repository contains the code for the main WebWorks Dreams website, a web design & development agency for Nonprofits.
 
 ### macOS
 
