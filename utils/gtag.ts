@@ -2,7 +2,7 @@
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url) => {
-    window.gtag("config", "UA-215990650-1", {
+    window.gtag("config", "G-NXP8R0SFMW", {
         page_path: url,
     });
 };
