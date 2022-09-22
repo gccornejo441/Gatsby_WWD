@@ -76,17 +76,18 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           />
           <Script
             strategy="afterInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=UA-215990650-1"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-226259500-1"
           />
           <Script
           id="google-analytics"
             strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
-             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-215990650-1');
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'UA-226259500-1');
           `,
             }}
           />
