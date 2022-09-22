@@ -11,7 +11,7 @@ import NProgress from 'nprogress';
 import Router from 'next/router'
 import * as gtag from "../utils/gtag";
 import MessengerCustomerChat from 'react-messenger-customer-chat'
-
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 Router.events.on('routeChangeStart', (url) => {
   console.log(`Loading: ${url}`)
@@ -74,23 +74,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           `,
             }}
           />
-          <Script
-            strategy="afterInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=G-NXP8R0SFMW"
-          />
-          <Script
-          id="google-analytics"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', 'G-NXP8R0SFMW');
-          `,
-            }}
-          />
           <Head>
             {canonicalURL !==
               "https://www.webworksdreams.com/services/[products]" ? (
@@ -113,22 +96,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <Layout links={Links} title="WebWorks Dreams">
         {/* Global Site Code Pixel - Facebook Pixel */}
         <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=UA-215990650-1"
-          />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-215990650-1');
-          `,
-          }}
-        />
-        <Script
           id="facebook-pixel"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -150,6 +117,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
         <Head>
           <link rel="canonical" href={canonicalURL} />
         </Head>
+        <GoogleAnalytics trackPageViews />
         <Component {...pageProps} />
         <MessengerCustomerChat
           pageId="101980465442553"
