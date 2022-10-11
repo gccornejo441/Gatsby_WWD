@@ -14,9 +14,9 @@ export const tableInfo = [
     revisions: "Revisions",
     price: {
       pricing: "Pricing",
-      price1: "$300",
-      price2: "$500",
-      price3: "$1000",
+      price1: "Request A Quote",
+      price2: "Request A Quote",
+      price3: "Request A Quote",
       disc1:
         "This excellent bundle has been put together for hobbyists who are looking to share their ideas with the web.",
       disc2:

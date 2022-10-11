@@ -91,30 +91,30 @@ const Pricing = () => {
                         </td>
                         <td className="text-darkestGreeny text-xs sm:text-lg align-top">
                           <div>
-                            <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
+                            <div className="md:py-5 text-sm sm:text-2xl lg:text-2xl font-bold">
                               {headerInfo.price?.price1}
                             </div>
-                            <div className="text-darkestGreeny md:pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
+                            <div className="text-darkestGreeny md:pr-5 py-5 text-[.6rem] sm:text-sm md:text-md lg:text-md">
                               {headerInfo.price?.disc1}
                             </div>
                           </div>
                         </td>
                         <td className="text-darkestGreeny text-xs sm:text-lg align-top">
                           <div>
-                            <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
+                            <div className="md:py-5 text-sm sm:text-2xl lg:text-2xl font-bold">
                               {headerInfo.price?.price2}
                             </div>
-                            <div className="text-darkestGreeny md:pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
+                            <div className="text-darkestGreeny md:pr-5 py-5 text-[.6rem] sm:text-sm md:text-md lg:text-md">
                               {headerInfo.price?.disc2}
                             </div>
                           </div>
                         </td>
                         <td className="text-darkestGreeny text-xs sm:text-lg align-top">
                           <div>
-                            <div className="md:py-5 text-sm sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold">
+                            <div className="md:py-5 text-sm sm:text-2xl lg:text-2xl font-bold">
                               {headerInfo.price?.price3}
                             </div>
-                            <div className="text-darkestGreeny md:pr-5 py-5 text-xs sm:text-sm md:text-md lg:text-md">
+                            <div className="text-darkestGreeny md:pr-5 py-5 text-[.6rem] sm:text-sm md:text-md lg:text-md">
                               {headerInfo.price?.disc3}
                             </div>
                           </div>
@@ -124,31 +124,31 @@ const Pricing = () => {
                         <td> </td>
                         <td className="px-1 md:px-2">
                           <Link
-                            href={`/services/starter?cost=${headerInfo.price?.price1}`}
+                            href="https://calendly.com/webworksdreams/"
                             passHref
                           >
                             <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
-                              Starter
+                              Quote
                             </a>
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
                           <Link
-                            href={`/services/small%20business?cost=${headerInfo.price?.price2}`}
+                             href="https://calendly.com/webworksdreams/"
                             passHref
                           >
                             <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
-                              Small Business
+                            Quote
                             </a>
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
                           <Link
-                            href={`/services/executive?cost=${headerInfo.price?.price3}`}
+                             href="https://calendly.com/webworksdreams/"
                             passHref
                           >
                             <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
-                              Executive
+                            Quote
                             </a>
                           </Link>
                         </td>
@@ -223,7 +223,7 @@ const Pricing = () => {
                         href="../contact"
                         className="text-darkestGreeny flex hover:underline"
                       >
-                        <div className="text-darkestGreeny px-5 text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                        <div className="text-darkestGreeny px-5 text-xl lg:text-2xl">
                           Don&apos;t know where to begin?
                         </div>
                         <svg
