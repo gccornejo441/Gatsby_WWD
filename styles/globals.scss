@@ -394,3 +394,12 @@ code {
   overflow: visible;
   white-space: break-spaces;
 }
+
+// Blue Ring Animation
+.animate-spin-slow {
+    animation: spin 4s linear infinite;
+}
+
+.animate-slower {
+    animation: spin .3s linear infinite;
+}
