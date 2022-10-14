@@ -5,7 +5,7 @@
 # WebWorks Dreams
 
 ## About WebWorks Dreams
-This repository contains the code for the main WebWorks Dreams website, a web design & development agency for Nonprofits.
+This repository contains the code for the main WebWorks Dreams website, a web design & development agency.
 
 ### macOS
 
