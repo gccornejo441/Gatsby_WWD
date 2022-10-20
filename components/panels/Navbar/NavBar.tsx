@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,6 +6,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 import WebWorksDreamsLogo from "../../../public/images/WWD.2.svg";
 import { MobileNavBar } from "./MobileNavBar";
 import Logo from "../NavLogo";
+import { Menu, Transition } from '@headlessui/react';
 
 
 export const NavBar = ({ links }) => {
@@ -60,32 +61,65 @@ export const NavBar = ({ links }) => {
           </Link>
           <div className="flex item-center">
             <ul className="flex flex-col md:flex-row text-xs font-bold text-darkestGreeny">
-              {links.navbar.links.map((item) => {
-                return (
-                  <div key={item._id}>
-                    {item._id !== 4 ? (
-                      <li>
-                        <div
-                          key={item._id}
-                          className="mr-8 md:mt-2 lg:mt-3 hover:text-darkGreeny flex items-center"
-                        >
-                          <Link href={item.href}>{item.name}</Link>
-                        </div>
-                      </li>
-                    ) : (
-                      <li>
-                        <div className="mt-3" key={item._id}>
-                          <Link href={item.href}>
-                            <a className="cursor-pointer text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
-                              {item.name}
-                            </a>
-                          </Link>
-                        </div>
-                      </li>
-                    )}
-                  </div>
-                );
-              })}
+              <li className="mt-3">
+                <div
+                  className="mr-8 md:mt-2 lg:mt-3 hover:text-darkGreeny flex items-center"
+                >
+                  <Link href="/">Home</Link>
+                </div>
+              </li>
+
+              <li className="mt-3">
+                <Menu>
+                  <Menu.Button className="mr-8 md:mt-2 lg:mt-3 hover:text-darkGreeny flex items-center">Products</Menu.Button>
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                  >
+                    <Menu.Items className="absolute z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      {links.navbar.links.map((link) => {
+                        return (
+                          <div className="p-1" key={link._id}>
+                            {link._id !== 1 && link._id !== 7 ? (
+                              <Menu.Item
+                                as="a"
+                                key={link._id}
+                                href={link.href}
+                                className="ui-active:bg-blue-500 ui-active:text-white ui-not-active:bg-white ui-not-active:text-black"
+                              >
+                                {({ active }) => (
+                                  <button
+                                    className={`${active ? 'bg-greeny text-white' : 'text-darkGreeny'
+                                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                                  >
+                                    {link.name}
+                                  </button>
+                                )}
+                              </Menu.Item>
+                            ) : <></>}
+                          </div>
+                        )
+                      })}
+                    </Menu.Items>
+                  </Transition>
+                </Menu>
+              </li>
+              <li>
+                <div
+                  className="mr-8 md:mt-2 lg:mt-3 hover:text-darkGreeny flex items-center"
+                >
+                  <Link href="/contact">
+                    <a className="cursor-pointer text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
+                      Get A Quote
+                    </a>
+                  </Link>
+                </div>
+              </li>
             </ul>
           </div>
         </div>

@@ -1,6 +1,4 @@
-import PhoneFrame from "../../public/images/phone-frame.svg";
-import ReactNative from "../../public/images/React-icon.png"
-import flutter from "../../public/images/flutter.png"
+import PhoneFrame from "../public/images/phone-frame.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,27 +6,29 @@ const AppDevelopment = () => {
     return (
         <>
             <div className="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-[100vh] mb-14">
                     <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
                         <div className="relative mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
                             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-700">Mobile App Development</h1>
                             <p className="mt-6 text-lg text-gray-600">We employ mobile device capabilities to design a unique end-user experience that will help your business flourish. </p>
-                            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-                                <div className="grid gap-y-10 grid-cols-2 gap-x-2 md:gap-x-8 md:pb-0 md:w-auto w-[100vw]">
-                                    <Link href="/contact">
-                                        <a className="text-white w-fit bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
-                                            Contact Us
-                                        </a>
-                                    </Link>
-                                    <Link href="/services/pricing">
-                                        <a className="text-white w-fit bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
-                                            Pricing
-                                        </a>
-                                    </Link>
+                            <div className="mt-8">
+                                <div className="md:pb-0 md:w-auto ">
+                                    <div className="flex flex-col md:flex-row pb-10 md:pb-0">
+                                        <Link href="/contact">
+                                            <a className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
+                                                Contact Us
+                                            </a>
+                                        </Link>
+                                        <Link href="/pricing">
+                                            <a className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
+                                                Pricing
+                                            </a>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6 ">
+                        <div className="relative  sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6 ">
                             <div className="-mx-4 md:h-[448px] px-9  sm:mx-0 lg:absolute lg:-inset-x-10 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-10 xl:-bottom-32">
                                 <div className="relative aspect-[366/729] mx-auto max-w-[366px]">
                                     <div className="absolute inset-y-[calc(1/729*100%)] right-[calc(5/729*100%)] left-[calc(7/729*100%)] rounded-[calc(58/366*100%)/calc(58/729*100%)] shadow-2xl"></div>
@@ -36,7 +36,7 @@ const AppDevelopment = () => {
                                         <div className="flex flex-col">
                                             <div className="flex justify-between px-4 pt-4">
                                                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className="h-6 w-6 flex-none">
-                                                    <path d="M5 6h14M5 18h14M5 12h14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                                    <path d="M5 6h14M5 18h14M5 12h14" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg>
                                                 <div className="text-[#fff]">
 
 
@@ -51,7 +51,7 @@ const AppDevelopment = () => {
                                                 </div>
                                             </div>
                                             <div className="mt-6 flex-auto rounded-t-2xl bg-white"><div className="p-4"><div className="flex gap-2"><div className="text-xs leading-6 text-gray-500">Daily Planner</div>
-                                                <svg viewBox="0 0 24 24" className="ml-auto h-6 w-6" fill="none"><path d="M5 12a7 7 0 1 1 14 0 7 7 0 0 1-14 0ZM12 9v6M15 12H9" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+                                                <svg viewBox="0 0 24 24" className="ml-auto h-6 w-6" fill="none"><path d="M5 12a7 7 0 1 1 14 0 7 7 0 0 1-14 0ZM12 9v6M15 12H9" stroke="#171717" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></svg></div>
                                                 <div className="mt-3 border-t border-gray-200 pt-5">
                                                     <div className="flex items-baseline gap-2"><div className="text-2xl tabular-nums tracking-tight text-gray-700">Monday</div>
                                                         <div className="ml-auto text-xs tabular-nums tracking-tight text-gray-700">Happy Halloween!</div>
@@ -86,30 +86,30 @@ const AppDevelopment = () => {
                                                             <path d="M4.21 178.535C3.67667 178.535 3.18333 178.449 2.73 178.275C2.28333 178.095 1.89333 177.845 1.56 177.525C1.23333 177.205 0.976667 176.829 0.79 176.395C0.61 175.962 0.52 175.489 0.52 174.975C0.52 174.462 0.61 173.989 0.79 173.555C0.976667 173.122 1.23667 172.745 1.57 172.425C1.90333 172.105 2.29333 171.859 2.74 171.685C3.19333 171.505 3.68667 171.415 4.22 171.415C4.75333 171.415 5.24 171.499 5.68 171.665C6.12667 171.832 6.50667 172.085 6.82 172.425L6.36 172.895C6.06667 172.602 5.74333 172.392 5.39 172.265C5.03667 172.139 4.65667 172.075 4.25 172.075C3.81667 172.075 3.41667 172.149 3.05 172.295C2.69 172.435 2.37333 172.639 2.1 172.905C1.83333 173.165 1.62333 173.472 1.47 173.825C1.32333 174.172 1.25 174.555 1.25 174.975C1.25 175.389 1.32333 175.772 1.47 176.125C1.62333 176.479 1.83333 176.789 2.1 177.055C2.37333 177.315 2.69 177.519 3.05 177.665C3.41667 177.805 3.81333 177.875 4.24 177.875C4.64 177.875 5.01667 177.815 5.37 177.695C5.73 177.575 6.06 177.372 6.36 177.085L6.78 177.645C6.44667 177.939 6.05667 178.162 5.61 178.315C5.16333 178.462 4.69667 178.535 4.21 178.535ZM6.07 177.555V174.975H6.78V177.645L6.07 177.555ZM8.76438 180.465C8.51771 180.465 8.28104 180.425 8.05438 180.345C7.83438 180.265 7.64437 180.145 7.48437 179.985L7.81438 179.455C7.94771 179.582 8.09104 179.679 8.24438 179.745C8.40438 179.819 8.58104 179.855 8.77438 179.855C9.00771 179.855 9.20771 179.789 9.37438 179.655C9.54771 179.529 9.71104 179.302 9.86438 178.975L10.2044 178.205L10.2844 178.095L12.4444 173.225H13.1444L10.5144 179.105C10.3677 179.445 10.2044 179.715 10.0244 179.915C9.85104 180.115 9.66104 180.255 9.45438 180.335C9.24771 180.422 9.01771 180.465 8.76438 180.465ZM10.1644 178.625L7.74438 173.225H8.48438L10.6244 178.045L10.1644 178.625ZM20.7043 173.175C21.131 173.175 21.501 173.259 21.8143 173.425C22.1343 173.585 22.381 173.832 22.5543 174.165C22.7343 174.499 22.8243 174.919 22.8243 175.425V178.475H22.1143V175.495C22.1143 174.942 21.981 174.525 21.7143 174.245C21.4543 173.959 21.0843 173.815 20.6043 173.815C20.2443 173.815 19.931 173.892 19.6643 174.045C19.4043 174.192 19.201 174.409 19.0543 174.695C18.9143 174.975 18.8443 175.315 18.8443 175.715V178.475H18.1343V175.495C18.1343 174.942 18.001 174.525 17.7343 174.245C17.4676 173.959 17.0943 173.815 16.6143 173.815C16.261 173.815 15.951 173.892 15.6843 174.045C15.4176 174.192 15.211 174.409 15.0643 174.695C14.9243 174.975 14.8543 175.315 14.8543 175.715V178.475H14.1443V173.225H14.8243V174.645L14.7143 174.395C14.8743 174.015 15.131 173.719 15.4843 173.505C15.8443 173.285 16.2676 173.175 16.7543 173.175C17.2676 173.175 17.7043 173.305 18.0643 173.565C18.4243 173.819 18.6576 174.202 18.7643 174.715L18.4843 174.605C18.6376 174.179 18.9076 173.835 19.2943 173.575C19.6876 173.309 20.1576 173.175 20.7043 173.175ZM28.437 178.475L26.457 173.225H27.137L28.937 178.095H28.627L30.477 173.225H31.087L32.917 178.095H32.607L34.437 173.225H35.087L33.097 178.475H32.427L30.667 173.895H30.877L29.107 178.475H28.437ZM36.156 178.475V173.225H36.866V178.475H36.156ZM36.516 172.065C36.3693 172.065 36.246 172.015 36.146 171.915C36.046 171.815 35.996 171.695 35.996 171.555C35.996 171.415 36.046 171.299 36.146 171.205C36.246 171.105 36.3693 171.055 36.516 171.055C36.6627 171.055 36.786 171.102 36.886 171.195C36.986 171.289 37.036 171.405 37.036 171.545C37.036 171.692 36.986 171.815 36.886 171.915C36.7927 172.015 36.6693 172.065 36.516 172.065ZM40.5016 178.525C40.0082 178.525 39.6282 178.392 39.3616 178.125C39.0949 177.859 38.9616 177.482 38.9616 176.995V172.065H39.6716V176.955C39.6716 177.262 39.7482 177.499 39.9016 177.665C40.0616 177.832 40.2882 177.915 40.5816 177.915C40.8949 177.915 41.1549 177.825 41.3616 177.645L41.6116 178.155C41.4716 178.282 41.3016 178.375 41.1016 178.435C40.9082 178.495 40.7082 178.525 40.5016 178.525ZM38.0216 173.815V173.225H41.2716V173.815H38.0216ZM45.5841 173.175C46.0107 173.175 46.3841 173.259 46.7041 173.425C47.0307 173.585 47.2841 173.832 47.4641 174.165C47.6507 174.499 47.7441 174.919 47.7441 175.425V178.475H47.0341V175.495C47.0341 174.942 46.8941 174.525 46.6141 174.245C46.3407 173.959 45.9541 173.815 45.4541 173.815C45.0807 173.815 44.7541 173.892 44.4741 174.045C44.2007 174.192 43.9874 174.409 43.8341 174.695C43.6874 174.975 43.6141 175.315 43.6141 175.715V178.475H42.9041V171.055H43.6141V174.665L43.4741 174.395C43.6407 174.015 43.9074 173.719 44.2741 173.505C44.6407 173.285 45.0774 173.175 45.5841 173.175ZM52.4291 178.475V171.475H53.0391L56.2391 176.935H55.9191L59.0891 171.475H59.6991V178.475H58.9891V172.585H59.1591L56.2391 177.585H55.8891L52.9491 172.585H53.1391V178.475H52.4291ZM65.1198 178.475V177.315L65.0898 177.125V175.185C65.0898 174.739 64.9632 174.395 64.7098 174.155C64.4632 173.915 64.0932 173.795 63.5998 173.795C63.2598 173.795 62.9365 173.852 62.6298 173.965C62.3232 174.079 62.0632 174.229 61.8498 174.415L61.5298 173.885C61.7965 173.659 62.1165 173.485 62.4898 173.365C62.8632 173.239 63.2565 173.175 63.6698 173.175C64.3498 173.175 64.8732 173.345 65.2398 173.685C65.6132 174.019 65.7998 174.529 65.7998 175.215V178.475H65.1198ZM63.3098 178.525C62.9165 178.525 62.5732 178.462 62.2798 178.335C61.9932 178.202 61.7732 178.022 61.6198 177.795C61.4665 177.562 61.3898 177.295 61.3898 176.995C61.3898 176.722 61.4532 176.475 61.5798 176.255C61.7132 176.029 61.9265 175.849 62.2198 175.715C62.5198 175.575 62.9198 175.505 63.4198 175.505H65.2298V176.035H63.4398C62.9332 176.035 62.5798 176.125 62.3798 176.305C62.1865 176.485 62.0898 176.709 62.0898 176.975C62.0898 177.275 62.2065 177.515 62.4398 177.695C62.6732 177.875 62.9998 177.965 63.4198 177.965C63.8198 177.965 64.1632 177.875 64.4498 177.695C64.7432 177.509 64.9565 177.242 65.0898 176.895L65.2498 177.385C65.1165 177.732 64.8832 178.009 64.5498 178.215C64.2232 178.422 63.8098 178.525 63.3098 178.525ZM67.7283 178.475V173.225H68.4083V174.655L68.3383 174.405C68.4849 174.005 68.7316 173.702 69.0783 173.495C69.4249 173.282 69.8549 173.175 70.3683 173.175V173.865C70.3416 173.865 70.3149 173.865 70.2883 173.865C70.2616 173.859 70.2349 173.855 70.2083 173.855C69.6549 173.855 69.2216 174.025 68.9083 174.365C68.5949 174.699 68.4383 175.175 68.4383 175.795V178.475H67.7283ZM72.2238 177.115L72.2438 176.205L75.5138 173.225H76.3838L74.0738 175.435L73.6738 175.775L72.2238 177.115ZM71.6638 178.475V171.055H72.3738V178.475H71.6638ZM75.7338 178.475L73.5438 175.745L74.0038 175.195L76.6038 178.475H75.7338Z" fill="url(#paint4_linear_6_37)" />
                                                             <defs>
                                                                 <linearGradient id="paint0_linear_6_37" x1="7.0808" y1="35.184" x2="277" y2="35.184" gradientUnits="userSpaceOnUse">
-                                                                    <stop stop-color="#059669" />
-                                                                    <stop offset="0.520833" stop-color="#10B981" />
-                                                                    <stop offset="1" stop-color="#42D390" />
+                                                                    <stop stopColor="#059669" />
+                                                                    <stop offset="0.520833" stopColor="#10B981" />
+                                                                    <stop offset="1" stopColor="#42D390" />
                                                                 </linearGradient>
                                                                 <linearGradient id="paint1_linear_6_37" x1="7" y1="114.184" x2="276.919" y2="114.184" gradientUnits="userSpaceOnUse">
-                                                                    <stop stop-color="#059669" />
-                                                                    <stop offset="0.520833" stop-color="#10B981" />
-                                                                    <stop offset="1" stop-color="#42D390" />
+                                                                    <stop stopColor="#059669" />
+                                                                    <stop offset="0.520833" stopColor="#10B981" />
+                                                                    <stop offset="1" stopColor="#42D390" />
                                                                 </linearGradient>
                                                                 <linearGradient id="paint2_linear_6_37" x1="0" y1="193.143" x2="158" y2="193.143" gradientUnits="userSpaceOnUse">
-                                                                    <stop stop-color="#EF4444" stop-opacity="0" />
-                                                                    <stop offset="0.520833" stop-color="#EF4444" stop-opacity="0.19" />
-                                                                    <stop offset="0.71875" stop-color="#EF4444" stop-opacity="0.524565" />
-                                                                    <stop offset="1" stop-color="#EF4444" />
+                                                                    <stop stopColor="#EF4444" stopOpacity="0" />
+                                                                    <stop offset="0.520833" stopColor="#EF4444" stopOpacity="0.19" />
+                                                                    <stop offset="0.71875" stopColor="#EF4444" stopOpacity="0.524565" />
+                                                                    <stop offset="1" stopColor="#EF4444" />
                                                                 </linearGradient>
                                                                 <linearGradient id="paint3_linear_6_37" x1="107.083" y1="199.939" x2="-7.27304" y2="200.781" gradientUnits="userSpaceOnUse">
-                                                                    <stop stop-color="white" stop-opacity="0.73" />
-                                                                    <stop offset="0.49652" stop-color="white" stop-opacity="0.06" />
-                                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                                    <stop stopColor="white" stopOpacity="0.73" />
+                                                                    <stop offset="0.49652" stopColor="white" stopOpacity="0.06" />
+                                                                    <stop offset="1" stopColor="white" stopOpacity="0" />
                                                                 </linearGradient>
                                                                 <linearGradient id="paint4_linear_6_37" x1="71.6987" y1="176.19" x2="-4.86021" y2="177.214" gradientUnits="userSpaceOnUse">
-                                                                    <stop stop-color="white" stop-opacity="0.34" />
-                                                                    <stop offset="0.49652" stop-color="white" stop-opacity="0.06" />
-                                                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                                                    <stop stopColor="white" stopOpacity="0.34" />
+                                                                    <stop offset="0.49652" stopColor="white" stopOpacity="0.06" />
+                                                                    <stop offset="1" stopColor="white" stopOpacity="0" />
                                                                 </linearGradient>
                                                             </defs>
                                                         </svg>
@@ -136,7 +136,7 @@ const AppDevelopment = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <svg viewBox="0 0 366 729" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full fill-gray-100"><path fill="#F2F2F2" fill-rule="evenodd" clip-rule="evenodd" d="M300.092 1c41.22 0 63.223 21.99 63.223 63.213V184.94c-.173.184-.329.476-.458.851.188-.282.404-.547.647-.791.844-.073 2.496.257 2.496 2.157V268.719c-.406 2.023-2.605 2.023-2.605 2.023a7.119 7.119 0 0 1-.08-.102v394.462c0 41.213-22.001 63.212-63.223 63.212h-95.074c-.881-.468-2.474-.795-4.323-.838l-33.704-.005-.049.001h-.231l-.141-.001c-2.028 0-3.798.339-4.745.843H66.751c-41.223 0-63.223-21.995-63.223-63.208V287.739c-.402-.024-2.165-.23-2.524-2.02v-.973A2.039 2.039 0 0 1 1 284.62v-47.611c0-.042.001-.084.004-.126v-.726c0-1.9 1.652-2.23 2.496-2.157l.028.028v-16.289c-.402-.024-2.165-.23-2.524-2.02v-.973A2.039 2.039 0 0 1 1 214.62v-47.611c0-.042.001-.084.004-.126v-.726c0-1.9 1.652-2.23 2.496-2.157l.028.028v-26.041a2.26 2.26 0 0 0 .093-.236l-.064-.01a3.337 3.337 0 0 1-.72-.12l-.166-.028A2 2 0 0 1 1 135.62v-24.611a2 2 0 0 1 1.671-1.973l.857-.143v-44.68C3.528 22.99 25.53 1 66.75 1h233.341ZM3.952 234.516a5.481 5.481 0 0 0-.229-.278c.082.071.159.163.228.278Zm89.99-206.304A4.213 4.213 0 0 0 89.727 24H56.864C38.714 24 24 38.708 24 56.852v618.296C24 693.292 38.714 708 56.864 708h250.272c18.15 0 32.864-14.708 32.864-32.852V56.852C340 38.708 325.286 24 307.136 24h-32.864a4.212 4.212 0 0 0-4.213 4.212v2.527c0 10.235-8.3 18.532-18.539 18.532H112.48c-10.239 0-18.539-8.297-18.539-18.532v-2.527Z"></path><rect x="154" y="29" width="56" height="5" rx="2.5" fill="#D4D4D4"></rect></svg>
+                                    <svg viewBox="0 0 366 729" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full fill-gray-100"><path fill="#F2F2F2" fillRule="evenodd" clipRule="evenodd" d="M300.092 1c41.22 0 63.223 21.99 63.223 63.213V184.94c-.173.184-.329.476-.458.851.188-.282.404-.547.647-.791.844-.073 2.496.257 2.496 2.157V268.719c-.406 2.023-2.605 2.023-2.605 2.023a7.119 7.119 0 0 1-.08-.102v394.462c0 41.213-22.001 63.212-63.223 63.212h-95.074c-.881-.468-2.474-.795-4.323-.838l-33.704-.005-.049.001h-.231l-.141-.001c-2.028 0-3.798.339-4.745.843H66.751c-41.223 0-63.223-21.995-63.223-63.208V287.739c-.402-.024-2.165-.23-2.524-2.02v-.973A2.039 2.039 0 0 1 1 284.62v-47.611c0-.042.001-.084.004-.126v-.726c0-1.9 1.652-2.23 2.496-2.157l.028.028v-16.289c-.402-.024-2.165-.23-2.524-2.02v-.973A2.039 2.039 0 0 1 1 214.62v-47.611c0-.042.001-.084.004-.126v-.726c0-1.9 1.652-2.23 2.496-2.157l.028.028v-26.041a2.26 2.26 0 0 0 .093-.236l-.064-.01a3.337 3.337 0 0 1-.72-.12l-.166-.028A2 2 0 0 1 1 135.62v-24.611a2 2 0 0 1 1.671-1.973l.857-.143v-44.68C3.528 22.99 25.53 1 66.75 1h233.341ZM3.952 234.516a5.481 5.481 0 0 0-.229-.278c.082.071.159.163.228.278Zm89.99-206.304A4.213 4.213 0 0 0 89.727 24H56.864C38.714 24 24 38.708 24 56.852v618.296C24 693.292 38.714 708 56.864 708h250.272c18.15 0 32.864-14.708 32.864-32.852V56.852C340 38.708 325.286 24 307.136 24h-32.864a4.212 4.212 0 0 0-4.213 4.212v2.527c0 10.235-8.3 18.532-18.539 18.532H112.48c-10.239 0-18.539-8.297-18.539-18.532v-2.527Z"></path><rect x="154" y="29" width="56" height="5" rx="2.5" fill="#D4D4D4"></rect></svg>
                                     <Image
                                         alt="Full Stack Developer Headshot"
                                         className="pointer-events-none absolute inset-0 h-full w-full" style={{ color: 'transparent' }}

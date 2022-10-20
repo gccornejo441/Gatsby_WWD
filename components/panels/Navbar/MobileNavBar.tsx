@@ -81,19 +81,27 @@ export const MobileNavBar = ({ links }) => {
                   <Menu.Item>
                     <MyLink
                       className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
-                      href="/"
-                    >
-                      Home
-                    </MyLink>
-                  </Menu.Item>
-                  <Menu.Item>
-                    <MyLink
-                      className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
                       href="/services/web-services"
                     >
                       Services
                     </MyLink>
                   </Menu.Item>
+                <Menu.Item>
+                  <MyLink
+                    className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
+                    href="/mobile-app-development"
+                  >
+                    Mobile App
+                  </MyLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <MyLink
+                    className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
+                    href="/portfolio"
+                  >
+                    Portfolio
+                  </MyLink>
+                </Menu.Item>
                   <Menu.Item>
                     <MyLink
                       className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
@@ -102,6 +110,14 @@ export const MobileNavBar = ({ links }) => {
                       Blog
                     </MyLink>
                   </Menu.Item>
+                <Menu.Item>
+                  <MyLink
+                    className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
+                    href="/pricing"
+                  >
+                    Pricing
+                  </MyLink>
+                </Menu.Item>
                   <Menu.Item>
                     <MyLink
                       className={`${"py-3 px-4 border-b-2 border-gray-100"}`}

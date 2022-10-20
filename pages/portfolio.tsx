@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import Jobbox from "../../public/images/portfolio/Jobbox-portfolio-cover.webp";
-import HomeKeeper from "../../public/images/portfolio/Homekeeper-portfolio.webp"
-import kleanWindows from "../../public/images/portfolio/Klean-wash.webp";
-import SIM from "../../public/images/portfolio/Spiritual-Intervention-Ministries.webp"
-import ESG from "../../public/images/portfolio/ADVANCE-ESG-IMAGE.webp"
-import LARJP from "../../public/images/portfolio/LARJP-WORKS.webp"
+import Jobbox from "../public/images/portfolio/Jobbox-portfolio-cover.webp";
+import HomeKeeper from "../public/images/portfolio/Homekeeper-portfolio.webp"
+import kleanWindows from "../public/images/portfolio/Klean-wash.webp";
+import SIM from "../public/images/portfolio/Spiritual-Intervention-Ministries.webp"
+import ESG from "../public/images/portfolio/ADVANCE-ESG-IMAGE.webp"
+import LARJP from "../public/images/portfolio/LARJP-WORKS.webp"
 
 const products = [
   {

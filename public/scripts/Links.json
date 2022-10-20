@@ -13,11 +13,26 @@
       },
       {
         "_id": 3,
+        "name": "Mobile App",
+        "href": "/mobile-app-development"
+      },
+      {
+        "_id": 4,
+        "name": "Portfolio",
+        "href": "/portfolio"
+      },
+      {
+        "_id": 5,
+        "name": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "_id": 6,
         "name": "Blog",
         "href": "/blog"
       },
       {
-        "_id": 4,
+        "_id": 7,
         "name": "Get A Quote",
         "href": "/contact"
       }
@@ -72,21 +87,6 @@
       },
       {
         "_id": 2,
-        "name": "Mobile App",
-        "href": "/services/mobile-app-development"
-      },
-      {
-        "_id": 3,
-        "name": "Pricing",
-        "href": "/services/pricing"
-      },
-      {
-        "_id": 4,
-        "name": "Portfolio",
-        "href": "/services/portfolio"
-      },
-      {
-        "_id": 5,
         "name": "Get A Quote",
         "href": "/contact"
       }

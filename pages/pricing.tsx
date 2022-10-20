@@ -3,10 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 
-import { tableInfo } from "../../public/scripts/tableData";
-import TableHead from "../../components/table/TableHead";
-import TableBody from "../../components/table/TableBody";
-import Balloons from "../../public/images/Balloons.svg";
+import { tableInfo } from "../public/scripts/tableData";
+import TableHead from "../components/table/TableHead";
+import TableBody from "../components/table/TableBody";
+import Balloons from "../public/images/Balloons.svg";
 
 const TITLE: string = "Website Design Price | WebWorks Dreams";
 

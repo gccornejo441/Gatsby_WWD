@@ -62,7 +62,7 @@ export const NavBarServices = ({ links }) => {
               {links.navbar_services.links.map((item) => {
                 return (
                   <div key={item._id}>
-                    {item._id !== 5 ? (
+                    {item._id !== 2 ? (
                       <li>
                         <div
                           key={item._id}

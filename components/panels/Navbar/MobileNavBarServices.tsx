@@ -86,25 +86,41 @@ export const MobileNavBarServices = ({ links }) => {
                 <Menu.Item>
                   <MyLink
                     className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
-                    href="/"
+                    href="/services/web-services"
                   >
-                    Home
+                    Services
                   </MyLink>
                 </Menu.Item>
                 <Menu.Item>
                   <MyLink
                     className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
-                    href="/services/pricing"
+                    href="/mobile-app-development"
                   >
-                    Pricing
+                    Mobile App
                   </MyLink>
                 </Menu.Item>
                 <Menu.Item>
                   <MyLink
                     className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
-                    href="/services/portfolio"
+                    href="/portfolio"
                   >
                     Portfolio
+                  </MyLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <MyLink
+                    className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
+                    href="/blog"
+                  >
+                    Blog
+                  </MyLink>
+                </Menu.Item>
+                <Menu.Item>
+                  <MyLink
+                    className={`${"py-3 px-4 border-b-2 border-gray-100"}`}
+                    href="/pricing"
+                  >
+                    Pricing
                   </MyLink>
                 </Menu.Item>
                 <Menu.Item>
