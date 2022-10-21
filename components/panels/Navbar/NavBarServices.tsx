@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { MdEmail, MdPhone } from "react-icons/md";
-import WebWorksDreamsLogo from "../../../public/images/WWD.2.svg";
+import WebWorksDreamsLogo from "../../../public/images/WebWorks-Dreams-Logo.svg";
 import { MobileNavBarServices } from "./MobileNavBarServices";
 import Logo from "../NavLogo";
 

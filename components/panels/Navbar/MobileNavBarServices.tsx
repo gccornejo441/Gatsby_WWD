@@ -2,7 +2,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { FiMenu } from "react-icons/fi";
 import { Fragment, useRef } from "react";
 import Image from "next/image";
-import WebWorksDreamsLogo from "../../../public/images/WWD.2.svg";
+import WebWorksDreamsLogo from "../../../public/images/WebWorks-Dreams-Logo.svg";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { MyLink } from "./navscripts";

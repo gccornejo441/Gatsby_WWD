@@ -2,12 +2,16 @@ import * as React from "react";
 import { Hero } from "../components/panels/Hero";
 import { Shapes } from "../components/shapes/Shapes";
 import Head from "next/head";
+import Script from 'next/script'
 
-
-interface Props {
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://www.webworksdreams.com/",
+  "logo": "https://www.webworksdreams.com/_next/static/media/WebWorks-Dreams-Logo.svg"
 }
 
-const Home: React.FC<Props> = () => {
+const Home = () => {
   return (
     <>
       <Head>
@@ -52,6 +56,10 @@ const Home: React.FC<Props> = () => {
           content="https://www.webworksdreams.com/images/sharecard.jpg"
         />
         <meta name="twitter:image:alt" content="A web developer hard at work" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
       <main className="flex flex-col bg-gradient-to-t from-gray-50 to-white">
         <Shapes />

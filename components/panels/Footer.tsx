@@ -1,5 +1,5 @@
 import React from "react";
-import WebWorksDream from "../../public/images/WWD.2.svg";
+import WebWorksDream from "../../public/images/WebWorks-Dreams-Logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import {
