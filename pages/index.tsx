@@ -1,14 +1,14 @@
 import * as React from "react";
 import { Hero } from "../components/panels/Hero";
 import { Shapes } from "../components/shapes/Shapes";
+import WebWorksDreamsLogo from "../public/images/WebWorks-Dreams.svg"
 import Head from "next/head";
-import Script from 'next/script'
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "url": "https://www.webworksdreams.com/",
-  "logo": "https://www.webworksdreams.com/_next/static/media/WebWorks-Dreams-Logo.svg"
+  "logo": WebWorksDreamsLogo
 }
 
 const Home = () => {
@@ -59,6 +59,7 @@ const Home = () => {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          key="product-jsonld"
         />
       </Head>
       <main className="flex flex-col bg-gradient-to-t from-gray-50 to-white">
