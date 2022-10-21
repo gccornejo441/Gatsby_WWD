@@ -8,7 +8,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "url": "https://www.webworksdreams.com/",
-  "logo": WebWorksDreamsLogo
+  "logo": "https://www.webworksdreams.com/_next/static/media/WebWorks-Dreams.c46646ff.svg"
 }
 
 const Home = () => {
