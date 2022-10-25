@@ -1755,6 +1755,11 @@ next-image-loader@^2.0.6:
   resolved "https://registry.npmjs.org/next-image-loader/-/next-image-loader-2.2.0.tgz"
   integrity sha512-czQ0aYzmxfWoJW7kKW0DKy3qDiYBibxjsbrqIromZda6+bFzh7wN5FmCDqblHe0ZXqF8/AStfGcJI+01wsdrMA==
 
+next-seo@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.8.0.tgz#c71c791971e030af448cae61dc1ece5e79da1790"
+  integrity sha512-V5W/JwqdoX6/0zG4S7m5g8zNajYffytWigkPo2hrbHhLD18yGFBU9607OPhvbI9zX3QjWQFMBSmlUY456xt9cA==
+
 next@^12.1.6:
   version "12.3.1"
   resolved "https://registry.npmjs.org/next/-/next-12.3.1.tgz"

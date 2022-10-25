@@ -1,15 +1,25 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 
 import { tableInfo } from "../public/scripts/tableData";
 import TableHead from "../components/table/TableHead";
 import TableBody from "../components/table/TableBody";
 import Balloons from "../public/images/Balloons.svg";
+import { PageSeo } from "../lib/seo";
 
-const TITLE: string = "Website Design Price | WebWorks Dreams";
-
+const metaData = {
+  "title": "WebWorks Dreams",
+  "sitesnippet": "Website Design Price",
+  "description": "Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan.",
+  "language": "en-us",
+  "imageUrl": "https://www.webworksdreams.com/images/sharecard.jpg",
+  "alt": "A web developer hard at work",
+  "tHandle": "@WebWorksDreams",
+  "site": "@WebWorksDreams",
+  "tCardType": "summary_large_image",
+  "appId": "254907099748012"
+}
 
 const Pricing = () => {
   let headerInfo = tableInfo[0];
@@ -17,44 +27,17 @@ const Pricing = () => {
 
   return (
     <>
-      <Head>
-        <meta name="robots" content="all" />
-
-        {/* OG */}
-        <meta property="fb:app_id" content="254907099748012" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.webworksdreams.com/" />
-        <meta property="og:title" content={TITLE} />
-        <meta
-          property="og:image"
-          content="https://www.webworksdreams.com/images/sharecard.jpg"
-        />
-        <meta property="og:image:alt" content="A web developer hard at work" />
-        <meta
-          property="og:description"
-          content="Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan."
-        />
-        <meta
-          name="description"
-          content="Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan."
-        />
-        <meta property="og:site_name" content="WebWorks Dreams" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@WebWorksDreams" />
-        <meta name="twitter:title" content={TITLE} />
-        <meta
-          name="twitter:description"
-          content="Find the right plan for your website design needs. If you only need one site, pay for hosting, or go with a paid plan."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.webworksdreams.com/images/sharecard.jpg"
-        />
-        <meta name="twitter:image:alt" content="A web developer hard at work" />
-        <title>{TITLE}</title>
-      </Head>
+      <PageSeo
+        title={metaData.title}
+        description={metaData.description}
+        sitesnippet={metaData.sitesnippet}
+        imageUrl={metaData.imageUrl}
+        alt={metaData.alt}
+        tHandle={metaData.tHandle}
+        tSite={metaData.tHandle}
+        tCardType={metaData.tCardType}
+        appId={metaData.appId}
+      />
       <main className="bg-gradient-to-t from-gray-50 to-white">
         <div className="flex justify-center px-2 sm:px-5 md:px-10">
           <div className="container md:text-center block md:flex flex-col my-8 xl:px-40">
@@ -134,21 +117,21 @@ const Pricing = () => {
                         </td>
                         <td className="px-1 md:px-2">
                           <Link
-                             href="https://calendly.com/webworksdreams/"
+                            href="https://calendly.com/webworksdreams/"
                             passHref
                           >
                             <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
-                            Quote
+                              Quote
                             </a>
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
                           <Link
-                             href="https://calendly.com/webworksdreams/"
+                            href="https://calendly.com/webworksdreams/"
                             passHref
                           >
                             <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
-                            Quote
+                              Quote
                             </a>
                           </Link>
                         </td>

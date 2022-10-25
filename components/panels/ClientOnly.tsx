@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-
-
 export const ClientOnly = ({ children, ...delegated }) => {
     const [hasMounted, setHasMounted] = React.useState(false);
     React.useEffect(() => {

@@ -1,10 +1,35 @@
 import PhoneFrame from "../public/images/phone-frame.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { PageSeo } from "../lib/seo";
+
+const metaData = {
+    "title": "WebWorks Dreams",
+    "sitesnippet": "Mobile App Development Services Near You",
+    "description": "WebWorks Dreams is a top mobile app development company in the United States. We create unique iOS and Android mobile apps. Request a free consultation right now.",
+    "language": "en-us",
+    "imageUrl": "https://www.webworksdreams.com/images/sharecard.jpg",
+    "alt": "A web developer hard at work",
+    "tHandle": "@WebWorksDreams",
+    "site": "@WebWorksDreams",
+    "tCardType": "summary_large_image",
+    "appId": "254907099748012"
+}
 
 const AppDevelopment = () => {
     return (
         <>
+            <PageSeo
+                title={metaData.title}
+                description={metaData.description}
+                sitesnippet={metaData.sitesnippet}
+                imageUrl={metaData.imageUrl}
+                alt={metaData.alt}
+                tHandle={metaData.tHandle}
+                tSite={metaData.tHandle}
+                tCardType={metaData.tCardType}
+                appId={metaData.appId}
+            />
             <div className="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-[100vh] mb-14">
                     <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">

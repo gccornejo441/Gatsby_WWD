@@ -1,54 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 
 import DesignImage from "../../public/images/Design-team.svg";
 import WebDesignOffice from "../../public/images/web-design-office.jpg";
 import WebDesign from "../../public/images/web-design.jpg";
 
-const TITLE: string = "Modern Website Design Services | WebWorks Dreams";
+import { PageSeo } from "../../lib/seo";
+
+const metaData = {
+  "title": "WebWorks Dreams",
+  "sitesnippet": "Modern Website Design Services",
+  "description": "WebWorks Dreams brings the power of modern website design to meet the needs of your clients by using responsive web technologies.",
+  "language": "en-us",
+  "imageUrl": "https://www.webworksdreams.com/images/sharecard.jpg",
+  "alt": "A web developer hard at work",
+  "tHandle": "@WebWorksDreams",
+  "site": "@WebWorksDreams",
+  "tCardType": "summary_large_image",
+  "appId": "254907099748012"
+}
 
 const webServices = () => {
   return (
     <>
-      <Head>
-        <meta name="robots" content="all" />
-
-        {/* OG */}
-        <meta property="fb:app_id" content="254907099748012" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.webworksdreams.com/" />
-        <meta property="og:title" content={TITLE} />
-        <meta
-          property="og:image"
-          content="https://www.webworksdreams.com/images/sharecard.jpg"
-        />
-        <meta property="og:image:alt" content="A web developer hard at work" />
-        <meta
-          property="og:description"
-          content="WebWorks Dreams brings the power of modern website design to meet the needs of your clients by using responsive web technologies."
-        />
-        <meta
-          name="description"
-          content="WebWorks Dreams brings the power of modern website design to meet the needs of your clients by using responsive web technologies."
-        />
-        <meta property="og:site_name" content="WebWorks Dreams" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@WebWorksDreams" />
-        <meta name="twitter:title" content={TITLE} />
-        <meta
-          name="twitter:description"
-          content="WebWorks Dreams brings the power of modern website design to meet the needs of your clients by using responsive web technologies."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.webworksdreams.com/images/sharecard.jpg"
-        />
-        <meta name="twitter:image:alt" content="A web developer hard at work" />
-        <title>{TITLE}</title>
-      </Head>
+      <PageSeo
+        title={metaData.title}
+        description={metaData.description}
+        sitesnippet={metaData.sitesnippet}
+        imageUrl={metaData.imageUrl}
+        alt={metaData.alt}
+        tHandle={metaData.tHandle}
+        tSite={metaData.tHandle}
+        tCardType={metaData.tCardType}
+        appId={metaData.appId}
+      />
       <main className="container sm:px-14 md:px-10 lg:px-10 xl:px-32 w-full mx-auto">
         <div className="w-full grid justify-items-center my-14 md:mb-20 text-center md:text-left">
           <h1 className="pb-4 text-4xl sm:text-5xl md:text-6xl lg:text-5xl text-gray-800 font-bold">

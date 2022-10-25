@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Hero } from "../components/panels/Hero";
 import { Shapes } from "../components/shapes/Shapes";
-import WebWorksDreamsLogo from "../public/images/WebWorks-Dreams.svg"
-import Head from "next/head";
+import { PageSeo } from "../lib/seo";
+import { LogoJsonLd } from "next-seo";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -11,57 +11,37 @@ const structuredData = {
   "logo": "https://www.webworksdreams.com/_next/static/media/WebWorks-Dreams.c46646ff.svg"
 }
 
+const metaData = {
+  "title": "WebWorks Dreams",
+  "sitesnippet": "Welcome to WebWorks Dreams where dreams come true",
+  "description": "WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits & startups for success in the digital age.",
+  "language": "en-us",
+  "imageUrl": "https://www.webworksdreams.com/images/sharecard.jpg",
+  "alt": "A web developer hard at work",
+  "tHandle": "@WebWorksDreams",
+  "site": "@WebWorksDreams",
+  "tCardType": "summary_large_image",
+  "appId": "254907099748012"
+}
+
 const Home = () => {
   return (
     <>
-      <Head>
-        <meta name="robots" content="all" />
-
-        {/* OG */}
-        <meta property="fb:app_id" content="254907099748012" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.webworksdreams.com/" />
-        <meta
-          property="og:title"
-          content="Welcome to WebWorks Dreams where dreams come true | WebWorks Dreams"
-        />
-        <meta
-          property="og:image"
-          content="https://www.webworksdreams.com/images/sharecard.jpg"
-        />
-        <meta property="og:image:alt" content="A web developer hard at work" />
-        <meta
-          property="og:description"
-          content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
-        />
-        <meta
-          name="description"
-          content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
-        />
-        <meta property="og:site_name" content="WebWorks Dreams" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@WebWorksDreams" />
-        <meta
-          name="twitter:title"
-          content="Welcome to WebWorks Dreams where dreams come true | WebWorks Dreams"
-        />
-        <meta
-          name="twitter:description"
-          content="WebWorks Dreams is an outstanding web development and design company providing superior web services to non-profits &amp; startups for success in the digital age."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.webworksdreams.com/images/sharecard.jpg"
-        />
-        <meta name="twitter:image:alt" content="A web developer hard at work" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-          key="product-jsonld"
-        />
-      </Head>
+      <LogoJsonLd
+        logo={structuredData.logo}
+        url={structuredData.url}
+      />
+      <PageSeo
+        title={metaData.title}
+        description={metaData.description}
+        sitesnippet={metaData.sitesnippet}
+        imageUrl={metaData.imageUrl}
+        alt={metaData.alt}
+        tHandle={metaData.tHandle}
+        tSite={metaData.tHandle}
+        tCardType={metaData.tCardType}
+        appId={metaData.appId}
+      />
       <main className="flex flex-col bg-gradient-to-t from-gray-50 to-white">
         <Shapes />
         <Hero />

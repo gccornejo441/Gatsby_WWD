@@ -4,14 +4,12 @@ import "tailwindcss/tailwind.css";
 import "../styles/globals.scss";
 import { Layout } from "../components/panels/Layout";
 import { ServicesLayout } from "../components/panels/ServicesLayout";
-import Head from "next/head";
 import Links from "../public/scripts/Links.json";
 import Script from "next/script";
 import NProgress from 'nprogress';
 import Router from 'next/router'
 import * as gtag from "../utils/gtag";
 import MessengerCustomerChat from 'react-messenger-customer-chat'
-
 
 Router.events.on('routeChangeStart', (url) => {
   console.log(`Loading: ${url}`)
@@ -23,23 +21,6 @@ Router.events.on('routeChangeError', () => NProgress.done())
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   const [loading, setLoading] = React.useState(false);
-  const [title, setTitle] = React.useState("WebWorks Dreams");
-
-  React.useEffect(() => {
-    if (router.pathname == "/services/web-services") {
-      setTitle("Services Overview | WebWorks Dreams");
-    } else if (router.pathname == "/services/portfolio") {
-      setTitle("Portfolio | WebWorks Dreams");
-    } else if (router.pathname == "/services/pricing") {
-      setTitle("Pricing | WebWorks Dreams");
-    } else {
-      setTitle("WebWorks Dreams");
-    }
-
-    setLoading(true);
-  }, [router.pathname]);
-  const site = "https://www.webworksdreams.com";
-  const canonicalURL = site + router.pathname;
 
   React.useEffect(() => {
     const handleRouteChange = (url) => {
@@ -54,7 +35,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   if (router.pathname.startsWith("/services/")) {
     return (
       <>
-        <ServicesLayout links={Links} title={title}>
+        <ServicesLayout links={Links}>
           {/* Global Site Code Pixel - Facebook Pixel */}
           <Script
             id="facebook-pixel"
@@ -91,17 +72,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           `,
             }}
           />
-          <Head>
-            {canonicalURL !==
-              "https://www.webworksdreams.com/services/[products]" ? (
-              <link rel="canonical" href={canonicalURL} />
-            ) : (
-              <link
-                rel="canonical"
-                href="https://www.webworksdreams.com/services/pricing"
-              />
-            )}
-          </Head>
           <Component {...pageProps} />
         </ServicesLayout>
       </>
@@ -110,7 +80,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
     <>
-      <Layout links={Links} title="WebWorks Dreams">
+      <Layout links={Links}>
         {/* Global Site Code Pixel - Facebook Pixel */}
         <Script
             strategy="afterInteractive"
@@ -147,10 +117,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           `,
           }}
         />
-    
-        <Head>
-          <link rel="canonical" href={canonicalURL} />
-        </Head>
         <Component {...pageProps} />
         <MessengerCustomerChat
           pageId="101980465442553"
