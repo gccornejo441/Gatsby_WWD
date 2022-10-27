@@ -43,7 +43,6 @@ const Contact = () => {
                 <Image
                   src={Contacting}
                   alt="Office hall"
-                  layout="intrinsic"
                   loading="lazy"
                   placeholder="blur"
                 />

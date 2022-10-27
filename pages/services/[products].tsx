@@ -50,7 +50,7 @@ const Checkout = () => {
       pageTitle = "Executive package for all your fast business needs";
       break;
   }
-const TITLE: string = `${pageTitle!} | WebWorks Dreams`;
+  const TITLE: string = `${pageTitle!} | WebWorks Dreams`;
 
   return (
     <div className="my-24 bg-gradient-to-t from-gray-50 to-white pb-10">
@@ -241,8 +241,10 @@ const TITLE: string = `${pageTitle!} | WebWorks Dreams`;
                 <p className="text-xs text-red-600">{errors.phone?.message}</p>
               </div>
             </div>
-            <Link href="/services/pricing">
-              <a className="text-red-500 text-sm font-light">Back</a>
+            <Link href="/services/pricing"
+              className="text-red-500 text-sm font-light"
+            >
+              Back
             </Link>
           </div>
           <div className="md:w-3/5">

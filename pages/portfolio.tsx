@@ -79,6 +79,8 @@ const metaData = {
   "appId": "254907099748012"
 }
 
+const css = { width: '100%', height: 'auto' }
+
 const Portfolio = () => {
   return (
     <>
@@ -113,7 +115,8 @@ const Portfolio = () => {
                   <Image
                     src={product.imageSrc}
                     alt={product.imageAlt}
-                    layout="responsive"
+                    sizes="100vw" 
+                    style={css} 
                     loading="lazy"
                     placeholder="blur"
                   />

@@ -136,10 +136,10 @@ const webServices = () => {
             <h3 className="text-lg md:text-2xl font-bold text-gray-800 pb-10">
               Contact us to schedule a consulting.
             </h3>
-            <Link href="../contact">
-              <a className="text-lg md:text-xl bg-darkestGreeny hover:bg-greeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline">
-                Get Started!
-              </a>
+            <Link
+              href="../contact"
+              className="text-lg md:text-xl bg-darkestGreeny hover:bg-greeny text-blue-50 font-semibold p-3 md:p-4 rounded-md focus:outline-none focus:shadow-outline">
+              Get Started!
             </Link>
           </div>
         </div>

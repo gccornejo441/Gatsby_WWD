@@ -113,10 +113,8 @@ export const NavBar = ({ links }) => {
                 <div
                   className="mr-8 md:mt-2 lg:mt-3 hover:text-darkGreeny flex items-center"
                 >
-                  <Link href="/contact">
-                    <a className="cursor-pointer text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
-                      Get A Quote
-                    </a>
+                  <Link className="cursor-pointer text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny" href="/contact">
+                    Get A Quote
                   </Link>
                 </div>
               </li>

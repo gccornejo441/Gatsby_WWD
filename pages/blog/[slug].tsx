@@ -62,8 +62,11 @@ export default function PostPage({
       </Head>
     <div className="flex flex-col text-gray-800 px-4">
       <div className="container mx-auto max-w-[692px]">
-          <Link href='/blog'>
-            <a className="h-full text-xs text-gray-800 hover:underline">Go Back</a>
+          <Link 
+          href='/blog' 
+          className="h-full text-xs text-gray-800 hover:underline"
+          >
+            Go Back
           </Link>
       </div>
       <div className="text-left post-body-w md:self-center">
@@ -77,7 +80,6 @@ export default function PostPage({
             title={image_title}
             width={730}
             height={400}
-            layout='intrinsic'
             loading="lazy"
           />
           <figcaption className="text-xs text-center">{image_description}</figcaption>

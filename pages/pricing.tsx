@@ -109,30 +109,25 @@ const Pricing = () => {
                           <Link
                             href="https://calendly.com/webworksdreams/"
                             passHref
+                            className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center"
                           >
-                            <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
-                              Quote
-                            </a>
+                            Quote
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
                           <Link
                             href="https://calendly.com/webworksdreams/"
                             passHref
-                          >
-                            <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
-                              Quote
-                            </a>
+                            className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
+                            Quote
                           </Link>
                         </td>
                         <td className="px-1 md:px-2">
                           <Link
                             href="https://calendly.com/webworksdreams/"
                             passHref
-                          >
-                            <a className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
-                              Quote
-                            </a>
+                            className="block cursor-pointer text-xs sm:text-sm md:text-xl bg-darkestGreeny text-white hover:bg-lightGreeny rounded-md py-1 mb-5 w-full text-center">
+                            Quote
                           </Link>
                         </td>
                       </tr>
@@ -201,29 +196,24 @@ const Pricing = () => {
               <div className="md:text-left flex justify-center my-auto">
                 <div className="w-full">
                   <div className="container mx-auto flex justify-center md:my-32 my-12">
-                    <Link href="/contact">
-                      <a
-                        href="../contact"
-                        className="text-darkestGreeny flex hover:underline"
+                    <Link href="/contact" className="text-darkestGreeny flex hover:underline">
+                      <div className="text-darkestGreeny px-5 text-xl lg:text-2xl">
+                        Don&apos;t know where to begin?
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="md:h-10 md:w-10 lg:h-10 lg:w-10 h-6 w-6 animate-spin"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
                       >
-                        <div className="text-darkestGreeny px-5 text-xl lg:text-2xl">
-                          Don&apos;t know where to begin?
-                        </div>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="md:h-10 md:w-10 lg:h-10 lg:w-10 h-6 w-6 animate-spin"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                      </a>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
                     </Link>
                   </div>
                 </div>

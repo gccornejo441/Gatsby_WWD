@@ -74,10 +74,8 @@ export const NavBarServices = ({ links }) => {
                     ) : (
                       <li>
                         <div className="mt-3" key={item._id}>
-                          <Link href={item.href}>
-                            <a className="cursor-pointer text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
-                              {item.name}
-                            </a>
+                          <Link href={item.href} className="cursor-pointer text-white px-3 py-2 lg:px-6 lg:py-3 rounded-full bg-gradient-to-r from-greeny to-lightGreeny">
+                            {item.name}
                           </Link>
                         </div>
                       </li>

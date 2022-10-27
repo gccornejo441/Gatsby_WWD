@@ -35,6 +35,9 @@ export const Hero = () => {
     return watchScroll();
   });
 
+  //Image Styles
+  const css = { width: '400px', height: '400px' }
+
   return (
     <div className="w-full xl:container mx-auto justify-center px-22 md:px-12 lg:px-12 xl:px-32 relative z-0">
       <div className="flex flex-col md:flex-row md:justify-between">
@@ -60,15 +63,15 @@ export const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row pb-10 md:pb-0">
-            <Link href="/services/pricing">
-              <a className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
-                Contact Us
-              </a>
+            <Link
+              className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10"
+              href="/services/pricing">
+              Contact Us
             </Link>
-            <Link href="/services/web-services">
-              <a className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
-                Web Services
-              </a>
+            <Link
+              className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center"
+              href="/services/web-services">
+              Web Services
             </Link>
           </div>
         </div>
@@ -98,7 +101,7 @@ export const Hero = () => {
             <div>
               <div className="text-center my-8">
                 <Image
-                  className="rounded-full"
+                  className="rounded-full mx-auto"
                   alt="Full Stack Developer Headshot"
                   src={GabeHeadShot}
                   height={100}
@@ -117,9 +120,8 @@ export const Hero = () => {
                 <div className="p-10 md:p-0 grid grid-cols-1 md:grid-cols-2 md:gap-[5rem] pb-12 lg:pb-0">
                   <Image
                     alt="Web Frameworks"
-                    height={400}
-                    width={400}
-                    layout="responsive"
+                    style={css}
+                    sizes="100vw"
                     src={SEOImage}
                     className="md:slidein"
                   />
@@ -134,7 +136,7 @@ export const Hero = () => {
                         dynamically responsive websites.
                       </span>
                     </div>
-                    <Link href="/contact">
+                    <Link legacyBehavior href="/contact">
                       <a className="mx-auto mt-4 md:mx-0 bg-greeny border-2 border-greeny hover:bg-transparent hover:text-greeny text-white w-max px-4 py-2 rounded-full  shadow-gray-400 shadow-lg">Learn More</a>
                     </Link>
                     <div className="mt-5">
@@ -142,7 +144,7 @@ export const Hero = () => {
                         alt="Web Fr"
                         height={100}
                         width={584}
-                        layout="responsive"
+                        sizes="100vw"
                         src={WebFrameworks}
                       />
                     </div>
@@ -156,7 +158,7 @@ export const Hero = () => {
                       alt="Web Developement"
                       height={400}
                       width={400}
-                      layout="responsive"
+                      sizes="100vw"
                       src={WebDevelopment}
                       className="md:slidein-right"
                     />
@@ -172,7 +174,7 @@ export const Hero = () => {
                         experience.
                       </span>
                     </div>
-                    <Link href="/contact">
+                    <Link legacyBehavior href="/contact">
                       <a className="mx-auto mt-4 md:mx-0 bg-greeny border-2 border-greeny hover:bg-transparent hover:text-greeny text-white w-max px-4 py-2 rounded-full  shadow-gray-400 shadow-lg">Learn More</a>
                     </Link>
                   </div>
@@ -185,7 +187,7 @@ export const Hero = () => {
                     src={Frameworks}
                     height={400}
                     width={550}
-                    layout="responsive"
+                    sizes="100vw"
                     className="md:slidein"
                   />
                   <div className="flex flex-col self-center">
@@ -199,8 +201,8 @@ export const Hero = () => {
                         customer satisfaction.
                       </span>
                     </div>
-                    <Link href="/contact">
-                      <a className="mx-auto mt-4 md:mx-0 bg-greeny border-2 border-greeny hover:bg-transparent hover:text-greeny text-white w-max px-4 py-2 rounded-full  shadow-gray-400 shadow-lg">Learn More</a>
+                    <Link  className="mx-auto mt-4 md:mx-0 bg-greeny border-2 border-greeny hover:bg-transparent hover:text-greeny text-white w-max px-4 py-2 rounded-full  shadow-gray-400 shadow-lg" href="/contact">
+                      Learn More
                     </Link>
                   </div>
                 </div>

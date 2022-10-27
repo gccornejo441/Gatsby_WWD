@@ -20,26 +20,24 @@ export const Footer = () => {
           <div className="flex px-2 relative pb-12 w-1/2 md:w-1/4">
             <div>
               <div className="mb-7">
-                <Link href="/">
-                  <a className="cursor-pointer">
-                    <Image
-                      src={WebWorksDream}
-                      alt="WebWorks Dreams Logo"
-                      height="24"
-                      width="28"
-                    />
-                  </a>
+                <Link href="/" className="cursor-pointer">
+                  <Image
+                    src={WebWorksDream}
+                    alt="WebWorks Dreams Logo"
+                    height="24"
+                    width="28"
+                  />
                 </Link>
               </div>
               <ul className="m-0 p-0 list-none block">
                 <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">
-                  <Link href="/">
-                    <a className="cursor-pointer">Home</a>
+                  <Link href="/" className="cursor-pointer">
+                    Home
                   </Link>
                 </li>
                 <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">
-                  <Link href="/services/web-services">
-                    <a className="cursor-pointer">Web Services</a>
+                  <Link href="/services/web-services" className="cursor-pointer">
+                    Web Services
                   </Link>
                 </li>
               </ul>
@@ -52,18 +50,18 @@ export const Footer = () => {
               </h2>
               <ul className="m-0 p-0 list-none block">
                 <li className="m-0 tracking-normal text-gray-500 hover:text-gray-500 pb-2 font-normal leading-5 text-base md:mb-1">
-                  <Link href="/services/web-services">
-                    <a className="cursor-pointer">Overview</a>
+                  <Link href="/services/web-services" className="cursor-pointer">
+                    Overview
                   </Link>
                 </li>
                 <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">
-                  <Link href="/pricing">
-                    <a className="cursor-pointer">Pricing</a>
+                  <Link href="/pricing" className="cursor-pointer">
+                    Pricing
                   </Link>
                 </li>
                 <li className="m-0 tracking-normal text-gray-500 hover:text-gray-600 py-2 font-normal leading-5 text-base md:mb-1">
-                  <Link href="/portfolio">
-                    <a className="cursor-pointer">Portfolio</a>
+                  <Link href="/portfolio" className="cursor-pointer">
+                    Portfolio
                   </Link>
                 </li>
               </ul>
@@ -118,20 +116,18 @@ export const Footer = () => {
           </div>
           <ul className="flex flex-col md:flex-row p-0 m-0 text-gray-500 ">
             <li className="block sm:inline-block pl-2">
-              <Link href="/terms-of-service">
-                <a className="flex px-2 justify-center py-3">
-                  Terms of service
-                </a>
+              <Link href="/terms-of-service" className="flex px-2 justify-center py-3">
+                Terms of service
               </Link>
             </li>
             <li className="block sm:inline-block pl-2">
-              <Link href="/privacy-policy">
-                <a className="flex px-2 justify-center py-3">Privacy policy</a>
+              <Link href="/privacy-policy" className="flex px-2 justify-center py-3">
+                Privacy policy
               </Link>
             </li>
             <li className="block sm:inline-block pl-2">
-              <Link href="/sitemap">
-                <a className="flex px-2 justify-center py-3">Sitemap</a>
+              <Link href="/sitemap" className="flex px-2 justify-center py-3">
+                Sitemap
               </Link>
             </li>
           </ul>

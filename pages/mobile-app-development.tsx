@@ -39,15 +39,13 @@ const AppDevelopment = () => {
                             <div className="mt-8">
                                 <div className="md:pb-0 md:w-auto ">
                                     <div className="flex flex-col md:flex-row pb-10 md:pb-0">
-                                        <Link href="/contact">
-                                            <a className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
+                                        <Link href="/contact"
+                                            className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-16 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center md:mr-10">
                                                 Contact Us
-                                            </a>
                                         </Link>
-                                        <Link href="/pricing">
-                                            <a className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
+                                        <Link href="/pricing"
+                                            className="text-white bg-gray-700 font-light hover:bg-greeny hover:text-white tracking-wider md:text-xs xl:text-sm mb-8 md:mb-0 px-2 lg:px-9 py-2 rounded-full flex justify-center items-center">
                                                 Pricing
-                                            </a>
                                         </Link>
                                     </div>
                                 </div>

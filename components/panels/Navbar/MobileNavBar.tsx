@@ -27,7 +27,7 @@ export const MobileNavBar = ({ links }) => {
         {({ open }) => (
           <>
             <div className="flex justify-between px-4">
-              <Link href="/" passHref>
+            <Link href="/" passHref>
                 <div className="flex items-center cursor-pointer">
                   <Image
                     src={WebWorksDreamsLogo}
