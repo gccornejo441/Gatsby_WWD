@@ -15,7 +15,7 @@ const products = [
   {
     id: 6,
     name: "Safety Compliance & Training: Roadside Ready",
-    href: "https://www.webworksdreams.com/case-studies/Safety Compliance & Training: Roadside Ready",
+    href: `https://www.webworksdreams.com/case-studies/${encodeURIComponent("Safety Compliance & Training: Roadside Ready")}`,
     imageSrc: SCT,
     imageAlt: "SCT Landing Page Card",
     description: "Safety Compliance & Training LLC conducts vehicle inspector training on topics such as handling hazardous materials, operating commercial vehicles safely, and following safety protocols in the event of an accident or emergency.",
