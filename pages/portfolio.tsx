@@ -7,9 +7,20 @@ import kleanWindows from "../public/images/portfolio/Klean-wash.webp";
 import SIM from "../public/images/portfolio/Spiritual-Intervention-Ministries.webp"
 import ESG from "../public/images/portfolio/ADVANCE-ESG-IMAGE.webp"
 import LARJP from "../public/images/portfolio/LARJP-WORKS.webp"
+import SCT from '../public/images/portfolio/Safety-Compliance-Training.webp'
+
 import { PageSeo } from "../lib/seo";
 
 const products = [
+  {
+    id: 6,
+    name: "Safety Compliance & Training: Roadside Ready",
+    href: "https://www.webworksdreams.com/case-studies/Safety Compliance & Training: Roadside Ready",
+    imageSrc: SCT,
+    imageAlt: "SCT Landing Page Card",
+    description: "Safety Compliance & Training LLC conducts vehicle inspector training on topics such as handling hazardous materials, operating commercial vehicles safely, and following safety protocols in the event of an accident or emergency.",
+    target: "_blank",
+  },
   {
     id: 5,
     name: "Lakes Area Restorative Justice Project",
@@ -115,8 +126,8 @@ const Portfolio = () => {
                   <Image
                     src={product.imageSrc}
                     alt={product.imageAlt}
-                    sizes="100vw" 
-                    style={css} 
+                    sizes="100vw"
+                    style={css}
                     loading="lazy"
                     placeholder="blur"
                   />
