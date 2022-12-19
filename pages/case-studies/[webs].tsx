@@ -46,7 +46,7 @@ const Webs = () => {
             <p className='text-left'>
                 Our client, {webs}, had a dream of starting a subscription-based course to share their expertise with a wider audience. They approached us with the goal of creating a dedicated website portal that would allow them to manage different classification of members, from basic to expert, and offer recurring payments using popular payment gateways.
 
-                After discussing the client's needs and goals, we began the process of developing a custom website portal using WooCommerce, a popular e-commerce platform. We integrated the site with Stripe and Affirm, two popular payment gateways, to allow for easy and secure recurring payments.
+                After discussing the client&apos;s needs and goals, we began the process of developing a custom website portal using WooCommerce, a popular e-commerce platform. We integrated the site with Stripe and Affirm, two popular payment gateways, to allow for easy and secure recurring payments.
             </p>
             <p className='text-left'>
             To accommodate the different classification of members, we developed a custom membership system that allowed the client to create different membership levels, each with its own set of perks and access to course materials. The system also allowed for easy management of members and their subscriptions, including the ability to add, delete, or update member information.
