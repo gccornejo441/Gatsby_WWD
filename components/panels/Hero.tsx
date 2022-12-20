@@ -5,13 +5,13 @@ import Image from "next/image";
 import SEOImage from "../../public/images/SEO.svg";
 import WebDevelopment from "../../public/images/Web-Development.svg";
 import Frameworks from "../../public/images/Frameworks.svg";
-import GabeHeadShot from "../../public/images/Gabriel-headshot.png";
+import RickHeadshot from "../../public/images/Rick-Headshot.jpg";
 import WebFrameworks from "../../public/images/webframeworks.svg";
 import { About } from "./AboutUs";
 
 export const Hero = () => {
   //Author's name
-  const authorName = "Gabriel Cornejo"
+  const authorName = "Rick Carson"
   const jobRole = "Frontend Web Developer"
 
   const [scrollY, setScrollTop] = React.useState(0);
@@ -79,8 +79,6 @@ export const Hero = () => {
           <Image
             src={headerBlob}
             alt="Web Design Creators"
-            height={650}
-            width={500}
             quality={85}
           />
         </div>
@@ -103,7 +101,7 @@ export const Hero = () => {
                 <Image
                   className="rounded-full mx-auto"
                   alt="Full Stack Developer Headshot"
-                  src={GabeHeadShot}
+                  src={RickHeadshot}
                   height={100}
                   width={100}
                 />
