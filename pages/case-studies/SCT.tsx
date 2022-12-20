@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import { PageSeo } from '../../lib/seo'
 
 const metaData = {
@@ -14,10 +13,7 @@ const metaData = {
     "appId": "254907099748012"
   }
   
-const Webs = () => {
-    const router = useRouter()
-    const { webs } = router.query
-
+const SCT = () => {
 
     return (
       <>
@@ -39,12 +35,12 @@ const Webs = () => {
               Elevating the Online Shopping Experience: An Ecommerce Implementation Journey
               </h1>
               <h2 className="text-gray-800 font-normal pt-10 text-xl md:text-3xl">
-                {webs}
+              Safety Compliance & Training LLC
               </h2>
             </div>
             <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-1 lg:grid-cols-1 xl:gap-x-8">
             <p className='text-left'>
-                Our client, {webs}, had a dream of starting a subscription-based course to share their expertise with a wider audience. They approached us with the goal of creating a dedicated website portal that would allow them to manage different classification of members, from basic to expert, and offer recurring payments using popular payment gateways.
+                Our client, Safety Compliance & Training, had a dream of starting a subscription-based course to share their expertise with a wider audience. They approached us with the goal of creating a dedicated SCTite portal that would allow them to manage different classification of members, from basic to expert, and offer recurring payments using popular payment gateways.
 
                 After discussing the client&apos;s needs and goals, we began the process of developing a custom website portal using WooCommerce, a popular e-commerce platform. We integrated the site with Stripe and Affirm, two popular payment gateways, to allow for easy and secure recurring payments.
             </p>
@@ -67,5 +63,5 @@ Overall, the project was a success, and our client was able to launch their subs
     );
   };
   
-  export default Webs
+  export default SCT
   
