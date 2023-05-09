@@ -1,5 +1,5 @@
 <div>
-  <img alt="WebWorks Dreams Logo" src="https://www.webworksdreams.com/_next/static/media/WWD.2.76100857.svg" width="200px">
+  <img alt="WebWorks Dreams Logo" src="https://www.webworksdreams.com/_next/static/media/WebWorks-Dreams-Logo.76100857.svg" width="200px">
 </div>
 
 # WebWorks Dreams
