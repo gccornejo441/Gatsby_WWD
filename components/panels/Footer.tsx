@@ -67,6 +67,20 @@ export const Footer = () => {
               </ul>
             </div>
           </div>
+          <div className="flex px-2 relative pb-12 w-1/2 md:w-1/4">
+            <div>
+              <h2 className="md:text-2xl text-xl mb-8 font-sans font-semibold leading-tight text-gray-600">
+                Assistance
+              </h2>
+              <ul className="m-0 p-0 list-none block">
+                <li className="m-0 tracking-normal text-gray-500 hover:text-gray-500 pb-2 font-normal leading-5 text-base md:mb-1">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdykpT4InEspfwhUVtihAy9_KwZ96QF5kOvZbOdaaRt75Mhlg/viewform" target="_blank" rel="noopener noreferrer" >
+                  Ticketing System
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="text-xs pt-6 pb-20 flex justify-between flex-col md:flex-row">
           <div className="flex justify-center">
