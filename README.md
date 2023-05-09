@@ -11,10 +11,8 @@ This repository contains the code for the main WebWorks Dreams website, a web de
 
 To build and view the site locally:
 
-    yarn update
-    yarn add node
-    yarn install
-    yarn dev
+    npm i
+    npm run dev
 
     The generated site is available at `http://localhost:3000`
 
@@ -23,11 +21,11 @@ We welcome any contributions to this project!!
 
 ## Building & Viewing ##
 
-cd into the directory where you cloned this repository, update yarn with the latest node version with `yarn update` then install node with `yarn install node`. Then install the node packet manager with `yarn add`.
+cd into the directory where you cloned this repository, update npm with the latest node version with `npm i` then install node with `npm install node`. Then install the node packet manager with `npm add`.
 
 Start the server in the current directory
 
-    yarn dev
+    npm run dev
 
 The generated site is available at `http://localhost:3001`
 
