@@ -7,10 +7,10 @@ export const About = () => {
       <div className="mx-5 md:mx-0 first:container grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="md:text-left">
           <h3 className="text-center md:text-left text-lg md:text-xl lg:text-5xl font-bold text-gray-800 py-4">
-            Professional nonprofit websites. 
+           CRAFTING WEBSITES FOR EXCELLENCE
           </h3>
           <p className="text-center md:text-left text-slate-700  font-light text-base lg:text-lg">
-            The right website makes all the difference. Start from dreaming your dream website to interacting with your powerful website.
+           A well-crafted website can redefine your business. From conceptualizing your dream site to engaging with your impactful online presence.
           </p>
         </div>
         <div>

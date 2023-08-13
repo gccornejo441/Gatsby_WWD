@@ -146,7 +146,7 @@ export const Footer = () => {
             </li>
           </ul>
           <p className="sm:inline-block text-xs font-semibold text-gray-500 m-0 pt-3 md:pt-0 text-center">
-            Copyright © 2022 WebWorks Dreams
+            Copyright © 2023 WebWorks Dreams
           </p>
         </div>
       </div>

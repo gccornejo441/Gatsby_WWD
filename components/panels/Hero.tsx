@@ -46,9 +46,9 @@ export const Hero = () => {
           className="px-10 lg:mt-5 xl:mt-32 md:px-0 hero-text"
         >
           <div className="my-8">
-            <div className="smooch-text">
-              <span className="font-normal text-greeny text-4xl md:text-4xl">
-                Welcome
+            <div>
+              <span className="font-bold text-greeny text-4xl md:text-4xl">
+                Welcome.
               </span>
             </div>
             <div className="text-5xl md:text-5xl lg:text-7xl font-bold text-gray-700 flex flex-col">
@@ -91,7 +91,7 @@ export const Hero = () => {
             </div>
             <div className="text-center flex justify-center">
               <div className="text-slate-900 font-bold text-xl lg:text-2xl lg:max-w-4xl px-4">
-                <p>&quot;Are you in search of cutting-edge solutions? Look no further than WebWorks Dreams. We specialize in equipping non-profit entities with the tools to unlock the potential of the latest and most innovative software capabilities.&quot;</p>
+                <p>&quot;Whether you&apos;re seeking the latest solutions, WebWorks Dreams empowers businesses to leverage the most innovative software capabilities.&quot;</p>
               </div>
             </div>
             <div>
@@ -137,7 +137,7 @@ export const Hero = () => {
                     </Link>
                     <div className="mt-5">
                       <Image
-                        alt="Web Fr"
+                        alt="Web Frameworks"
                         height={100}
                         width={584}
                         sizes="100vw"
@@ -192,9 +192,7 @@ export const Hero = () => {
                     </div>
                     <div className="text-center md:text-left lg:max-w-prose">
                       <span className="text-slate-700 font-light text-base lg:text-lg">
-                        Our websites are tailored to your needs and your user
-                        demands, so we have cultivated our process to target
-                        customer satisfaction.
+                      Our websites are designed to suit your unique requirements and the preferences of your audience.  We&apos;ve refined our approach to prioritize customer satisfaction.
                       </span>
                     </div>
                     <Link  className="mx-auto mt-4 md:mx-0 bg-greeny border-2 border-greeny hover:bg-transparent hover:text-greeny text-white w-max px-4 py-2 rounded-full  shadow-gray-400 shadow-lg" href="/contact">
