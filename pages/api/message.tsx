@@ -29,7 +29,8 @@ export const message = async (
       const message = await db.collection(msg_collection!).insertOne(entry);
       return res.redirect("/");
     } catch (err) {
-      console.log(err);
+      console.error(err);
+      res.status(500).json({ message: "Error connecting to the database" });
     }
 
   } 

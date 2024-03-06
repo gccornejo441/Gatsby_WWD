@@ -9,10 +9,8 @@ import Script from "next/script";
 import NProgress from 'nprogress';
 import Router from 'next/router'
 import * as gtag from "../utils/gtag";
-import MessengerCustomerChat from 'react-messenger-customer-chat'
 
 Router.events.on('routeChangeStart', (url) => {
-  console.log(`Loading: ${url}`)
   NProgress.start()
 })
 Router.events.on('routeChangeComplete', () => NProgress.done())
@@ -118,10 +116,6 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           }}
         />
         <Component {...pageProps} />
-        <MessengerCustomerChat
-          pageId="101980465442553"
-          appId="254907099748012"
-        />
       </Layout>
     </>
   );

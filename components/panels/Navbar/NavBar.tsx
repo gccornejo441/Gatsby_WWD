@@ -15,9 +15,9 @@ export const NavBar = ({ links }) => {
       <nav className="hidden md:flex justify-center py-2 text-white text-xs bg-gradient-to-r from-greeny to-lightGreeny">
         <div className="w-full xl:container flex justify-between px-8 lg:px-12 xl:px-28">
           <div className="grid grid-cols-2 gap-3">
-            <a className="flex hover:underline" href="mailto:gcornejo@webworksdreams.com">
+            <a className="flex hover:underline" href="mailto:webworksdreams@gmail.com">
               <MdEmail className="text-white text-lg mr-1" />
-              gcornejo@webworksdreams.com
+              webworksdreams@gmail.com
             </a>
             <a className="flex hover:underline" href="tel:951-254-2009">
               <MdPhone className="text-white text-lg mr-1" />

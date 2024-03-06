@@ -41,7 +41,8 @@ const sales = async (req: NextApiRequest, res: NextApiResponse) => {
       const db = client.db(dbName);
       const sales = await db.collection(sales_collection!).insertOne(entry);
     } catch (err) {
-      console.log("Error: ", err);
+      console.error(err);
+      res.status(500).json({ message: "Error connecting to the database" });
     } finally {
       await client.close();
     }
